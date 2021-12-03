@@ -1,3 +1,123 @@
+/* SECTION hero banner */
+
+.section-hero__title {
+text-align: center;    
+padding: 30px;
+}
+
+.section-hero {
+    overflow: hidden;
+  }
+  
+  .section-hero__banner {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .section-hero__content {
+      position: absolute;
+      width: 851px;
+      height: 658px;
+      bottom: 146px;
+      left: -520px;
+      background: rgba(242, 242, 242, 0.9);
+      border: 1px solid var(--color-dark);
+  }
+  
+  .section-hero__poster img {
+      display: block;
+      width: auto;
+  }
+  
+  .section-hero__box {
+      width: 330px;
+      flex-shrink: 0;
+      position: relative;
+  }
+  
+  .section-hero__text span {
+      font-style: normal;
+      font-weight: 600;
+
+  }
+  
+  .section-hero__text {
+      padding-left: 60px;
+      padding-right: 60px;
+      font-size: 18px;
+      line-height: 25px;
+  }
+  
+  .section-hero__header {
+      padding-left: 60px;
+  }
+
+/* SECTION FLIGHTS */
+.section-flights {
+    background-color: var(--color-light);
+}
+
+.section-flights__card {
+    border: 1px solid #828282;
+}
+
+.section-flights__card-small {
+    width: calc(470/630 * 100%);
+    background-color: var(--color-light);
+    margin-top: -40px;
+    position: relative;
+    padding: calc(var(--grid-gutter)/2);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-flights__card-button .button {
+    margin: 80px;
+}
+
+.section-flights__card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: calc(var(--grid-gutter)/2);
+}
+
+.section-flights__card-title {
+    font-family: Playfair Display;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    width: 100%;
+}
+
+.section-flights__card-title:after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 50%;
+    margin: 0 auto;
+    background: #828282;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+  }
+
+.section-flights__card-text {
+    line-height: 25px;
+    text-align: center;
+}
+
+.section-flights__card--horizontal {
+    display: flex;
+    grid-column: span 2;
+}
+
+.section-flights__card-small--horizontal {
+    margin-top: 0;
+    padding: 30px 110px;
+}
+
 
 /* SECTION PLANES */
 
@@ -11,6 +131,22 @@
     text-transform: uppercase;
 }
 
+.section-planes__title {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
 .section-planes__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -19,6 +155,7 @@
 
 .section-planes__card {
     border: 1px solid #828282;
+    background-color: var(--color-light)
 }
 
 .section-planes__card-content {
@@ -29,7 +166,7 @@
     width: 100%;    
 }
 
-.section-planes__title {
+.section-planes__card-title {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 10px;
@@ -41,7 +178,54 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 19px;
-    
+}
 
+/* SECTION FLIGHTS PROGRAMS */
+.section-programs{
+    background-color: var(--color-light);
+}
+
+.section-programs__title {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+.section-programs__card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: calc(var(--grid-gutter)/2);
+    
+}
+
+.section-programs__card {
+    background-color: var(--color-light-grey);
+    margin: 10px;
+}
+
+.section-programs__icon {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.section-program__title {
+    font-family: Noto Sans;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 25px;
+    text-align: center;
+    padding: 30px 30px 0 30px;
+}
+
+.section-program__text {
+    padding: 30px;
+    text-align: center;
 
 }
