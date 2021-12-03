@@ -2,7 +2,7 @@
 :root {
   --color-dark: rgba(51, 51, 51, 1);
   --color-light: #F9F8F6;
-  --color-ligh-grey: #F2F2F2;
+  --color-light-grey: #F2F2F2;
   --grid-gutter: 60px;
   --font-size-base: 18px; 
   /* --font-size-base: 24px; */
@@ -23,7 +23,7 @@ h2 {
 }
 
 body {
-  background-color: var(--color-ligh-grey);
+  background-color: var(--color-light-grey);
   color: var(--color-dark);
   font-family: 'Noto Sans', sans-serif;
   font-size: var(--font-size-base);
