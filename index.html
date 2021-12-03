@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Playfair+Display&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
     <title>Аэродром Сокольский</title>
 </head>
@@ -56,120 +57,126 @@
         </div>
     </section>
 
-    <!-- section-slider -->
-    <section class="page-section section-main-services">
-        <div class="container">
-            <div class="section-main-services__wrap">
-                <div class="section-main-services__slider slider js-slider">
-                    <div class="section-main-services__box">
-                    <h2 class="section-main-services__title heading">Услуги аэродрома</h2>
-                    <!-- навигация для слайдера -->
-                    <div class="slider-nav section-main-services__slider-nav">
-                        <button class="slider-nav__arrow slider-nav__arrow--disabled" type="button">
-                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M13.9999 5.01503C13.9999 4.88231 13.9472 4.75503 13.8535 4.66119C13.7597 4.56734 13.6325 4.51462 13.4999 4.51462H1.70692L4.85392 1.36607C4.90041 1.31954 4.93728 1.26431 4.96244 1.20352C4.9876 1.14273 5.00055 1.07758 5.00055 1.01178C5.00055 0.945983 4.9876 0.88083 4.96244 0.820041C4.93728 0.759252 4.90041 0.704018 4.85392 0.657493C4.80743 0.610967 4.75224 0.574061 4.6915 0.548881C4.63076 0.523702 4.56566 0.510742 4.49992 0.510742C4.43417 0.510742 4.36907 0.523702 4.30833 0.548881C4.24759 0.574061 4.1924 0.610967 4.14592 0.657493L0.145917 4.66074C0.099354 4.70722 0.0624111 4.76244 0.0372047 4.82324C0.0119982 4.88403 -0.000976563 4.94921 -0.000976562 5.01503C-0.000976563 5.08085 0.0119982 5.14602 0.0372047 5.20682C0.0624111 5.26761 0.099354 5.32283 0.145917 5.36931L4.14592 9.37256C4.1924 9.41909 4.24759 9.45599 4.30833 9.48117C4.36907 9.50635 4.43417 9.51931 4.49992 9.51931C4.56566 9.51931 4.63076 9.50635 4.6915 9.48117C4.75224 9.45599 4.80743 9.41909 4.85392 9.37256C4.90041 9.32604 4.93728 9.2708 4.96244 9.21001C4.9876 9.14922 5.00055 9.08407 5.00055 9.01827C5.00055 8.95248 4.9876 8.88732 4.96244 8.82653C4.93728 8.76575 4.90041 8.71051 4.85392 8.66399L1.70692 5.51543H13.4999C13.6325 5.51543 13.7597 5.46271 13.8535 5.36887C13.9472 5.27502 13.9999 5.14774 13.9999 5.01503Z"
-                                    fill="#333333" />
-                            </svg>
+<!-- section-slider -->
+<section class="page-section section-main-services">
+    <div class="container">
+        <div class="section-main-services__wrap">
 
-                        </button>
-                        <p class="section-main-services__slider-number"><span>1</span>/5</p>
-                        <button class="slider-nav__arrow" type="button">
-                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M0 5.01503C0 4.88231 0.0526784 4.75503 0.146447 4.66119C0.240215 4.56734 0.367392 4.51462 0.5 4.51462H12.293L9.146 1.36607C9.05211 1.2721 8.99937 1.14466 8.99937 1.01178C8.99937 0.878897 9.05211 0.751456 9.146 0.657493C9.23989 0.56353 9.36722 0.510742 9.5 0.510742C9.63278 0.510742 9.76011 0.56353 9.854 0.657493L13.854 4.66074C13.9006 4.70722 13.9375 4.76244 13.9627 4.82324C13.9879 4.88403 14.0009 4.94921 14.0009 5.01503C14.0009 5.08085 13.9879 5.14602 13.9627 5.20682C13.9375 5.26761 13.9006 5.32283 13.854 5.36931L9.854 9.37256C9.76011 9.46652 9.63278 9.51931 9.5 9.51931C9.36722 9.51931 9.23989 9.46652 9.146 9.37256C9.05211 9.2786 8.99937 9.15116 8.99937 9.01827C8.99937 8.88539 9.05211 8.75795 9.146 8.66399L12.293 5.51543H0.5C0.367392 5.51543 0.240215 5.46271 0.146447 5.36887C0.0526784 5.27502 0 5.14774 0 5.01503V5.01503Z"
-                                    fill="#333333" />
-                            </svg>
-                        </button>
-                    </div>
-                    
-                    </div> 
+            <div class="swiper-container">
 
+                <div class="section-main-services__box">
+                    <h2 class="section-main-services__box-title heading">Услуги аэродрома</h2>
+                    <!-- стрелки управления -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- цыфры-->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- прокрутка-->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
+
+
+                <div class="swiper-wrapper">
                     <!-- слайдер 1-->
-                    <div class="section-main-services__slider-item slider__item">
-                        <div class="section-main-services__poster"><img src="images/services_flights.png" alt="flights" height="750"></div>
+                    <div class="section-main-services__slider-item swiper-slide">
+                        <div class="section-main-services__poster"><img src="images/services_flights.png" alt="flights"
+                                height="750"></div> 
                         <div class="section-main-services__text-blok">
                             <div class="section-main-services__text">
                                 <h3 class="section-main-services__title heading">Полеты</h3>
-                                <p>Организация прогулочных полётов над Нижним новгородом на частных самолётах. Предлагаем на выбор почти десяток воздушных
-                                судов.</p>
+                                <p>Организация прогулочных полётов над Нижним новгородом на частных самолётах.
+                                    Предлагаем на выбор почти десяток воздушных
+                                    судов.</p>
                             </div>
                             <div class="section-main-services__actions">
                                 <a href="#!" class="button button--signup">Подробнее</a>
                             </div>
                         </div>
                     </div>
-                
-                    <!-- слайдер 2-->
-                        <!-- <div class="section-main-services__slider-item slider__item">
-                            <div class="section-main-services__poster"><img src="images/service_photo.png" alt="flights" height="750"></div>
-                            <div class="section-main-services__text-blok">
-                                <div class="section-main-services__text">
-                                    <h3 class="section-main-services__title heading">Фотосессии</h3>
-                                    <p>Фотосессия на аэродроме – блестящая идея подарка себе или близкому человеку. Мы предлагаем съемку на фоне любых моделей
-                                    самолетов, а также внутри кабины. Несомненно, фотосессия на аэродроме станет великолепным воспоминанием на долгие годы!</p>
-                                </div>
-                                <div class="section-main-services__actions">
-                                    <a href="#!" class="button button--signup">Подробнее</a>
-                                </div>
-                            </div>
-                        </div> -->
-                
-                    <!-- слайдер 3-->
-                        <!-- <div class="section-main-services__slider-item slider__item">
-                            <div class="section-main-services__poster"><img src="images/services_courses.png" alt="flights" height="750"></div>
-                            <div class="section-main-services__text-blok">
-                                <div class="section-main-services__text">
-                                    <h3 class="section-main-services__title heading">Курсы пилотирования</h3>
-                                    <p>Обучающие курсы для пилотов любителей и летчиков гражданской авиации. Профессиональное обучение полетам, увлекательные
-                                    мастер-классы.</p>
-                                </div>
-                                <div class="section-main-services__actions">
-                                    <a href="#!" class="button button--signup">Подробнее</a>
-                                </div>
-                            </div>
-                        </div> -->
 
-                        <!-- слайдер 4-->
-                        
-                        <!-- <div class="section-main-services__slider-item slider__item">
-                            <div class="section-main-services__poster"><img src="images/services_jumping.png" alt="flights" height="750"></div>
-                            <div class="section-main-services__text-blok">
-                                <div class="section-main-services__text">
-                                    <h3 class="section-main-services__title heading">Прыжки с парашютом</h3>
-                                    <p>Прыжок в тандеме с инструктором с высоты 4000 метров или самостоятельноый прыжок с высоты 1200 метров, с принудительным
+                    <!-- слайдер 2-->
+                    <div class="section-main-services__slider-item swiper-slide">
+                        <div class="section-main-services__poster"><img src="images/service_photo.png" alt="flights"
+                                height="750"></div>
+                        <div class="section-main-services__text-blok">
+                            <div class="section-main-services__text">
+                                <h3 class="section-main-services__title heading">Фотосессии</h3>
+                                <p>Фотосессия на аэродроме – блестящая идея подарка себе или близкому человеку. Мы
+                                    предлагаем съемку на фоне любых моделей
+                                    самолетов, а также внутри кабины. Несомненно, фотосессия на аэродроме станет
+                                    великолепным воспоминанием на долгие годы!</p>
+                            </div>
+                            <div class="section-main-services__actions">
+                                <a href="#!" class="button button--signup">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- слайдер 3-->
+                    <div class="section-main-services__slider-item swiper-slide">
+                        <div class="section-main-services__poster"><img src="images/services_courses.png" alt="flights"
+                                height="750"></div>
+                        <div class="section-main-services__text-blok">
+                            <div class="section-main-services__text">
+                                <h3 class="section-main-services__title heading">Курсы пилотирования</h3>
+                                <p>Обучающие курсы для пилотов любителей и летчиков гражданской авиации.
+                                    Профессиональное обучение полетам, увлекательные
+                                    мастер-классы.</p>
+                            </div>
+                            <div class="section-main-services__actions">
+                                <a href="#!" class="button button--signup">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- слайдер 4-->
+
+                    <div class="section-main-services__slider-item swiper-slide">
+                        <div class="section-main-services__poster"><img src="images/services_jumping.png" alt="flights"
+                                height="750"></div>
+                        <div class="section-main-services__text-blok">
+                            <div class="section-main-services__text">
+                                <h3 class="section-main-services__title heading">Прыжки с парашютом</h3>
+                                <p>Прыжок в тандеме с инструктором с высоты 4000 метров или самостоятельноый прыжок с
+                                    высоты 1200 метров, с принудительным
                                     немедленным раскрытием основного парашюта, типа «крыло».</p>
-                                </div>
-                                <div class="section-main-services__actions">
-                                    <a href="#!" class="button button--signup">Подробнее</a>
-                                </div>
                             </div>
-                        </div> -->
-                                                                    
-                        <!-- слайдер 5-->
-                                            
-                        <!-- <div class="section-main-services__slider-item slider__item">
-                            <div class="section-main-services__poster"><img src="images/servece_rent.png" alt="flights" height="750"></div>
-                            <div class="section-main-services__text-blok">
-                                <div class="section-main-services__text">
-                                    <h3 class="section-main-services__title heading">Аренда ангаров</h3>
-                                    <p>В аренду сдаются отапливаемые и охраняемые ангары для хранения и стоянки вашей авиатехники. Наши ангары отлично подойдут
+                            <div class="section-main-services__actions">
+                                <a href="#!" class="button button--signup">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- слайдер 5-->
+
+                    <div class="section-main-services__slider-item swiper-slide">
+                        <div class="section-main-services__poster"><img src="images/servece_rent.png" alt="flights"
+                                height="750"></div>
+                        <div class="section-main-services__text-blok">
+                            <div class="section-main-services__text">
+                                <h3 class="section-main-services__title heading">Аренда ангаров</h3>
+                                <p>В аренду сдаются отапливаемые и охраняемые ангары для хранения и стоянки вашей
+                                    авиатехники. Наши ангары отлично подойдут
                                     для размещения: легких самолетов, парапланов, дельтопланов.</p>
-                                </div>
-                                <div class="section-main-services__actions">
-                                    <a href="#!" class="button button--signup">Подробнее</a>
-                                </div>
                             </div>
-                        </div> -->
-                                            
-                 </div>
+                            <div class="section-main-services__actions">
+                                <a href="#!" class="button button--signup">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
-    </section> 
+    </div>
+</section>
+
 
 
     <!-- section-about-us-->
-    <section class="page-section section-about-us">
+    <section class="section-about-us">
                 <div class="container">
             <div class="section-about-us__left">
                 <div class="section-about-us__text-blok">
@@ -393,6 +400,7 @@
     </footer>
 
 </main>
-
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="slider.js"></script>
 </body>
 </html>
