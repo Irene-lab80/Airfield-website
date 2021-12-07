@@ -35,10 +35,17 @@ body {
   letter-spacing: 0.02em;
 }
 
+nav a:hover {
+    border-bottom: 1px solid var(--color-light);
+    padding-bottom: 1px;
+}
+
 /* layout */
 .container {
   max-width: 1290px;
   padding: 0 20px;
+
+
   margin: 0 auto;
   box-sizing: content-box;
 }
@@ -744,3 +751,70 @@ figure {
   
 }
 
+figure:hover .gallery__img{
+  transform: scale(1.5);
+}
+
+/* ################################################################### */
+/* Модальное окно Записаться */
+#zatemnenie:target {
+  display: block;
+}
+
+.close {
+  display: inline-block;
+  background: url('/images/svg/plus.svg') no-repeat;
+  transform: rotate(45deg);
+  height: 48px;
+  width: 48px;
+  cursor: pointer;
+  margin-bottom: 7px;
+  position: relative;
+  right: -95%;
+  top: -30px;
+}
+
+
+.close:focus {
+  background: url('/images/svg/toggle.svg') no-repeat;
+  transform: none;
+}
+
+#zatemnenie {
+  background: linear-gradient(0deg, rgba(18, 21, 33, 0.6), rgba(18, 21, 33, 0.6));
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+.section-sign-up__content {
+    width: 700px;
+    height: 750px;
+    background: var(--color-light);
+    flex-shrink: 0;
+    padding: 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  
+}
+
+
+
+.section-sign-up--form-title {
+  line-height: 0;
+}
+
+.section-sign-up--checkbox__text {
+    top: 7px;
+}
