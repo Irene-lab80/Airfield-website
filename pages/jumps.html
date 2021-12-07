@@ -15,22 +15,46 @@
 
     <!-- шапка страницы -->
     <header class="page-header">
-        <div class="container">
-            <div class="page-header__row">
-                <!-- логотип -->
-                <a href="/index.html"><img class="page-header__logo" src="/images/logo.svg" alt="Аэродром Сокольский" width="350"></a>
-                <!-- меню сайта -->
-                <nav class="page-header__menu">
-                    <ul class="mainmenu__list">
-                        <li class="mainmenu__item"><a href="./about_us.html">О НАС</a></li>
-                        <li class="mainmenu__item"><a href="./services.html">УСЛУГИ</a></li>
-                        <li class="mainmenu__item"><a href="./jumps.html">ПРЫЖКИ</a></li>
-                        <li class="mainmenu__item"><a href="./flights.html">ПОЛЕТЫ</a></li>
-                        <li class="mainmenu__item"><a href="./courses.html">КУРСЫ</a></li>
-                        <li class="mainmenu__item"><a href="./contacts.html">КОНТАКТЫ</a></li>
-                    </ul>
-                </nav>
-            </div>
+        <div class="page-header__container container">            
+            <!-- логотип -->
+            <a href="index.html">
+                <img class="page-header__logo" src="/images/svg/logo.svg" alt="Аэродром Сокольский" >
+            </a>
+
+            <!-- меню сайта -->
+            <!-- menu-toggle -->
+            <button class="hamburger hamburger--emphatic-r page-header__menu-toggle" 
+            type="button" onclick="this.classList.toggle('is-active')">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <nav class="page-header__menu mainmenu">
+                <ul class="mainmenu__list">                    
+                    <li class="mainmenu__item">
+                        <a class="mainmenu__link" href="./pages/about_us.html">О НАС</a>
+                    </li>
+                    <li class="mainmenu__item">
+                        <a class="mainmenu__link" href="./pages/services.html">УСЛУГИ</a>
+                    </li>
+                    <li class="mainmenu__item">
+                        <a class="mainmenu__link" href="./pages/jumps.html">ПРЫЖКИ</a>
+                    </li>
+                    <li class="mainmenu__item">
+                        <a class="mainmenu__link" href="./pages/flights.html">ПОЛЕТЫ</a>
+                    </li>
+                    <li class="mainmenu__item">
+                        <a class="mainmenu__link" href="./pages/courses.html">КУРСЫ</a>
+                    </li>
+                    <li class="mainmenu__item">
+                        <a class="mainmenu__link" href="./pages/contacts.html">КОНТАКТЫ</a>
+                    </li>
+                </ul>
+
+                
+
+            </nav>            
+
         </div>
     </header>
     
