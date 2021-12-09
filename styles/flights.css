@@ -1,8 +1,7 @@
 /* SECTION hero banner */
 
 .section-hero__title {
-text-align: center;    
-padding: 30px;
+    text-align: center;    
 }
 
 .section-hero {
@@ -15,8 +14,8 @@ padding: 30px;
   }
   
   .section-hero__content {
+      padding: var(--grid-gutter);
       position: absolute;
-      /* width: 851px; */
       width: 275%;
       height: 658px;
       /* bottom: 146px;
@@ -143,22 +142,9 @@ padding: 30px;
 }
 
 .section-planes__title {
-    font-family: Playfair Display;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 48px;
-    line-height: 64px;
     text-align: center;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    padding-bottom: 30px;
 }
 
-h2,
-h3 {
-    margin: 0;
-    padding: 0;
-}
 .section-planes__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -198,15 +184,7 @@ h3 {
 }
 
 .section-programs__title {
-    font-family: Playfair Display;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 48px;
-    line-height: 64px;
     text-align: center;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    padding-bottom: 30px;
 }
 
 .section-programs__card-container {
