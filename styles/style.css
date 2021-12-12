@@ -787,8 +787,6 @@ justify-content: flex-end;
   position: absolute;
   width: 275%;
   height: 658px;
-  /* bottom: 146px;
-  left: -520px;  */
   background: rgba(242, 242, 242, 0.9);
   border: 1px solid var(--color-dark);
 }
@@ -799,7 +797,6 @@ justify-content: flex-end;
 }
 
 .section-hero__box {
-  /* width: 330px; */
   width: 25%;
   flex-shrink: 0;
   position: relative;
@@ -814,20 +811,10 @@ justify-content: flex-end;
 }
 
 .section-hero__text {
-  /* padding-left: 60px;
-  padding-right: 60px;
-  font-size: 18px; */
   line-height: 25px;
-  margin: 30px 60px;
-  margin-bottom: 30px;
   font-style: normal;
   font-weight: 300;
 }
-
-.section-hero__header {
-  padding-left: 60px;
-}
-
 
 /* SECTION OUR TEAM */
 .section-our-team {
@@ -867,8 +854,6 @@ justify-content: flex-end;
   padding: 10px;
 }
 
-
-
 /* WE PROVIDE SAFETY */
 .section-safety__title {
   text-align: center;
@@ -901,18 +886,15 @@ justify-content: flex-end;
 }
 
 .section-safety__text {
-  /* margin-left: 80px;
-  margin-right: 80px; */
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
   line-height: 25px;
-  /* margin-bottom: 30px; */
 }
 
 .section-safety__actions {
-   margin-left: 80px;
-   margin-bottom: 30px;
+  margin-left: 80px;
+  margin-bottom: 30px;
 }
 
 .section-safety__button {
@@ -1198,65 +1180,6 @@ justify-content: flex-end;
 }
 
 /* =========================================================PAGE-FLIGHTS=========================================================== */
-/* SECTION hero banner */
-.section-hero__title {
-  text-align: center;    
-}
-
-.section-hero {
-  overflow: hidden;
-}
-
-.section-hero__banner {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.section-hero__content {
-  padding: var(--grid-gutter);
-  position: absolute;
-  width: 275%;
-  height: 658px;
-  /* bottom: 146px;
-  left: -520px;  */
-  background: rgba(242, 242, 242, 0.9);
-  border: 1px solid var(--color-dark);
-}
-
-.section-hero__poster img {
-  display: block;
-  width: auto;
-}
-
-.section-hero__box {
-  /* width: 330px; */
-  width: 25%;
-  flex-shrink: 0;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.section-hero__text span {
-  font-style: normal;
-  font-weight: 600;
-
-}
-
-.section-hero__text {
-  line-height: 25px;
-  margin: 30px 60px;
-  margin-bottom: 30px;
-  font-style: normal;
-  font-weight: 300;
-}
-
-.section-hero__header {
-  padding-left: 60px;
-}
-
-
 /* SECTION FLIGHTS */
 .section-flights {
   background-color: var(--color-light);
@@ -1617,15 +1540,10 @@ align-items: center;
 }
 
 .section-why-study__text {
-  margin: 30px 60px;
   margin-bottom: 30px;
   font-style: normal;
   font-weight: 300;
   line-height: 25px;
-}
-
-.section-why-study__header {
-  padding-left: 60px;
 }
 
 /* ########################################################## */
@@ -1798,15 +1716,10 @@ align-items: center;
 }
 
 .section-contacts__text {
-  margin: 30px 60px;
   margin-bottom: 30px;
   font-style: normal;
   font-weight: 300;
   line-height: 25px;
-}
-
-.section-contacts__header {
-  padding-left: 60px;
 }
 
 /* map */
