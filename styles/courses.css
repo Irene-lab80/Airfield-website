@@ -1,7 +1,7 @@
 /* section-why-study and section-courses-block__bottom*/
 
 .section-why-study {
-     background-color: var(--color-light);
+  background-color: var(--color-light);
   overflow: hidden;
 }
 
@@ -35,13 +35,13 @@
 }
 
 .section-courses-block__bottom {
-display: flex;
+  display: flex;
   justify-content: flex-start;
 }
 
 .section-why-study__content {
+    padding: var(--grid-gutter);
     position: absolute;
-    /* width: 851px; */
     width: 275%;
     background: rgba(242, 242, 242, 0.9);
     border: 1px solid var(--color-dark);
@@ -59,7 +59,6 @@ display: flex;
 .section-why-study__text {
     margin: 30px 60px;
     margin-bottom: 30px;
-
     font-style: normal;
     font-weight: 300;
     line-height: 25px;
@@ -67,10 +66,6 @@ display: flex;
 
 .section-why-study__header {
     padding-left: 60px;
-}
-
-.section-why-study__title {
-    margin-top: 30px;
 }
 
 /* ########################################################## */
