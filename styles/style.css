@@ -1609,15 +1609,16 @@ iframe {
 
   .section-form__poster {
     position: fixed;
+  }
 
   /* section-form */
-/*   .section-form {
+  .section-form {
     display: block;
   }
 
   .section-form__row {
     display: block;
-  } */
+  }
   
  .section-about-us__left {
     flex-direction: column-reverse;
@@ -1651,7 +1652,6 @@ iframe {
     line-height: 46px;
 }
   }
-}
 
 @media screen and (max-width: 480px) {
 
