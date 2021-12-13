@@ -252,15 +252,30 @@ nav a:hover {
 }
 
 .section-main-services__text-blok {
-  width: 544px;
+  /* width: 544px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; */
+   position: absolute;
+    align-items: center;
+    /* top: 25%; */
+    left: 50%;
+    right: 0;
+    z-index: 2;
 }
 
 .section-main-services__text {
   margin-left: 60px;
   margin-right: 50px;
+}
+
+.section-main-services__text--add {
+  margin-left: 80px;
+}
+
+
+.section-main-services__actions--add {
+  margin-left: 80px;
 }
 
 .section-main-services__box {
@@ -288,6 +303,9 @@ nav a:hover {
 .section-main-services__poster img {
   display: block;
   width: auto;
+  position: fixed;
+  z-index: 1;
+  top: 0;
 }
 
 /* slider-nav */
@@ -306,20 +324,21 @@ nav a:hover {
 .swiper-pagination-fraction {
   width: 0;
   bottom: 10px;
-  left: 1040px;
+  left: 89%;
   font-size: 24px;
 }
 
 .swiper-pagination-current {
-  font-size: 42px;
+  font-size: 50px;
 }
 
 .swiper-button-next {
+  right: 7px;
   color: var(--color-dark);
 }
 
 .swiper-button-prev {
-  left: 1000px;
+  left: 85%;
   color: var(--color-dark);
 }
 
@@ -1648,5 +1667,41 @@ iframe {
   .section-why-us__icon {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .section-form__poster {
+    position: fixed;
+  }
   
+ .section-about-us__left {
+    flex-direction: column-reverse;
+  }
+
+  .section-about-us__text-blok {
+    align-items: center;
+    margin: 30px 0;
+  }
+
+.section-about-us__text {
+  text-align: center;
+}
+
+.section-main-services__text-blok {
+  background-color: #FFFFFF;
+  padding: 30px;
+}
+
+.section-main-services__text {
+  margin: 0;
+}
+
+.section-main-services__actions,
+.section-main-services__actions--add {
+  margin: 0;
+}
+
+.section-main-services__title {
+  font-size: 30px;
+    line-height: 46px;
+}
+
 }
