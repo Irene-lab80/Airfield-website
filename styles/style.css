@@ -339,13 +339,23 @@ nav a:hover {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
-  justify-items: center;
   margin-top: 60px;
+}
+
+.section-why-us__icon-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section-why-us__icon-text {
   text-align: center;
 }
+
+.section-why-us__icon-img {
+  padding-bottom: calc(var(--grid-gutter)/2);
+}
+
 
 .section-about-us__poster img {
   display: block;
@@ -355,7 +365,7 @@ nav a:hover {
 /* ####################################################### */
 /* section quote */
 .section-clouds {
-  background: url(images/fonclouds.png) no-repeat center;
+  background: url(../images/fonclouds.png) no-repeat center;
 }
 
 .section-clouds__blok-text {
@@ -431,7 +441,7 @@ nav a:hover {
 }
 
 .checkbox__input:checked + .checkbox__text::before{
-  background: var(--color-light) url(images/svg/check.svg) no-repeat center center;
+  background: var(--color-light) url(../images/svg/check.svg) no-repeat center center;
 }
 
 .checkbox__input:focus-visible + .checkbox__text::before{
@@ -552,9 +562,9 @@ FOOTER
   background-color: var(--color-dark);
 }
 
-.page-footer__logo {
+/* .page-footer__logo {
   padding-top: calc(var(--grid-gutter)/2);
-}
+} */
 
 .page-footer__flex {
   display: flex;
@@ -621,7 +631,11 @@ FOOTER
 
 .page-footer__menu {
   padding-bottom: var(--grid-gutter);
-  padding-top: var(--grid-gutter);
+  padding-top: calc(var(--grid-gutter)/2);
+}
+
+.page-footer {
+  padding: var(--grid-gutter);
 }
 
 /* ====================================================
@@ -631,7 +645,6 @@ SECTION GALLERY
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
-  /* grid-template-rows: repeat(8, 1vw); */
   grid-gap: calc(var(--grid-gutter)/3); 
   grid-auto-rows: 1fr
 }
@@ -1562,7 +1575,7 @@ align-items: center;
 .section-requirements__icon {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px 180px;
+  gap: 30px;
   justify-items: center;
   margin-top: 60px;
 }
@@ -1809,4 +1822,17 @@ iframe {
   .section-cover__poster {
     height: 620px;
   }
+
+  .page-footer__menu {
+    display: none;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .section-why-us__icon {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
 }
