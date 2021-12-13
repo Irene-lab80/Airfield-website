@@ -338,13 +338,23 @@ nav a:hover {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
-  justify-items: center;
   margin-top: 60px;
+}
+
+.section-why-us__icon-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section-why-us__icon-text {
   text-align: center;
 }
+
+.section-why-us__icon-img {
+  padding-bottom: calc(var(--grid-gutter)/2);
+}
+
 
 .section-about-us__poster img {
   display: block;
@@ -551,9 +561,9 @@ FOOTER
   background-color: var(--color-dark);
 }
 
-.page-footer__logo {
+/* .page-footer__logo {
   padding-top: calc(var(--grid-gutter)/2);
-}
+} */
 
 .page-footer__flex {
   display: flex;
@@ -624,7 +634,11 @@ transform: scale(1.5);
 
 .page-footer__menu {
   padding-bottom: var(--grid-gutter);
-  padding-top: var(--grid-gutter);
+  padding-top: calc(var(--grid-gutter)/2);
+}
+
+.page-footer {
+  padding: var(--grid-gutter);
 }
 
 /* ====================================================
@@ -634,7 +648,6 @@ SECTION GALLERY
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
-  /* grid-template-rows: repeat(8, 1vw); */
   grid-gap: calc(var(--grid-gutter)/3); 
   grid-auto-rows: 1fr
 }
@@ -1346,6 +1359,42 @@ overflow: hidden;
 /* =========================================================PAGE COURSES=========================================================== */
 /* COURSES */
 
+/* ########################################################## */
+/* section-requirements */
+
+/* why-us */
+.section-requirements {
+  background-color: var(--color-light);
+}
+
+.section-requirements__title {
+  display: flex;
+  justify-content: center;
+}
+
+.section-requirements__icon {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+  margin-top: 60px;
+}
+
+.section-requirements__icon-text {
+  text-align: center;
+  width: 240px;
+}
+
+.section-requirements__poster img {
+  display: block;
+  width: auto;
+}
+
+.section-requirements__text-block {
+   padding: 60px 0;
+}
+
+/* ########################################################## */
 /* section-accordeon  */
 
 .section-accordeon {
@@ -1587,4 +1636,17 @@ iframe {
   .section-cover__poster {
     height: 620px;
   }
+
+  .page-footer__menu {
+    display: none;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .section-why-us__icon {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
 }
