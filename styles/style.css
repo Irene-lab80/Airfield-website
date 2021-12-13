@@ -396,10 +396,11 @@ nav a:hover {
 /* section-form */
 .section-form {
   background-color: var(--color-ligh-grey);
-  height: 987px;
-  position: relative;
+  /* height: 987px; */
+  /* position: relative;
   display: flex;
-  align-items: center;
+  align-items: center; */
+  padding: var(--grid-gutter) 0;
 }
 
 .section-form__row {
@@ -1647,6 +1648,15 @@ iframe {
 
   .section-why-us__icon {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* section-form */
+  .section-form {
+    display: block;
+  }
+
+  .section-form__row {
+    display: block;
   }
   
 }
