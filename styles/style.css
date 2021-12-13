@@ -1012,6 +1012,9 @@ justify-content: flex-end;
 overflow: hidden;
 }
 
+.section-services__title {
+  text-align: center;
+}
 
 /* =========================================================PAGE-JUMPS=========================================================== */
 /* JUMPS */
