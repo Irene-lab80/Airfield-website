@@ -215,7 +215,6 @@ nav a:hover {
   color: var(--color-dark);
 }
 
-
 /* section-about-us */
 .section-about-us {
   overflow: hidden;
@@ -355,7 +354,7 @@ nav a:hover {
 /* ####################################################### */
 /* section quote */
 .section-clouds {
-  background: url(images/fonclouds.png) no-repeat center;
+  background: url('/images/fonclouds.png') no-repeat center;
 }
 
 .section-clouds__blok-text {
@@ -431,7 +430,7 @@ nav a:hover {
 }
 
 .checkbox__input:checked + .checkbox__text::before{
-  background: var(--color-light) url(images/svg/check.svg) no-repeat center center;
+  background: var(--color-light) url('/images/svg/check.svg') no-repeat center center;
 }
 
 .checkbox__input:focus-visible + .checkbox__text::before{
@@ -442,7 +441,7 @@ nav a:hover {
   padding-left: 30px;
   display: block;
   position: relative;
-  top: 7px;
+  top: 9px;
   font-family: 'Noto Sans', sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -619,6 +618,10 @@ FOOTER
   display: block;
 }
 
+.socials-list__item a:hover {
+transform: scale(1.5);
+}
+
 .page-footer__menu {
   padding-bottom: var(--grid-gutter);
   padding-top: var(--grid-gutter);
@@ -765,38 +768,57 @@ input::-webkit-calendar-picker-indicator {
     top: 7px;
 }
 
-/* =========================================================PAGE-ABOUT-US=========================================================== */
-/* section hero banner */
+/* =======PAGES============================================================================================================= */
 
-.section-hero__title {
-  text-align: center;    
+
+ /* ****************************************************************** */
+/* ОБЩИЕ СТИЛИ ДЛЯ СТРАНИЦ, кроме главной */
+/* ****************************************************************** */
+.section__poster img {
+  display: block;
+  width: auto;
+ } 
+
+ .section__text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
 }
 
-.section-hero {
+.section__title {
+  font-size: 36px;  
+  margin-bottom: 30px;  
+  line-height: 48px;
+}
+
+/* баннеры */
+.section__title-banner {
+  font-size: 42px;  
+  margin-bottom: 30px;  
+  line-height: 48px;
+}
+
+.section-pages {
   overflow: hidden;
   background-color: var(--color-light);
 }
 
-.section-hero__banner {
+
+ .section-pages__banner {
 display: flex;
 justify-content: flex-end;
 }
 
-.section-hero__content {
+.section-pages__content {
   padding: var(--grid-gutter);
   position: absolute;
   width: 275%;
-  height: 658px;
   background: rgba(242, 242, 242, 0.9);
   border: 1px solid var(--color-dark);
 }
 
-.section-hero__poster img {
-  display: block;
-  width: auto;
-}
-
-.section-hero__box {
+.section-pages__box {
   width: 25%;
   flex-shrink: 0;
   position: relative;
@@ -805,15 +827,76 @@ justify-content: flex-end;
   justify-content: flex-end;
 }
 
-.section-hero__text span {
+.section__text span {
   font-style: normal;
   font-weight: 600;
 }
 
-.section-hero__text {
-  line-height: 25px;
-  font-style: normal;
-  font-weight: 300;
+/* блоки с картинками */
+
+  .section__heading {
+  height: 184px;
+  text-align: center;
+}
+
+.section__box {
+  width: 50%;
+  flex-shrink: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.section__button {
+  margin-top: 30px;
+}
+
+/* if picture-left */
+.section__block-picture-left {
+display: flex;
+justify-content: flex-end;
+}
+
+.section__content-picture-left {
+  padding: var(--grid-gutter);
+  padding-left: 80px;
+  position: absolute;
+  /* width: 660px; */
+  width: 110%;
+  background: rgba(242, 242, 242, 0.9);
+  border: 1px solid var(--color-dark);
+}
+
+.section__block-picture-right {
+  display: flex;
+  align-items: center;
+}
+
+.section__content-picture-right {
+  padding: var(--grid-gutter);
+   padding-right: 80px;
+  position: absolute;
+  /* width: 660px; */
+  width: 110%;
+  background: rgba(242, 242, 242, 0.9);
+  border: 1px solid var(--color-dark);
+}
+
+.section__box--picture-left {
+  display: flex;
+  justify-content: flex-end;
+}
+
+ /* ****************************************************************** */
+
+/* =========================================================PAGE ABOUT US=========================================================== */
+ /* ABOUT US */
+
+/* section hero banner */
+
+.section-pages__text--list {
+ padding-left: 60px;
+ padding-top: 10px;
 }
 
 /* SECTION OUR TEAM */
@@ -844,6 +927,7 @@ justify-content: flex-end;
 .section-our-team__card-title {
   text-align: center;
   font-weight: 700;
+  font-size: 24px;
 }
 
 .section-our-team__card {
@@ -855,83 +939,14 @@ justify-content: flex-end;
 }
 
 /* WE PROVIDE SAFETY */
+
 .section-safety__title {
   text-align: center;
-}
-
-.section-safety__content-title {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 48px;
-  letter-spacing: 0.05em;
 }
 
 .section-safety {
   overflow: hidden;
   background-color: var(--color-light);
-}
-
-.section-safety__poster img {
-  display: block;
-  width: auto;
-}
-
-.section-safety__box {
-  width: 50%;
-  flex-shrink: 0;
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.section-safety__text {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 25px;
-}
-
-.section-safety__actions {
-  margin-left: 80px;
-  margin-bottom: 30px;
-}
-
-.section-safety__button {
-  margin-top: 30px;
-}
-
-.section-safety__block-picture-left {
-display: flex;
-justify-content: flex-end;
-}
-
-.section-safety__content-picture-left {
-  padding: var(--grid-gutter);
-  position: absolute;
-  /* width: 660px; */
-  width: 110%;
-  background: #f9f8f679;
-  border: 1px solid var(--color-dark);
-}
-
-.section-safety__block-picture-right {
-  display: flex;
-  align-items: center;
-}
-
-.section-safety__content-picture-right {
-  padding: var(--grid-gutter);
-  position: absolute;
-  /* width: 660px; */
-  width: 110%;
-  background: #f9f8f679;
-  border: 1px solid var(--color-dark);
-}
-
-.section-safety__box--picture-left {
-  display: flex;
-  justify-content: flex-end;
 }
 
 /* BENEFITS */
@@ -958,99 +973,22 @@ justify-content: flex-end;
   column-gap: calc(var(--grid-gutter)*2);
 }
 
-/* =========================================================PAGE-SERVISES=========================================================== */
-.section-servises__heading {
-  height: 184px;
-  text-align: center;
-  padding-top:  60px;
-}
+/* =========================================================PAGE SERVICES=========================================================== */
+/* SERVICES */
 
-/* section-serveses */
-.section-servises {
+.section-services {
 overflow: hidden;
-}
-
-.section-servises__poster img {
-  display: block;
-  width: auto;
-}
-
-.section-servises__box {
-  width: 50%;
-  flex-shrink: 0;
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.section-servises__text {
-  margin-left: 80px;
-  margin-right: 80px;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 25px;
-  margin-bottom: 30px;
-}
-
-.section-servises__header {
-  margin-left: 80px;
-}
-
-.section-servises__title {
-  font-size: 36px;  
-  margin: 30px 0;;  
-}
-
-.section-servises__actions {
-   margin-left: 80px;
-   margin-bottom: 30px;
-}
-
-.section-servises__button {
-  margin-top: 30px;
-}
-
-/* if picture-left */
-.section-servises__block-picture-left {
-display: flex;
-justify-content: flex-end;
-}
-
-.section-servises__content-picture-left {
-  position: absolute;
-  /* width: 660px; */
-  width: 110%;
-  background: rgba(242, 242, 242, 0.9);
-  border: 1px solid var(--color-dark);
-}
-
-.section-servises__block-picture-right {
-  display: flex;
-  align-items: center;
-}
-
-.section-servises__content-picture-right {
-  position: absolute;
-  /* width: 660px; */
-  width: 110%;
-  background: rgba(242, 242, 242, 0.9);
-  border: 1px solid var(--color-dark);
-}
-
-.section-servises__box--picture-left {
-  display: flex;
-  justify-content: flex-end;
 }
 
 
 /* =========================================================PAGE-JUMPS=========================================================== */
-/* SECTION FLIGHTS */
+/* JUMPS */
+
 .section-jumps {
   background-color: var(--color-light);
 }
 
-.section-jumps__title{
+.section-jumps__title {
   text-align: center;
 }
 
@@ -1078,12 +1016,15 @@ justify-content: flex-end;
 }
 
 .section-jumps__card:hover .section-jumps__card-hidden {
-  background: var(--color-light);
+  background: rgba(51, 51, 51, 1);
+  color: rgba(242, 242, 242, 1);
   opacity: 1;
 }
 
 .section-jumps__card:hover .section-jumps__card-hidden h3 {
-  background: var(--color-light);opacity: 1;
+  background: rgba(51, 51, 51, 1);
+  color: rgba(242, 242, 242, 1);
+  opacity: 1;
 }
 
 .section-jumps__img{
@@ -1179,8 +1120,10 @@ justify-content: flex-end;
   padding: 60px 0;
 }
 
-/* =========================================================PAGE-FLIGHTS=========================================================== */
-/* SECTION FLIGHTS */
+
+/* =========================================================PAGE FLIGHTS=========================================================== */
+/* FLIGHTS */
+
 .section-flights {
   background-color: var(--color-light);
 }
@@ -1247,6 +1190,47 @@ justify-content: flex-end;
   padding: 30px 110px;
 }
 
+/* hover карточеки */
+.section-flights__card {
+  border: 1px solid #828282;
+
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-flights__card-see {
+  display: block;
+  position: relative;
+}
+
+.section-flights__card-see-flex {
+  display: flex;
+}
+
+.section-flights__card-hidden {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  opacity: 0;
+  padding: 60px;
+}
+
+.section-flights__card:hover .section-flights__card-hidden {
+  background: rgba(51, 51, 51, 1);
+  color: rgba(242, 242, 242, 1);
+  opacity: 1;
+}
+
+.section-flights__card:hover .section-flights__card-hidden h3 {
+  background: rgba(51, 51, 51, 1);
+  color: rgba(242, 242, 242, 1);
+  opacity: 1; 
+}
+
 /* SECTION PLANES */
 .section-title {
   margin: var(--grid-gutter) 0;
@@ -1295,6 +1279,10 @@ justify-content: flex-end;
   line-height: 19px;
 }
 
+.section-planes__card:hover {
+  transform: scale(1.5);
+}
+
 /* SECTION FLIGHTS PROGRAMS */
 .section-programs {
   background-color: var(--color-light);
@@ -1338,7 +1326,6 @@ justify-content: flex-end;
 
 }
 
-/* ###################################################################### */
 /* addservices*/
 .section-addservices__start {
   background: var(--color-light-grey);
@@ -1347,241 +1334,18 @@ justify-content: flex-end;
 .section-addservices {
   background: var(--color-light-grey);
 }
-
-.section-addservices__heading {
-  height: 184px;
+.section-addservices__title {
   text-align: center;
-  padding-top: 60px;
- 
+  margin-top: 60px;
 }
 
-/* section-addservices*/
 .section-addservices {
 overflow: hidden;
 }
 
-.section-addservices__poster img {
-  display: block;
-  width: auto;
-}
-
-.section-addservices__box {
-  width: 50%;
-  flex-shrink: 0;
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.section-addservices__text {
-  margin-left: 80px;
-  margin-right: 80px;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 25px;
-  margin-bottom: 30px;
-}
-
-.section-addservices__header {
-  margin-left: 80px;
-}
-
-.section-addservices__title {
-  font-size: 36px;  
-  margin: 30px 0; 
-}
-
-.section-addservices__actions {
-  margin-left: 80px;
-  margin-bottom: 30px;
-}
-
-.section-addservices__button {
-  margin-top: 30px;
-}
-
-/* if picture-left */
-.section-addservices__block-picture-left {
-display: flex;
-justify-content: flex-end;
-}
-
-.section-addservices__content-picture-left {
-  position: absolute;
-  width: 110%;
-  background: rgba(242, 242, 242, 0.9);
-  border: 1px solid var(--color-dark);
-}
-
-.section-addservices__box--picture-left {
-  display: flex;
-  justify-content: flex-end;
-}
-
-
-/* if picture-right */
-.section-addservices__block-picture-right {
-display: flex;
-align-items: center;
-}
-
-.section-addservices__content-picture-right {
-  position: absolute;
-  width: 110%;
-  background: rgba(242, 242, 242, 0.9);
-  border: 1px solid var(--color-dark);
-}
-
-/* ################################################################## */
-/* 2 вариант карточек */
-.section-flights__card {
-  border: 1px solid #828282;
-
-  display: block;
-  position: relative;
-  overflow: hidden;
-}
-
-.section-flights__card-see {
-  display: block;
-  position: relative;
-}
-
-.section-flights__card-see-flex {
-  display: flex;
-}
-
-.section-flights__card-hidden {
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  opacity: 0;
-  padding: 60px;
-}
-
-.section-flights__card:hover .section-flights__card-hidden {
-  background: rgba(51, 51, 51, 1);
-  color: rgba(242, 242, 242, 1);
-  opacity: 1;
-}
-
-.section-flights__card:hover .section-flights__card-hidden h3 {
-  background: rgba(51, 51, 51, 1);
-  color: rgba(242, 242, 242, 1);
-  opacity: 1; 
-}
-
-.section-planes__card:hover {
-  transform: scale(1.5);
-}
-
-
 /* =========================================================PAGE COURSES=========================================================== */
-/* section-why-study and section-courses-block__bottom*/
+/* COURSES */
 
-.section-why-study {
-  background-color: var(--color-light);
-  overflow: hidden;
-}
-
-.section-why-study__poster img,
-.section-courses-block__poster img {
-  display: block;
-  width: auto;
-}
-
-.section-why-study__box {
-  width: 25%;
-  flex-shrink: 0;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.section-courses-block__box {
-  width: 25%;
-  flex-shrink: 0;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.section-why-study__banner {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.section-courses-block__bottom {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.section-why-study__content {
-  padding: var(--grid-gutter);
-  position: absolute;
-  width: 275%;
-  background: rgba(242, 242, 242, 0.9);
-  border: 1px solid var(--color-dark);
-}
-
-.section-courses-block__content {
-  height: 70%;
-}
-
-.section-why-study__text span {
-  font-style: normal;
-  font-weight: 600;
-}
-
-.section-why-study__text {
-  margin-bottom: 30px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 25px;
-}
-
-/* ########################################################## */
-/* section-requirements */
-
-/* why-us */
-.section-requirements {
-  background-color: var(--color-light);
-}
-
-.section-requirements__title {
-  display: flex;
-  justify-content: center;
-}
-
-.section-requirements__icon {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px 180px;
-  justify-items: center;
-  margin-top: 60px;
-}
-
-.section-requirements__icon-text {
-  text-align: center;
-  width: 240px;
-}
-
-.section-requirements__poster img {
-  display: block;
-  width: auto;
-}
-
-.section-requirements__text-block {
-   padding: 60px 0;
-}
-
-/* ########################################################## */
 /* section-accordeon  */
 
 .section-accordeon {
@@ -1618,6 +1382,7 @@ align-items: center;
 }
 
 /* faq-card */
+
 .faq-card {
   border: 1px solid rgba(130, 130, 130, 1);
   padding: 30px;
@@ -1678,48 +1443,65 @@ align-items: center;
   margin-bottom: 0;
 }
 
+/* section-requirements */
 
-
-/* =========================================================PAGE CONTACTS=========================================================== */
-/* section-contacts*/
-.section-contacts {
+.section-requirements {
   background-color: var(--color-light);
-  overflow: hidden;
 }
 
-.section-contacts__poster img{
+.section-requirements__title {
+  display: flex;
+  justify-content: center;
+}
+
+.section-requirements__icon {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px 180px;
+  justify-items: center;
+  margin-top: 60px;
+}
+
+.section-requirements__icon-text {
+  text-align: center;
+  width: 240px;
+}
+
+.section-requirements__poster img {
   display: block;
   width: auto;
 }
 
-.section-contacts__box {
-  width: 25%;
-  flex-shrink: 0;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+.section-requirements__text-block {
+   padding: 60px 0;
 }
 
-.section-contacts__banner {
-  display: flex;
-  justify-content: flex-end;
+/* section-courses-block__bottom*/
+
+.section-why-study {
+  background-color: var(--color-light);
+  overflow: hidden;
 }
 
-.section-contacts__content {
-  padding: var(--grid-gutter);
-  position: absolute;
-  width: 275%;
+.section-courses-block__box {
+  justify-content: flex-start;
+}
+
+.section-courses-block__bottom {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.section-courses-block__content {
   height: 70%;
-  background: rgba(242, 242, 242, 0.9);
-  border: 1px solid var(--color-dark);
 }
 
-.section-contacts__text {
-  margin-bottom: 30px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 25px;
+/* =========================================================PAGE CONTACTS=========================================================== */
+/* CONTACTS*/
+
+.section-contacts {
+  background-color: var(--color-light);
+  overflow: hidden;
 }
 
 /* map */
@@ -1734,7 +1516,7 @@ iframe {
   /* width: 100%; */
 }
 
-/* form */
+/* form  для контактов*/
 .section-form__map {
   margin: 60px 0;
   border: 1px solid var(--color-dark);
@@ -1753,10 +1535,6 @@ iframe {
 
 .section-contacts__contacts {
   margin-top: 60px;
-}
-
-.checkbox__text-contacts {
-  top: 10px;
 }
 
 /* =========================================================ADAPTIVE=========================================================== */
