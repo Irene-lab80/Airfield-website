@@ -48,12 +48,11 @@ nav a:hover {
 }
 
 .page-section {
-  padding: var(--grid-gutter) 0; /* уменьшила до 60px? */
+  padding: var(--grid-gutter) 0; 
 }
 
 .heading {
   font-family: 'Playfair Display', serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 48px;
   line-height: 64px;
@@ -61,7 +60,7 @@ nav a:hover {
   text-transform: uppercase;
   color: var(--color-dark);
   margin-bottom: var(--grid-gutter);
-  /*padding-top: 60px; */
+  text-align: center; /* убрать из тайтлов?? */
 }
 
 /* button */
@@ -92,6 +91,11 @@ nav a:hover {
 }
 
 /* menu */
+
+.logo {
+  width: 100%;
+}
+
 .page-header {
   background-color: var(--color-dark);
 }
@@ -324,7 +328,7 @@ nav a:hover {
 }
 
 /* ####################################################### */
-/* section why-us */
+/* SECTION WHY-US */
 .section-why-us {
   background-color: var(--color-light);
 }
@@ -334,24 +338,24 @@ nav a:hover {
   justify-content: center;
 }
 
-.section-why-us__icon {
+/* section-icons */
+.section-icons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
-  margin-top: 60px;
 }
 
-.section-why-us__icon-card {
+.section-icons__card {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.section-why-us__icon-text {
+.section-icons__text {
   text-align: center;
 }
 
-.section-why-us__icon-img {
+.section-icons__img {
   padding-bottom: calc(var(--grid-gutter)/2);
 }
 
@@ -593,7 +597,7 @@ FOOTER
   font-weight: 700;
   line-height: 25px;
   text-transform: uppercase;  
-  padding-bottom: 10px;
+  padding: 10px 0;
 }
 
 .page-footer__contact-column:first-child {
@@ -1107,33 +1111,20 @@ overflow: hidden;
   background-color: var(--color-light-grey);
 }
 
-.section-additional-services__title {
+.section-additional-services .section-icons {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* .section-additional-services__title {
   display: flex;
   justify-content: center;
-}
+} */
 
-.section-additional-services__icon {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px 180px;
-  justify-items: center;
-  margin-top: 60px;
-}
-
-.section-additional-services__icon-text {
-  text-align: center;
-  width: 240px;
-}
 
 .section-additional-services__poster img {
   display: block;
   width: auto;
 }
-
-.section-additional-services__text-block {
-  padding: 60px 0;
-}
-
 
 /* =========================================================PAGE FLIGHTS=========================================================== */
 /* FLIGHTS */
@@ -1361,41 +1352,6 @@ overflow: hidden;
 /* COURSES */
 
 /* ########################################################## */
-/* section-requirements */
-
-/* why-us */
-.section-requirements {
-  background-color: var(--color-light);
-}
-
-.section-requirements__title {
-  display: flex;
-  justify-content: center;
-}
-
-.section-requirements__icon {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  justify-items: center;
-  margin-top: 60px;
-}
-
-.section-requirements__icon-text {
-  text-align: center;
-  width: 240px;
-}
-
-.section-requirements__poster img {
-  display: block;
-  width: auto;
-}
-
-.section-requirements__text-block {
-   padding: 60px 0;
-}
-
-/* ########################################################## */
 /* section-accordeon  */
 
 .section-accordeon {
@@ -1499,35 +1455,11 @@ overflow: hidden;
   background-color: var(--color-light);
 }
 
-.section-requirements__title {
-  display: flex;
-  justify-content: center;
-}
-
-.section-requirements__icon {
-  display: grid;
+.section-requirements .section-icons {
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px 180px;
-  justify-items: center;
-  margin-top: 60px;
-}
-
-.section-requirements__icon-text {
-  text-align: center;
-  width: 240px;
-}
-
-.section-requirements__poster img {
-  display: block;
-  width: auto;
-}
-
-.section-requirements__text-block {
-   padding: 60px 0;
 }
 
 /* section-courses-block__bottom*/
-
 .section-why-study {
   background-color: var(--color-light);
   overflow: hidden;
@@ -1642,11 +1574,13 @@ iframe {
     display: none;
   }
 
+  /* gallery */
   .gallery {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .section-why-us__icon {
+  /* section-icons */
+  .section-icons {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -1658,5 +1592,44 @@ iframe {
   .section-form__row {
     display: block;
   }
+}
+
+@media screen and (max-width: 480px) {
+
+  /* section-icons */
+
+  .section-icons {
+    grid-template-columns: 1fr;
+
+  }
+
+  .section-additional-services .section-icons {
+    grid-template-columns: 1fr;
+  }
+
+  /* section-requirements */
+  .section-requirements .section-icons {
+    grid-template-columns: 1fr;
+  }
   
+  /* section our-team */
+  .section-our-team__card-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  /* section-benefits */
+  .section-benefits__item-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  /* footer */
+  .page-footer__flex {
+    display: block;
+  }
+
+  .page-footer__contact {
+    display: block;
+  }
+
+
 }
