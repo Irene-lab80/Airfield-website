@@ -176,7 +176,7 @@
 .faq-card__icon {
   width: 48px;
   height: 48px;
-  background: url('/images/svg/plus.svg') no-repeat;
+  /* background: url('../images/svg/plus.svg') no-repeat; */
 }
 
 .faq-card--opened .faq-card__icon {

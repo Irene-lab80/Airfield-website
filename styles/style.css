@@ -1700,9 +1700,9 @@ iframe {
   margin: 30px 0;
 }
 
-.section-benefits__item-wrapper {
+/* .section-benefits__item-wrapper {
    column-gap: calc(var(--grid-gutter)/2);
-}
+} */
 
 .section-benefits__icon {
   margin-right: calc(var(--grid-gutter)/4);
@@ -1852,7 +1852,11 @@ iframe {
 
 }
 
-
+@media screen and (max-width: 780px) {
+  .section-benefits__item-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
 @media screen and (max-width: 480px) {
 
@@ -1860,7 +1864,6 @@ iframe {
 
   .section-icons {
     grid-template-columns: 1fr;
-
   }
 
   .section-additional-services .section-icons {
