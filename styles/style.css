@@ -239,6 +239,10 @@ nav a:hover {
   margin-right: 70px;
 }
 
+.section-about-us__title {
+  text-align: start;
+}
+
 /* section-services*/
 .section-main-services__wrap {
   display: flex;
@@ -293,6 +297,7 @@ nav a:hover {
 .section-main-services__title {
   margin-bottom: 30px;
   font-size: 36px;
+  text-align: start;
 }
 
 .section-main-services__box-title {
@@ -814,6 +819,7 @@ input::-webkit-calendar-picker-indicator {
 .section__poster img {
   display: block;
   width: auto;
+
  } 
 
  .section__text {
@@ -882,6 +888,7 @@ justify-content: flex-end;
   position: relative;
   display: flex;
   align-items: center;
+
 }
 
 .section__button {
@@ -890,8 +897,8 @@ justify-content: flex-end;
 
 /* if picture-left */
 .section__block-picture-left {
-display: flex;
-justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .section__content-picture-left {
@@ -907,6 +914,11 @@ justify-content: flex-end;
 .section__block-picture-right {
   display: flex;
   align-items: center;
+
+}
+
+.section-safety__bottom {
+  margin-bottom: 60px;
 }
 
 .section__content-picture-right {
@@ -917,11 +929,13 @@ justify-content: flex-end;
   width: 110%;
   background: rgba(242, 242, 242, 0.9);
   border: 1px solid var(--color-dark);
+ 
 }
 
 .section__box--picture-left {
   display: flex;
   justify-content: flex-end;
+  
 }
 
  /* ****************************************************************** */
@@ -975,6 +989,10 @@ justify-content: flex-end;
   padding: 10px;
 }
 
+.section-safety__title {
+  margin-top: 60px;
+}
+
 /* WE PROVIDE SAFETY */
 
 .section-safety__title {
@@ -1019,6 +1037,7 @@ overflow: hidden;
 
 .section-services__title {
   text-align: center;
+  margin-top: 30px;
 }
 
 /* =========================================================PAGE-JUMPS=========================================================== */
@@ -1169,6 +1188,15 @@ overflow: hidden;
   margin-right: auto;
 }
 
+.section-flights__img {
+  width: 100%;
+}
+
+.section-flights__title {
+  font-size: 36px;
+  line-height: 45px;
+}
+
 .section-flights__card-button .button {
   margin: 80px;
 }
@@ -1289,7 +1317,8 @@ overflow: hidden;
 }
 
 .section-planes__img {
-  width: 100%;    
+  width: 100%;  
+  
 }
 
 .section-planes__card-title {
@@ -1311,6 +1340,10 @@ overflow: hidden;
 }
 
 /* SECTION FLIGHTS PROGRAMS */
+.read-more-checker {
+  display: none;
+}
+
 .section-programs {
   background-color: var(--color-light);
 }
@@ -1430,6 +1463,7 @@ overflow: hidden;
   color: var(--color-dark);
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .faq-card__toggle--opened + .faq-card__content {
@@ -1541,6 +1575,8 @@ iframe {
   margin-top: 60px;
 }
 
+
+
 /* =========================================================ADAPTIVE=========================================================== */
 @media screen and (max-width: 1250px) {
   .section-main__subtitle {
@@ -1606,6 +1642,9 @@ iframe {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .section-programs__card {
+    margin: 0;
+  }
 
   .section-form__poster {
     position: fixed;
@@ -1619,20 +1658,8 @@ iframe {
   .section-form__row {
     display: block;
   }
-  
- .section-about-us__left {
-    flex-direction: column-reverse;
-  }
 
-  .section-about-us__text-blok {
-    align-items: center;
-    margin: 30px 0;
-  }
-
-.section-about-us__text {
-  text-align: center;
-}
-
+/* section slider */
 .section-main-services__text-blok {
   background-color: #FFFFFF;
   padding: 30px;
@@ -1649,9 +1676,180 @@ iframe {
 
 .section-main-services__title {
   font-size: 30px;
-    line-height: 46px;
+  line-height: 46px;
 }
+/* section-about us */
+.section-our-team__card-wrapper {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.section-about-us__title,
+.section-about-us__text  {
+  text-align: center;
+}
+
+.section-about-us__left {
+  flex-direction: column-reverse;
+}
+
+.section-about-us__text-blok {
+  align-items: center;
+  margin: 30px 0;
+}
+
+.section-benefits__item-wrapper {
+   column-gap: calc(var(--grid-gutter)/2);
+}
+
+.section-benefits__icon {
+  margin-right: calc(var(--grid-gutter)/4);
+}
+
+/* ##################################### */
+/* card pages*/
+.section__content-picture-right,
+.section__content-picture-left {
+  padding: 30px;
   }
+
+.section__title {
+  margin-bottom: 15px;
+  line-height: 45px;
+  
+}
+.section__box {
+  width: 70%;
+  z-index: 2;
+}
+
+.section__poster-right {    
+    z-index: 0;
+    position: relative;
+    left: -30%;
+    right: 0;
+}
+
+.section__poster-left {    
+    z-index: 0;
+    position: relative;
+    left: 30%;
+    right: 0;
+}
+
+
+/* footer */
+.page-footer__flex {
+  display: block;
+}
+
+/* Стили для текстового поля с кнопкой "Далее" для иконок flights */
+.section-program__text {
+  line-height: 25px;
+}
+
+.limiter {
+  max-height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.limiter .bottom__limiter {
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgb(242 242 242 / 0%),
+    rgba(242 242 242) 90%);
+  width: 100%;
+  height: 60px;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.read-more-checker {
+  opacity: 0;
+  position: absolute;
+}
+.read-more-checker:checked ~ .limiter {
+  max-height: none;
+}
+.read-more-checker:checked ~ .limiter .bottom {
+  opacity: 0;
+  transition: 0.3s;
+}
+.read-more-checker~ .read-more-button:before {
+  content: "Подробнее... »";
+}
+.read-more-checker:checked ~ .read-more-button:before {
+  content: "Свернуть «";
+}
+
+.read-more-button {
+  cursor: pointer;
+  display: inline-block;
+  color: #777;
+  text-decoration: underline;
+  padding-left: 25%;
+  padding-top: calc(var(--grid-gutter)/4);
+  padding-bottom: calc(var(--grid-gutter)/4);
+}
+/* card pages flights and jumps*/
+
+.section-flights__card-button .button {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.section-flights__img--horizontal {
+  width: 50%;
+}
+
+.section-flights__card-small--horizontal {
+    margin-top: 0;
+    padding: 30px 10px;
+}
+
+.section-flights__card-small,
+.section-jumps__card-small {
+  padding: calc(var(--grid-gutter)/4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-flights__title,
+.section-jumps__title {
+  margin: 10px;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.section-flights__card-hidden,
+.section-jumps__card-hidden {
+  padding: calc(var(--grid-gutter)/4);
+}
+
+.section-flights__card-hidden p,
+.section-jumps__card-hidden p  {
+  font-size: 16px;
+  line-height: 25px;
+}
+
+/* pages courses */
+
+.section-pages__content {
+  width: 310%;
+  padding: calc(var(--grid-gutter)/2);
+}
+
+.section-form__map iframe {
+  width: 100%;
+}
+
+}
+
+
 
 @media screen and (max-width: 480px) {
 
