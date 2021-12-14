@@ -847,10 +847,9 @@ input::-webkit-calendar-picker-indicator {
   background-color: var(--color-light);
 }
 
-
- .section-pages__banner {
-display: flex;
-justify-content: flex-end;
+.section-pages__banner {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .section-pages__content {
@@ -859,6 +858,10 @@ justify-content: flex-end;
   width: 275%;
   background: rgba(242, 242, 242, 0.9);
   border: 1px solid var(--color-dark);
+}
+
+.section-pages__content p {
+  padding: 10px 0;
 }
 
 .section-pages__box {
