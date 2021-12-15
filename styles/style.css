@@ -751,21 +751,49 @@ figure:hover .gallery__img{
 
 /* ################################################################### */
 /* Модальное окно Записаться */
-#zatemnenie:target {
-  display: block;
+.popup:target {
+  opacity: 1;
+  visibility: visible;
 }
 
-.close {
-  display: inline-block;
-  background: url('/images/svg/plus.svg') no-repeat;
-  transform: rotate(45deg);
-  height: 48px;
-  width: 48px;
-  cursor: pointer;
-  margin-bottom: 7px;
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 150;
+}
+
+.popup__body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .popup__title {
+  font-family: 'Playfair Display';
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+} */
+
+.popup__content {
+  max-width: 630px;
   position: relative;
-  right: -95%;
-  top: -30px;
+  background: var(--color-light);
+  padding: 80px;
+}
+
+.popup__close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 
 .close:focus {
@@ -773,42 +801,7 @@ figure:hover .gallery__img{
   transform: none;
 }
 
-#zatemnenie {
-  background: linear-gradient(0deg, rgba(18, 21, 33, 0.6), rgba(18, 21, 33, 0.6));
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: none;
-}
-
-input::-webkit-calendar-picker-indicator {
-  opacity: 0;
-}
-
-.section-sign-up__content {
-  width: 700px;
-  height: 750px;
-  background: var(--color-light);
-  flex-shrink: 0;
-  padding: 60px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  
-}
-
-.section-sign-up--form-title {
-  line-height: 0;
-}
-
-.section-sign-up--checkbox__text {
-    top: 7px;
-}
+/* Модальное окно Записаться конец*/
 
 /* =======PAGES============================================================================================================= */
 
