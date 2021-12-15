@@ -275,7 +275,6 @@ nav a:hover {
 .section-main-services__text-block {
   padding: 150px 60px;
   background-color: var(--color-light);
-
 }
 
 /* slider-nav */
@@ -693,21 +692,49 @@ figure:hover .gallery__img{
 
 /* ################################################################### */
 /* Модальное окно Записаться */
-#zatemnenie:target {
-  display: block;
+.popup:target {
+  opacity: 1;
+  visibility: visible;
 }
 
-.close {
-  display: inline-block;
-  background: url('/images/svg/plus.svg') no-repeat;
-  transform: rotate(45deg);
-  height: 48px;
-  width: 48px;
-  cursor: pointer;
-  margin-bottom: 7px;
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 150;
+}
+
+.popup__body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .popup__title {
+  font-family: 'Playfair Display';
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+} */
+
+.popup__content {
+  max-width: 630px;
   position: relative;
-  right: -95%;
-  top: -30px;
+  background: var(--color-light);
+  padding: 80px;
+}
+
+.popup__close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 
 .close:focus {
@@ -715,42 +742,7 @@ figure:hover .gallery__img{
   transform: none;
 }
 
-#zatemnenie {
-  background: linear-gradient(0deg, rgba(18, 21, 33, 0.6), rgba(18, 21, 33, 0.6));
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: none;
-}
-
-input::-webkit-calendar-picker-indicator {
-  opacity: 0;
-}
-
-.section-sign-up__content {
-  width: 700px;
-  height: 750px;
-  background: var(--color-light);
-  flex-shrink: 0;
-  padding: 60px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  
-}
-
-.section-sign-up--form-title {
-  line-height: 0;
-}
-
-.section-sign-up--checkbox__text {
-    top: 7px;
-}
+/* Модальное окно Записаться конец*/
 
 /* =======PAGES============================================================================================================= */
 
@@ -1605,8 +1597,6 @@ iframe {
   }
 
 
-
-
 /* section-about us */
 .section-our-team__card-wrapper {
   grid-template-columns: repeat(2, 1fr);
@@ -1623,7 +1613,7 @@ iframe {
 
 .section-about-us__text-blok {
   align-items: center;
-  margin: 30px 0;
+  margin: 0;
 }
 
 .section-benefits__item-wrapper {
@@ -1780,12 +1770,19 @@ iframe {
   width: 100%;
 }
 
+/* section about us */
+.section-about-us__text-blok {
+  width: 100%;
+  padding: calc(var(--grid-gutter)/2);
+}
+
 }
 
 @media screen and (max-width: 780px) {
   .section-benefits__item-wrapper {
     grid-template-columns: 1fr 1fr;
   }
+
 
   /* СЛАЙДЕР */
 .section-main-services__slider-item {
@@ -1803,6 +1800,39 @@ iframe {
   font-size: 30px;
   line-height: 46px;
 }
+
+/* section clouds */
+.section-clouds-text,
+.section-clouds__blok-text span {
+  width: 100%;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: center;
+}
+/* section form */
+.section-form__content {
+  padding: calc(var(--grid-gutter)/2);
+}
+
+.section-form__title {
+  font-size: 26px;
+  margin-bottom: calc(var(--grid-gutter)/4);
+}
+
+
+
+/* heading */
+.heading {
+  font-size: 36px;
+  margin-bottom: calc(var(--grid-gutter)/2);
+}
+
+.section-main__text span {
+  font-size: 42px;
+  margin-bottom: calc(var(--grid-gutter)/2);
+}
+
+
 }
 
 @media screen and (max-width: 480px) {
@@ -1841,38 +1871,7 @@ iframe {
     display: block;
   }
 
- /* section clouds */
-.section-clouds-text,
-.section-clouds__blok-text span {
-  width: 100%;
-  font-size: 24px;
-  line-height: 35px;
-  text-align: center;
-}
-/* section form */
-.section-form__content {
-  padding: calc(var(--grid-gutter)/2);
-}
+ 
 
-.section-form__title {
-  font-size: 26px;
-  margin-bottom: calc(var(--grid-gutter)/4);
-}
-
-/* section about us */
-.section-about-us__text-blok {
-  width: 100%;
-}
-
-/* heading */
-.heading {
-  font-size: 36px;
-  margin-bottom: calc(var(--grid-gutter)/2);
-}
-
-.section-main__text span {
-  font-size: 42px;
-  margin-bottom: calc(var(--grid-gutter)/2);
-}
 
 }
