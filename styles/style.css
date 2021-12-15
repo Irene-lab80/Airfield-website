@@ -312,10 +312,14 @@ nav a:hover {
 .section-main-services__poster img {
   display: block;
   width: auto;
-  position: fixed;
+  /* position: fixed; */
   z-index: 1;
   top: 0;
 }
+
+/* .swiper-slide {
+  height: 100%;
+} */
 
 /* slider-nav */
 .swiper-container {
@@ -326,7 +330,7 @@ nav a:hover {
 
 .swiper-wrapper {
   width: 1140px;
-  height: 750px;
+  /* height: 750px; */
   padding-left: 2px;
 }
 
@@ -1659,6 +1663,11 @@ iframe {
 .section-main-services__text-blok {
   background-color: #FFFFFF;
   padding: 30px;
+  position: static;
+}
+
+.section-main-services__slider-item {
+  display: block;
 }
 
 .section-main-services__text {
