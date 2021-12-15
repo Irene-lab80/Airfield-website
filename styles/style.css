@@ -1560,10 +1560,17 @@ iframe {
     flex-direction: column-reverse;
   }
 
+.section-main__poster img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
   .section-main__left {
     align-items: center;
     text-align: center;
     padding: var(--grid-gutter);
+    width: 100%;
   }
   
   .section-cover__poster {
@@ -1602,8 +1609,6 @@ iframe {
   }
 
 
-
-
 /* section-about us */
 .section-our-team__card-wrapper {
   grid-template-columns: repeat(2, 1fr);
@@ -1624,7 +1629,6 @@ iframe {
   width: 100%;
   padding: calc(var(--grid-gutter)/2);
 }
-
 
 .section-benefits__item-wrapper {
    column-gap: calc(var(--grid-gutter)/2);
@@ -1794,15 +1798,40 @@ iframe {
 }
 
 .section-main-services__text-block {
-  padding: 60px;
+  padding: 10px 60px 60px 60px;
 } 
 
 .section-main-services__title {
   font-size: 30px;
   line-height: 46px;
+  text-align: center;
 }
 
+.section-main-services__actions,
+.section-main-services__actions--add {
+  text-align: center;
+  margin-top: calc(var(--grid-gutter)/4);
+}
 
+.button {
+  margin-top: calc(var(--grid-gutter)/2);
+}
+
+.section-main-services__text p {
+  text-align: center;
+}
+
+.section-about-us__poster img {
+  width: 100%;
+  height: 100%;
+}
+.swiper-pagination {
+  position: static;
+}
+.swiper-pagination .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+}
 }
 
 
@@ -1843,24 +1872,23 @@ iframe {
   font-size: 42px;
   margin-bottom: calc(var(--grid-gutter)/2);
 }
-
-  /* СЛАЙДЕР
-.section-main-services__slider-item {
-  display: block;
-}
-.section-main-services__slider-item > img {
-  width: 100%;
+.page-footer__bottom {
+  display: inherit;
 }
 
-.section-main-services__text-block {
-  padding: 60px;
-} 
+.page-footer__socials {
+  margin-top: calc(var(--grid-gutter)/4);
+}
 
-.section-main-services__title {
-  font-size: 30px;
-  line-height: 46px;
-} */
+/* slider */
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+}
 
+.section-main-services__text p {
+  display: none;
+}
 
 }
 
@@ -1900,6 +1928,10 @@ iframe {
     display: block;
   }
 
+  .page-footer {
+    padding: calc(var(--grid-gutter)/2);
+  }
+
  /* section clouds */
 .section-clouds-text,
 .section-clouds__blok-text span {
@@ -1926,12 +1958,33 @@ iframe {
 /* heading */
 .heading {
   font-size: 36px;
+  line-height: 120%;
   margin-bottom: calc(var(--grid-gutter)/2);
 }
 
 .section-main__text span {
   font-size: 42px;
   margin-bottom: calc(var(--grid-gutter)/2);
+}
+/* slider */
+
+.section-main-services__text-block {
+  padding: calc(var(--grid-gutter)/4);
+}
+.section-main-services__title {
+font-size: 22px;
+line-height: 120%;
+}
+
+
+.section-main-services__actions .button,
+.section-main-services__actions--add .button {
+  padding: calc(var(--grid-gutter)/2);
+  margin-top: 0px;
+}
+
+.section-about-us__text-blok .button {
+  margin-top: 30px;
 }
 
 }
