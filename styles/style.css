@@ -93,7 +93,7 @@ nav a:hover {
 /* menu */
 
 .logo {
-  width: 100%;
+  width: 350px;
 }
 
 .page-header {
@@ -535,10 +535,6 @@ FOOTER
 .page-footer{
   background-color: var(--color-dark);
 }
-
-/* .page-footer__logo {
-  padding-top: calc(var(--grid-gutter)/2);
-} */
 
 .page-footer__flex {
   display: flex;
@@ -1145,7 +1141,6 @@ overflow: hidden;
 
 .section-flights__card-container {
   display: grid;
-
   grid-template-columns: 1fr 1fr;
   grid-gap: calc(var(--grid-gutter)/2);
 }
@@ -1586,11 +1581,6 @@ iframe {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  /* section-icons */
-  .section-icons {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .section-programs__card {
     margin: 0;
   }
@@ -1607,12 +1597,6 @@ iframe {
   .section-form__row {
     display: block;
   }
-
-
-/* section-about us */
-.section-our-team__card-wrapper {
-  grid-template-columns: repeat(2, 1fr);
-}
 
 .section-about-us__title,
 .section-about-us__text  {
@@ -1836,9 +1820,68 @@ iframe {
 
 
 @media screen and (max-width: 780px) {
-  .section-benefits__item-wrapper {
-    grid-template-columns: 1fr 1fr;
+  /* section-programs */
+  .section-programs__icon {
+    height: 100px;
   }
+  
+  .section-programs__card-container {
+    grid-template-columns: 1fr;
+  } 
+
+  /* section-palanes */
+  .section-planes__container {
+    grid-template-columns: 1fr;
+  }
+
+  /* section-flights */
+  .section-flights__card-container {
+    display: block;
+  }
+
+  .section-flights__card-see-flex {
+    display: block;
+  } 
+
+  .section-flights__card-see-flex img {
+    width: 100%;
+  }
+
+  .section-flights__card {
+    margin-bottom: calc(var(--grid-gutter)/2);
+  }
+
+  .page-section {
+    padding: calc(var(--grid-gutter)/2);
+  }
+
+  .section-jumps__card-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* section-icons */
+  .section-icons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-benefits__item {
+    flex-direction: column;
+    
+  }
+
+  .section-benefits-text {
+    text-align: center;
+  }
+
+  .section-benefits__icon {
+    margin-right: 0;
+    margin-bottom: calc(var(--grid-gutter)/4);
+  }
+  
+/* section-about-us  */
+.section-our-team__card-wrapper {
+  grid-template-columns: repeat(2, 1fr);
+}
 
 /* section clouds */
 .section-clouds-text,
@@ -1890,12 +1933,15 @@ iframe {
   display: none;
 }
 
+
 }
 
 @media screen and (max-width: 480px) {
+  .logo {
+    width: 100%;
+  }
 
   /* section-icons */
-
   .section-icons {
     grid-template-columns: 1fr;
   }
@@ -1957,7 +2003,7 @@ iframe {
 
 /* heading */
 .heading {
-  font-size: 36px;
+  font-size: 30px;
   line-height: 120%;
   margin-bottom: calc(var(--grid-gutter)/2);
 }
@@ -1987,4 +2033,20 @@ line-height: 120%;
   margin-top: 30px;
 }
 
+.section-icons__text {
+  font-size: 90%;
+}
+
+.page-footer__contact-column:first-child {
+  margin-bottom: 20px;
+  margin-right: 0;
+}
+
+.section-jumps__card-title {
+  font-size: 28px;
+}
+
+.section-jumps__card-subtitle {
+  font-size: 20px;
+}
 }
