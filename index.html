@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Playfair+Display&display=swap"
@@ -14,25 +15,26 @@
     <link rel="stylesheet" href="./styles/style.css">
     <title>Аэродром Сокольский</title>
 </head>
+
 <body class="page">
     <!-- шапка страницы -->
     <header class="page-header">
-        <div class="page-header__container container">            
+        <div class="page-header__container container">
             <!-- логотип -->
             <a href="index.html">
-                <img class="logo" src="./images/svg/logo.svg" alt="Аэродром Сокольский" >
+                <img class="logo" src="./images/svg/logo.svg" alt="Аэродром Сокольский">
             </a>
 
             <!-- меню сайта -->
             <!-- menu-toggle -->
-            <button class="hamburger hamburger--emphatic-r page-header__menu-toggle" 
-            type="button" onclick="this.classList.toggle('is-active')">
+            <button class="hamburger hamburger--emphatic-r page-header__menu-toggle" type="button"
+                onclick="this.classList.toggle('is-active')">
                 <span class="hamburger-box">
-                  <span class="hamburger-inner"></span>
+                    <span class="hamburger-inner"></span>
                 </span>
             </button>
             <nav class="page-header__menu mainmenu">
-                <ul class="mainmenu__list">                    
+                <ul class="mainmenu__list">
                     <li class="mainmenu__item">
                         <a class="mainmenu__link" href="./pages/about_us.html">О НАС</a>
                     </li>
@@ -51,256 +53,261 @@
                     <li class="mainmenu__item">
                         <a class="mainmenu__link" href="./pages/contacts.html">КОНТАКТЫ</a>
                     </li>
-                </ul>              
-            </nav>            
+                </ul>
+            </nav>
 
         </div>
     </header>
 
-<main>
+    <main>
 
-    <!-- section-banner-->
-    <section class="section-main">
-        <div class="container">
-            <div class="section-main__banner">
-                <div class="section-main__left">
-                    <div class="section-main__text">
-                        <h1 class="section-main__title">Частный аэродром СОКОЛЬСКИЙ</h1>
-                        <span class="section-main__subtitle heading">Открывай границы возможного</span>
+        <!-- section-banner-->
+        <section class="section-main">
+            <div class="container">
+                <div class="section-main__banner">
+                    <div class="section-main__left">
+                        <div class="section-main__text">
+                            <h1 class="section-main__title">Частный аэродром СОКОЛЬСКИЙ</h1>
+                            <span class="section-main__subtitle heading">Открывай границы возможного</span>
+                        </div>
+                        <div class="section-main__actions">
+                            <a href="#popup" class="button button--main">Записаться</a>
+                        </div>
                     </div>
-                    <div class="section-main__actions">
-                        <a href="#popup" class="button button--main">Записаться</a>
+
+                    <div class="section-main__poster">
+                        <img src="./images/main_banner.png" alt="Сокольский" height="987">
                     </div>
+
                 </div>
-
-                <div class="section-main__poster">
-                    <img src="./images/main_banner.png" alt="Сокольский" height="987">
-                </div>      
-
             </div>
-        </div>
-    </section>
+        </section>
 
-<!-- section-slider -->
-<section class="page-section section-main-services">
-    <div class="container">
-        <div class="section-main-services__wrap">
+        <!-- СЛАЙДЕР -->
+        <section class="section-main-services page-section">
+            <div class="container">
+                <h2 class="section-main-services__box-title heading">Услуги аэродрома</h2>
 
-            <div class="image-slider swiper-container">
+                <div class="section-main-services__wrapper">
 
-                <div class="section-main-services__box">
-                    <h2 class="section-main-services__box-title heading">Услуги аэродрома</h2>
-                    <!-- стрелки управления -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                    <div class="swiper-container">
+                        <div class="section-main-services__box">
+                            <!-- стрелки управления -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
 
-                    <!-- цифры-->
-                    <div class="swiper-pagination"></div>
+                        <!-- цифры-->
+                        <div class="swiper-pagination"></div>
 
-                    <!-- прокрутка-->
-                    <!-- <div class="swiper-scrollbar"></div> -->
-                </div>
+                        <div class="swiper-wrapper">
+                            <!-- слайдер 1-->
+                            <div class="section-main-services__slider-item swiper-slide">
+                                <img src="./images/services_flights.jpg" alt="flights">
 
-               
-                    <div class="image-slider__wrapper swiper-wrapper">
-                        <!-- слайдер 1-->
-                        <div class="section-main-services__slider-item swiper-slide">
-                            <div class="section-main-services__poster"><img src="images/services_flights.png" alt="flights"
-                                    height="750"></div> 
-                            <div class="section-main-services__text-blok">
-                                <div class="section-main-services__text">
-                                    <h3 class="section-main-services__title heading">Полеты</h3>
-                                    <p>Организация прогулочных полётов над Нижним новгородом на частных самолётах. Предлагаем на выбор почти десяток воздушных судов.</p>
+                                <div class="section-main-services__text-block">
+                                    <div class="section-main-services__text">
+                                        <h3 class="section-main-services__title heading">Полеты</h3>
+                                        <p>Организация прогулочных полётов над Нижним новгородом на частных самолётах.
+                                            Предлагаем на выбор почти десяток воздушных судов.</p>
+                                    </div>
+                                    <div class="section-main-services__actions">
+                                        <a href="./pages/flights.html" class="button button--signup">Подробнее</a>
+                                    </div>
                                 </div>
-                                <div class="section-main-services__actions">
-                                    <a href="./pages/flights.html" class="button button--signup">Подробнее</a>
+                            </div>
+
+                            <!-- слайдер 2-->
+                            <div class="section-main-services__slider-item swiper-slide">
+                                <img src="./images/service_photo.jpg" alt="flights">
+
+                                <div class="section-main-services__text-block">
+                                    <div class="section-main-services__text">
+                                        <h3 class="section-main-services__title heading">Фотосессии</h3>
+                                        <p>Фотосессия на аэродроме – блестящая идея подарка себе или близкому человеку.
+                                            Мы
+                                            предлагаем съемку на фоне любых моделей
+                                            самолетов, а также внутри кабины. Несомненно, фотосессия на аэродроме станет
+                                            великолепным воспоминанием на долгие годы!</p>
+                                    </div>
+                                    <div class="section-main-services__actions">
+                                        <a href="./pages/services.html" class="button button--signup">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- слайдер 3-->
+                            <div class="section-main-services__slider-item swiper-slide">
+                                <img src="./images/services_courses.jpg" alt="flights">
+
+                                <div class="section-main-services__text-block section-main-services__text-block--padding">
+                                    <div class="section-main-services__text">
+                                        <h3 class="section-main-services__title heading">Курсы пилотирования</h3>
+                                        <p>Обучающие курсы для пилотов любителей и летчиков гражданской авиации.
+                                            Профессиональное обучение полетам, увлекательные
+                                            мастер-классы.</p>
+                                    </div>
+                                    <div class="section-main-services__actions">
+                                        <a href="./pages/courses.html" class="button button--signup">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- слайдер 4-->
+
+                            <div class="section-main-services__slider-item swiper-slide">
+                                <img src="./images/services_jumping.jpg" alt="flights">
+
+                                <div class="section-main-services__text-block">
+                                    <div class="section-main-services__text section-main-services__text--add">
+                                        <h3 class="section-main-services__title heading">Прыжки с парашютом</h3>
+                                        <p>Прыжок в тандеме с инструктором с высоты 4000 метров или самостоятельноый
+                                            прыжок с
+                                            высоты 1200 метров, с принудительным
+                                            немедленным раскрытием основного парашюта, типа «крыло».</p>
+                                    </div>
+                                    <div class="section-main-services__actions--add">
+                                        <a href="./pages/jumps.html" class="button button--signup">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- слайдер 5-->
+
+                            <div class="section-main-services__slider-item swiper-slide">
+                                <img src="./images/servece_rent.jpg" alt="flights">
+
+                                <div class="section-main-services__text-block">
+                                    <div class="section-main-services__text section-main-services__text--add">
+                                        <h3 class="section-main-services__title heading">Аренда ангаров</h3>
+                                        <p>В аренду сдаются отапливаемые и охраняемые ангары для хранения и стоянки
+                                            вашей
+                                            авиатехники. Наши ангары отлично подойдут
+                                            для размещения: легких самолетов, парапланов, дельтопланов.</p>
+                                    </div>
+                                    <div class="section-main-services__actions--add">
+                                        <a href="./pages/flights.html" class="button button--signup">Подробнее</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <!-- слайдер 2-->
-                        <div class="section-main-services__slider-item swiper-slide">
-                            <div class="section-main-services__poster"><img src="images/service_photo.png" alt="flights"
-                                    height="750"></div>
-                            <div class="section-main-services__text-blok">
-                                <div class="section-main-services__text">
-                                    <h3 class="section-main-services__title heading">Фотосессии</h3>
-                                    <p>Фотосессия на аэродроме – блестящая идея подарка себе или близкому человеку. Мы
-                                        предлагаем съемку на фоне любых моделей
-                                        самолетов, а также внутри кабины. Несомненно, фотосессия на аэродроме станет
-                                        великолепным воспоминанием на долгие годы!</p>
-                                </div>
-                                <div class="section-main-services__actions">
-                                    <a href="./pages/services.html" class="button button--signup">Подробнее</a>
-                                </div>
-                            </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- section-about-us-->
+        <section class="section-about-us">
+            <div class="container">
+                <div class="section-about-us__left">
+                    <div class="section-about-us__text-blok">
+                        <div class="section-about-us__text">
+                            <h2 class="section-about-us__title heading">О нас</h2>
+                            <p>Лучший аэродром в Нижегородской области для осуществления ознакомительных, спортивных и
+                                учебных полетов - Аэродром
+                                "Сокольский". Аэродром является наиболее активно летающей площадкой в области.
+                                Осуществляются полеты на различных видах
+                                авиационной техники, активно проводятся парашютные прыжки. Полеты проводятся
+                                круглогодично, инфраструктура аэродрома
+                                включает паркинг для машин, гостиницу для гостей, кафе, ангары, зону приземления для
+                                паршютистов. По выходным дням
+                                проводятся различные мероприятия.</p>
                         </div>
-
-                        <!-- слайдер 3-->
-                        <div class="section-main-services__slider-item swiper-slide">
-                            <div class="section-main-services__poster"><img src="images/services_courses.png" alt="flights"
-                                    height="750"></div>
-                            <div class="section-main-services__text-blok">
-                                <div class="section-main-services__text">
-                                    <h3 class="section-main-services__title heading">Курсы пилотирования</h3>
-                                    <p>Обучающие курсы для пилотов любителей и летчиков гражданской авиации.
-                                        Профессиональное обучение полетам, увлекательные
-                                        мастер-классы.</p>
-                                </div>
-                                <div class="section-main-services__actions">
-                                    <a href="./pages/courses.html" class="button button--signup">Подробнее</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- слайдер 4-->
-
-                        <div class="section-main-services__slider-item swiper-slide">
-                            <div class="section-main-services__poster"><img src="images/services_jumping.png" alt="flights"
-                                    height="750"></div>
-                            <div class="section-main-services__text-blok">
-                                <div class="section-main-services__text section-main-services__text--add">
-                                    <h3 class="section-main-services__title heading">Прыжки с парашютом</h3>
-                                    <p>Прыжок в тандеме с инструктором с высоты 4000 метров или самостоятельноый прыжок с
-                                        высоты 1200 метров, с принудительным
-                                        немедленным раскрытием основного парашюта, типа «крыло».</p>
-                                </div>
-                                <div class="section-main-services__actions--add">
-                                    <a href="./pages/jumps.html" class="button button--signup">Подробнее</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- слайдер 5-->
-
-                        <div class="section-main-services__slider-item swiper-slide">
-                            <div class="section-main-services__poster"><img src="images/servece_rent.png" alt="flights"
-                                    height="750"></div>
-                            <div class="section-main-services__text-blok">
-                                <div class="section-main-services__text section-main-services__text--add">
-                                    <h3 class="section-main-services__title heading">Аренда ангаров</h3>
-                                    <p>В аренду сдаются отапливаемые и охраняемые ангары для хранения и стоянки вашей
-                                        авиатехники. Наши ангары отлично подойдут
-                                        для размещения: легких самолетов, парапланов, дельтопланов.</p>
-                                </div>
-                                <div class="section-main-services__actions--add">
-                                    <a href="./pages/flights.html" class="button button--signup">Подробнее</a>
-                                </div>
-                            </div>
+                        <div class="section-about-us__actions">
+                            <a href="./pages/about_us.html" class="button button--signup">Подробнее</a>
                         </div>
                     </div>
-                
-            </div>
 
-        </div>
-    </div>
-</section>
-
-
-
-    <!-- section-about-us-->
-    <section class="section-about-us">
-                <div class="container">
-            <div class="section-about-us__left">
-                <div class="section-about-us__text-blok">
-                    <div class="section-about-us__text">
-                        <h2 class="section-about-us__title heading">О нас</h2>
-                        <p>Лучший аэродром в Нижегородской области для осуществления ознакомительных, спортивных и учебных полетов - Аэродром
-                        "Сокольский". Аэродром является наиболее активно летающей площадкой в области. Осуществляются полеты на различных видах
-                        авиационной техники, активно проводятся парашютные прыжки. Полеты проводятся круглогодично, инфраструктура аэродрома
-                        включает паркинг для машин, гостиницу для гостей, кафе, ангары, зону приземления для паршютистов. По выходным дням
-                        проводятся различные мероприятия.</p>
-                    </div>
-                    <div class="section-about-us__actions">
-                        <a href="./pages/about_us.html" class="button button--signup">Подробнее</a>
+                    <div class="section-about-us__poster"><img src="images/main_about_us.png" alt="Сокольский"
+                            height="1114">
                     </div>
                 </div>
-    
-                <div class="section-about-us__poster"><img src="images/main_about_us.png" alt="Сокольский" height="1114">
-                </div>
             </div>
-            </div>
-    </section>
+        </section>
 
-    <!-- SECTION GALLERY -->
-    <section class="page-section section-gallery">
-        <h2 class="section-gallery__title heading">Галлерея</h2>
+        <!-- SECTION GALLERY -->
+        <section class="page-section section-gallery">
+            <h2 class="section-gallery__title heading">Галлерея</h2>
 
-        <div class="container">
-            <div class="gallery">
-                <figure class="gallery__item gallery__item--1">
-                    <img src="./images/gallery1.jpg" class="gallery__img" alt="Image 1">
-                </figure>
-                <figure class="gallery__item gallery__item--2">
-                    <img src="./images/gallery2.jpg" class="gallery__img" alt="Image 2">
-                </figure>
-                <figure class="gallery__item gallery__item--3">
-                    <img src="./images/gallery3.jpg" class="gallery__img" alt="Image 3">
-                </figure>
-                <figure class="gallery__item gallery__item--4">
-                    <img src="./images/gallery4.jpg" class="gallery__img" alt="Image 4">
-                </figure>
-                <figure class="gallery__item gallery__item--5">
-                    <img src="./images/gallery5.jpg" class="gallery__img" alt="Image 5">
-                </figure>
-                <figure class="gallery__item gallery__item--6">
-                    <img src="./images/gallery6.jpg" class="gallery__img" alt="Image 6">
-                </figure>
-                <figure class="gallery__item gallery__item--7">
-                    <img src="./images/gallery7.jpg" class="gallery__img" alt="Image 7">
-                </figure>
-                <figure class="gallery__item gallery__item--8">
-                    <img src="./images/gallery8.jpg" class="gallery__img" alt="Image 8">
-                </figure>
-                <figure class="gallery__item gallery__item--9">
-                    <img src="./images/gallery9.jpg" class="gallery__img" alt="Image 9">
-                </figure>
-                <figure class="gallery__item gallery__item--10">
-                    <img src="./images/gallery10.jpg" class="gallery__img" alt="Image 10">
-                </figure>           
-            </div>
-        </div>
-    </section>
-
-    <!-- section-why-us-->
-    <section class="page-section section-why-us">
-        <div class="container">
-            <h2 class="section-why-us__title heading">Почему мы</h2>
-            <div class="section-icons">
-                <div class="section-icons__card">
-                    <img class="section-icons__img" src="images/svg/main_icon_1.png" alt="safety-icon">
-                    <div class="section-icons__text">Мы обеспечиваем безопасноть и несем ответсвенность</div>
-                </div>
-                <div class="section-icons__card">
-                    <img class="section-icons__img" src="images/svg/main_icon_2.png" alt="trust-icin">
-                    <div class="section-icons__text">Доверие клиентов наша главная ценность</div>
-                </div>
-                <div class="section-icons__card">                    
-                    <img class="section-icons__img" src="images/svg/main_icon_3.png" alt="Сокольский">
-                    <div class="section-icons__text">Широкий спектр услуг и индивидуальный подход к клиентам.</div>
-                </div>
-                <div class="section-icons__card">
-                    <img class="section-icons__img" src="images/svg/main_icon_4.png" alt="Сокольский">
-                    <div class="section-icons__text">Огромный опыт в сфере малой авиации</div>
+            <div class="container">
+                <div class="gallery">
+                    <figure class="gallery__item gallery__item--1">
+                        <img src="./images/gallery1.jpg" class="gallery__img" alt="Image 1">
+                    </figure>
+                    <figure class="gallery__item gallery__item--2">
+                        <img src="./images/gallery2.jpg" class="gallery__img" alt="Image 2">
+                    </figure>
+                    <figure class="gallery__item gallery__item--3">
+                        <img src="./images/gallery3.jpg" class="gallery__img" alt="Image 3">
+                    </figure>
+                    <figure class="gallery__item gallery__item--4">
+                        <img src="./images/gallery4.jpg" class="gallery__img" alt="Image 4">
+                    </figure>
+                    <figure class="gallery__item gallery__item--5">
+                        <img src="./images/gallery5.jpg" class="gallery__img" alt="Image 5">
+                    </figure>
+                    <figure class="gallery__item gallery__item--6">
+                        <img src="./images/gallery6.jpg" class="gallery__img" alt="Image 6">
+                    </figure>
+                    <figure class="gallery__item gallery__item--7">
+                        <img src="./images/gallery7.jpg" class="gallery__img" alt="Image 7">
+                    </figure>
+                    <figure class="gallery__item gallery__item--8">
+                        <img src="./images/gallery8.jpg" class="gallery__img" alt="Image 8">
+                    </figure>
+                    <figure class="gallery__item gallery__item--9">
+                        <img src="./images/gallery9.jpg" class="gallery__img" alt="Image 9">
+                    </figure>
+                    <figure class="gallery__item gallery__item--10">
+                        <img src="./images/gallery10.jpg" class="gallery__img" alt="Image 10">
+                    </figure>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- section-why-us-->
+        <section class="page-section section-why-us">
+            <div class="container">
+                <h2 class="section-why-us__title heading">Почему мы</h2>
+                <div class="section-icons">
+                    <div class="section-icons__card">
+                        <img class="section-icons__img" src="images/svg/main_icon_1.png" alt="safety-icon">
+                        <div class="section-icons__text">Мы обеспечиваем безопасноть и несем ответсвенность</div>
+                    </div>
+                    <div class="section-icons__card">
+                        <img class="section-icons__img" src="images/svg/main_icon_2.png" alt="trust-icin">
+                        <div class="section-icons__text">Доверие клиентов наша главная ценность</div>
+                    </div>
+                    <div class="section-icons__card">
+                        <img class="section-icons__img" src="images/svg/main_icon_3.png" alt="Сокольский">
+                        <div class="section-icons__text">Широкий спектр услуг и индивидуальный подход к клиентам.</div>
+                    </div>
+                    <div class="section-icons__card">
+                        <img class="section-icons__img" src="images/svg/main_icon_4.png" alt="Сокольский">
+                        <div class="section-icons__text">Огромный опыт в сфере малой авиации</div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- section-clouds-->
         <section class="section-clouds">
             <div class="container">
                 <div class="section-clouds__blok-text">
-                        <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M6.60927 16.1887C3.03792 16.1887 0.62207 13.0037 0.62207 8.28458C0.62207 4.03792 3.39346 0.5 7.14714 0.5C11.2586 0.5 14.2967 4.74667 14.2967 11.2333C14.2967 25.9771 5.89591 31.8746 0.62207 32.5833V26.0967C4.19798 25.2712 8.21831 20.6717 8.39836 15.5967C8.21831 15.7133 7.50495 16.1887 6.60927 16.1887V16.1887Z"
-                                fill="#2C2B28" />
-                            <path
-                                d="M24.8417 16.1887C21.2681 16.1887 18.8545 13.0037 18.8545 8.28458C18.8545 4.03792 21.6259 0.5 25.3796 0.5C29.4911 0.5 32.5291 4.74667 32.5291 11.2333C32.5291 25.9771 24.1283 31.8746 18.8545 32.5833V26.0967C22.4304 25.2712 26.4507 20.6717 26.6308 15.5967C26.4507 15.7133 25.7374 16.1887 24.8417 16.1887V16.1887Z"
-                                fill="#2C2B28" />
-                        </svg>
-                    <p class="section-clouds-text">Однажды вкусив полет, ты всегда будешь ходить по земле с глазами, обращенными к небу, — ибо ты уже был там, и тебя
-                    неудержимо тянет туда вернуться.</p>
+                    <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.60927 16.1887C3.03792 16.1887 0.62207 13.0037 0.62207 8.28458C0.62207 4.03792 3.39346 0.5 7.14714 0.5C11.2586 0.5 14.2967 4.74667 14.2967 11.2333C14.2967 25.9771 5.89591 31.8746 0.62207 32.5833V26.0967C4.19798 25.2712 8.21831 20.6717 8.39836 15.5967C8.21831 15.7133 7.50495 16.1887 6.60927 16.1887V16.1887Z"
+                            fill="#2C2B28" />
+                        <path
+                            d="M24.8417 16.1887C21.2681 16.1887 18.8545 13.0037 18.8545 8.28458C18.8545 4.03792 21.6259 0.5 25.3796 0.5C29.4911 0.5 32.5291 4.74667 32.5291 11.2333C32.5291 25.9771 24.1283 31.8746 18.8545 32.5833V26.0967C22.4304 25.2712 26.4507 20.6717 26.6308 15.5967C26.4507 15.7133 25.7374 16.1887 24.8417 16.1887V16.1887Z"
+                            fill="#2C2B28" />
+                    </svg>
+                    <p class="section-clouds-text">Однажды вкусив полет, ты всегда будешь ходить по земле с глазами,
+                        обращенными к небу, — ибо ты уже был там, и тебя
+                        неудержимо тянет туда вернуться.</p>
                     <span>Леонардо Да Винчи</span>
                 </div>
             </div>
@@ -308,181 +315,202 @@
 
         <!-- section-form-->
         <section class="section-form">
-                <div class="container">
-                    <div class="section-form__row">
-                        <div class="section-form__poster"><img src="images/main_form.png" alt="" height="747">
-                        </div>
-                            <div class="section-form__content">
-                                    <h3 class="section-form__title heading">Форма обратной связи</h3>
-                                <form action="/" class="section-form__form">
-                                    <div class="section-form__field">
-                                        <input type="text" class="input-field" placeholder="Имя">
-                                    </div>
-                                    <div class="section-form__field">
-                                        <input type="email" class="input-field" placeholder="E-mail">
-                                    </div>
-                                    <div class="section-form__field section-form__field--position">
-                                        <textarea class="input-field section-form__field--style"></textarea>
-                                        <span> Введите свое сообщение </span>
-                                    </div>
-                                    <div class="section-form__form-bottom">
-
-                                        <label class="checkbox">
-                                            <input type="checkbox" class="checkbox__input">
-                                            <span class="checkbox__text">Я согласен(a) на обработку данных</a></span>
-                                        </label>
-
-                                        <button class="button section-form__button button--main" type="submit">Отправить
-                                            <svg width="36" height="17" viewBox="0 0 36 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M0.0263672 8.50017C0.0263672 8.25982 0.158176 8.02931 0.392797 7.85935C0.627418 7.6894 0.945632 7.59392 1.27744 7.59392H30.7851L22.9109 1.89179C22.676 1.72162 22.544 1.49082 22.544 1.25017C22.544 1.00951 22.676 0.778713 22.9109 0.608543C23.1458 0.438373 23.4644 0.342773 23.7967 0.342773C24.1289 0.342773 24.4475 0.438373 24.6824 0.608543L34.691 7.85854C34.8075 7.94273 34.8999 8.04273 34.963 8.15283C35.0261 8.26293 35.0585 8.38096 35.0585 8.50017C35.0585 8.61937 35.0261 8.7374 34.963 8.8475C34.8999 8.9576 34.8075 9.05761 34.691 9.14179L24.6824 16.3918C24.4475 16.562 24.1289 16.6576 23.7967 16.6576C23.4644 16.6576 23.1458 16.562 22.9109 16.3918C22.676 16.2216 22.544 15.9908 22.544 15.7502C22.544 15.5095 22.676 15.2787 22.9109 15.1085L30.7851 9.40642H1.27744C0.945632 9.40642 0.627418 9.31094 0.392797 9.14098C0.158176 8.97103 0.0263672 8.74052 0.0263672 8.50017V8.50017Z"
-                                                    fill="#F2F2F2" />
-                                            </svg>
-                                        </button>                    
-                                        
-                                    </div>
-                                </form>
+            <div class="container">
+                <div class="section-form__row">
+                    <div class="section-form__poster"><img src="images/main_form.png" alt="" height="747">
+                    </div>
+                    <div class="section-form__content">
+                        <h3 class="section-form__title heading">Форма обратной связи</h3>
+                        <form action="/" class="section-form__form">
+                            <div class="section-form__field">
+                                <input type="text" class="input-field" placeholder="Имя">
                             </div>
-                    </div>                    
-                </div>            
+                            <div class="section-form__field">
+                                <input type="email" class="input-field" placeholder="E-mail">
+                            </div>
+                            <div class="section-form__field section-form__field--position">
+                                <textarea class="input-field section-form__field--style"></textarea>
+                                <span> Введите свое сообщение </span>
+                            </div>
+                            <div class="section-form__form-bottom">
+
+                                <label class="checkbox">
+                                    <input type="checkbox" class="checkbox__input">
+                                    <span class="checkbox__text">Я согласен(a) на обработку данных</a></span>
+                                </label>
+
+                                <button class="button section-form__button button--main" type="submit">Отправить
+                                    <svg width="36" height="17" viewBox="0 0 36 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0.0263672 8.50017C0.0263672 8.25982 0.158176 8.02931 0.392797 7.85935C0.627418 7.6894 0.945632 7.59392 1.27744 7.59392H30.7851L22.9109 1.89179C22.676 1.72162 22.544 1.49082 22.544 1.25017C22.544 1.00951 22.676 0.778713 22.9109 0.608543C23.1458 0.438373 23.4644 0.342773 23.7967 0.342773C24.1289 0.342773 24.4475 0.438373 24.6824 0.608543L34.691 7.85854C34.8075 7.94273 34.8999 8.04273 34.963 8.15283C35.0261 8.26293 35.0585 8.38096 35.0585 8.50017C35.0585 8.61937 35.0261 8.7374 34.963 8.8475C34.8999 8.9576 34.8075 9.05761 34.691 9.14179L24.6824 16.3918C24.4475 16.562 24.1289 16.6576 23.7967 16.6576C23.4644 16.6576 23.1458 16.562 22.9109 16.3918C22.676 16.2216 22.544 15.9908 22.544 15.7502C22.544 15.5095 22.676 15.2787 22.9109 15.1085L30.7851 9.40642H1.27744C0.945632 9.40642 0.627418 9.31094 0.392797 9.14098C0.158176 8.97103 0.0263672 8.74052 0.0263672 8.50017V8.50017Z"
+                                            fill="#F2F2F2" />
+                                    </svg>
+                                </button>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
 
-</main>
 
-<!-- FOOTER -->
-<footer class="page-footer">
-    <div class="container">
-        <div class="page-footer__flex">
-            <!-- логотип футер -->
-            <a href="index.html"><img class="logo" src="images/logo.svg" alt="Аэродром Сокольский"></a>
-            <!-- меню сайта футер -->
-            <div class="page-footer__right">
-                <nav class="page-footer__menu menu">
-                    <ul class="mainmenu__list">
-                        <li class="mainmenu__item">
-                            <a href="./pages/about_us.html">О НАС</a>
+
+
+
+
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="page-footer__flex">
+                <!-- логотип футер -->
+                <a href="index.html"><img class="logo" src="images/logo.svg" alt="Аэродром Сокольский"></a>
+                <!-- меню сайта футер -->
+                <div class="page-footer__right">
+                    <nav class="page-footer__menu menu">
+                        <ul class="mainmenu__list">
+                            <li class="mainmenu__item">
+                                <a href="./pages/about_us.html">О НАС</a>
+                            </li>
+                            <li class="mainmenu__item">
+                                <a href="./pages/services.html">УСЛУГИ</a>
+                            </li>
+                            <li class="mainmenu__item">
+                                <a href="./pages/jumps.html">ПРЫЖКИ</a>
+                            </li>
+                            <li class="mainmenu__item">
+                                <a href="./pages/flights.html">ПОЛЕТЫ</a>
+                            </li>
+                            <li class="mainmenu__item">
+                                <a href="./pages/courses.html">КУРСЫ</a>
+                            </li>
+                            <li class="mainmenu__item">
+                                <a href="./pages/contacts.html">КОНТАКТЫ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <address class="page-footer__contact">
+                        <div class="page-footer__contact-column">
+                            <div class="page-footer__contact-title">Адрес аэродрома</div>
+                            <div class="page-footer__contact-text">
+                                Нижегородская область, <br>
+                                Сокольский городской округ, <br>
+                                аэродром "Сокольский"
+                            </div>
+                        </div>
+                        <div class="page-footer__contact-column">
+                            <div class="page-footer__contact-title">Главный офис</div>
+                            <div class="page-footer__contact-text">
+                                ул. Ленина д.42, 3 этаж, офис №5 <br>
+                                Понедельник - Суббота с 9:00 до 18:00
+                            </div>
+                            <a href="tel:+175684565612">+7 (000) 674-45-78</a>
+                        </div>
+                    </address>
+                </div>
+            </div>
+
+            <div class="page-footer__bottom">
+                <div class="page-footer__copyright">© 2021 Аэродром Сокольский</div>
+                <div class="page-footer__socials">
+                    <ul class="socials-list">
+                        <li class="socials-list__item"><a href="https://www.instagram.com/">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.33125 0.3325C9.7975 0.265 10.265 0.25 14 0.25C17.735 0.25 18.2025 0.26625 19.6675 0.3325C21.1325 0.39875 22.1325 0.6325 23.0075 0.97125C23.9237 1.3175 24.755 1.85875 25.4425 2.55875C26.1425 3.245 26.6825 4.075 27.0275 4.9925C27.3675 5.8675 27.6 6.8675 27.6675 8.33C27.735 9.79875 27.75 10.2663 27.75 14C27.75 17.735 27.7338 18.2025 27.6675 19.6687C27.6013 21.1312 27.3675 22.1312 27.0275 23.0062C26.6825 23.9239 26.1416 24.7552 25.4425 25.4425C24.755 26.1425 23.9237 26.6825 23.0075 27.0275C22.1325 27.3675 21.1325 27.6 19.67 27.6675C18.2025 27.735 17.735 27.75 14 27.75C10.265 27.75 9.7975 27.7338 8.33125 27.6675C6.86875 27.6013 5.86875 27.3675 4.99375 27.0275C4.07615 26.6825 3.24478 26.1416 2.5575 25.4425C1.85797 24.7558 1.31664 23.9249 0.97125 23.0075C0.6325 22.1325 0.4 21.1325 0.3325 19.67C0.265 18.2012 0.25 17.7337 0.25 14C0.25 10.265 0.26625 9.7975 0.3325 8.3325C0.39875 6.8675 0.6325 5.8675 0.97125 4.9925C1.31715 4.0751 1.8589 3.24414 2.55875 2.5575C3.24505 1.85813 4.07559 1.3168 4.9925 0.97125C5.8675 0.6325 6.8675 0.4 8.33 0.3325H8.33125ZM19.5562 2.8075C18.1062 2.74125 17.6713 2.7275 14 2.7275C10.3287 2.7275 9.89375 2.74125 8.44375 2.8075C7.1025 2.86875 6.375 3.0925 5.89 3.28125C5.24875 3.53125 4.79 3.8275 4.30875 4.30875C3.85256 4.75256 3.50148 5.29285 3.28125 5.89C3.0925 6.375 2.86875 7.1025 2.8075 8.44375C2.74125 9.89375 2.7275 10.3287 2.7275 14C2.7275 17.6713 2.74125 18.1062 2.8075 19.5562C2.86875 20.8975 3.0925 21.625 3.28125 22.11C3.50125 22.7063 3.8525 23.2475 4.30875 23.6913C4.7525 24.1475 5.29375 24.4988 5.89 24.7188C6.375 24.9075 7.1025 25.1313 8.44375 25.1925C9.89375 25.2588 10.3275 25.2725 14 25.2725C17.6725 25.2725 18.1062 25.2588 19.5562 25.1925C20.8975 25.1313 21.625 24.9075 22.11 24.7188C22.7513 24.4688 23.21 24.1725 23.6913 23.6913C24.1475 23.2475 24.4988 22.7063 24.7188 22.11C24.9075 21.625 25.1313 20.8975 25.1925 19.5562C25.2588 18.1062 25.2725 17.6713 25.2725 14C25.2725 10.3287 25.2588 9.89375 25.1925 8.44375C25.1313 7.1025 24.9075 6.375 24.7188 5.89C24.4688 5.24875 24.1725 4.79 23.6913 4.30875C23.2474 3.85259 22.7071 3.50151 22.11 3.28125C21.625 3.0925 20.8975 2.86875 19.5562 2.8075V2.8075ZM12.2438 18.2387C13.2246 18.647 14.3167 18.7021 15.3337 18.3947C16.3506 18.0872 17.2292 17.4361 17.8195 16.5528C18.4098 15.6695 18.6751 14.6086 18.5701 13.5514C18.465 12.4942 17.9963 11.5062 17.2438 10.7562C16.764 10.2768 16.184 9.90977 15.5454 9.68143C14.9068 9.4531 14.2255 9.3692 13.5506 9.43577C12.8757 9.50234 12.2239 9.71772 11.6423 10.0664C11.0606 10.4151 10.5634 10.8884 10.1866 11.4523C9.80983 12.0162 9.56274 12.6566 9.46314 13.3275C9.36355 13.9983 9.41394 14.6829 9.61067 15.3319C9.80741 15.9809 10.1456 16.5783 10.6009 17.0809C11.0562 17.5835 11.6173 17.979 12.2438 18.2387ZM9.0025 9.0025C9.65878 8.34622 10.4379 7.82563 11.2954 7.47045C12.1528 7.11528 13.0719 6.93247 14 6.93247C14.9281 6.93247 15.8472 7.11527 16.7046 7.47045C17.5621 7.82563 18.3412 8.34622 18.9975 9.0025C19.6538 9.65878 20.1744 10.4379 20.5295 11.2954C20.8847 12.1528 21.0675 13.0719 21.0675 14C21.0675 14.9281 20.8847 15.8472 20.5295 16.7046C20.1744 17.5621 19.6538 18.3412 18.9975 18.9975C17.6721 20.3229 15.8744 21.0675 14 21.0675C12.1256 21.0675 10.3279 20.3229 9.0025 18.9975C7.67708 17.6721 6.93247 15.8744 6.93247 14C6.93247 12.1256 7.67708 10.3279 9.0025 9.0025V9.0025ZM22.635 7.985C22.7976 7.83159 22.9278 7.6471 23.0179 7.44247C23.1079 7.23783 23.156 7.01721 23.1593 6.79366C23.1625 6.57011 23.1209 6.34818 23.0369 6.14101C22.9528 5.93384 22.828 5.74564 22.67 5.58755C22.5119 5.42946 22.3237 5.3047 22.1165 5.22065C21.9093 5.1366 21.6874 5.09497 21.4638 5.09823C21.2403 5.10149 21.0197 5.14957 20.815 5.23962C20.6104 5.32967 20.4259 5.45987 20.2725 5.6225C19.9741 5.93879 19.8108 6.3589 19.8171 6.79366C19.8235 7.22842 19.999 7.6436 20.3064 7.95105C20.6139 8.25851 21.0291 8.43404 21.4638 8.44037C21.8986 8.44671 22.3187 8.28336 22.635 7.985V7.985Z"
+                                        fill="#F9F8F6" />
+                                </svg>
+                            </a>
                         </li>
-                        <li class="mainmenu__item">
-                            <a href="./pages/services.html">УСЛУГИ</a>
+                        <li class="socials-list__item">
+                            <a href="https://web.telegram.org/">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M30 15C30 23.2837 23.2837 30 15 30C6.71625 30 0 23.2837 0 15C0 6.71625 6.71625 0 15 0C23.2837 0 30 6.71625 30 15ZM15.5375 11.0738C14.0788 11.68 11.1625 12.9363 6.79 14.8413C6.08 15.1238 5.7075 15.4 5.67375 15.67C5.61625 16.1275 6.18875 16.3075 6.96625 16.5513C7.0725 16.585 7.1825 16.6187 7.295 16.6562C8.06125 16.905 9.09125 17.1962 9.62625 17.2075C10.1125 17.2175 10.655 17.0175 11.2538 16.6075C15.3388 13.8488 17.4475 12.455 17.58 12.425C17.6738 12.4037 17.8037 12.3762 17.8912 12.455C17.9787 12.5325 17.97 12.68 17.9613 12.72C17.9038 12.9612 15.6612 15.0475 14.4987 16.1275C14.1362 16.4638 13.88 16.7025 13.8275 16.7575C13.71 16.8788 13.59 16.995 13.475 17.1063C12.7625 17.7913 12.23 18.3063 13.505 19.1463C14.1175 19.55 14.6075 19.8838 15.0962 20.2163C15.63 20.58 16.1625 20.9425 16.8525 21.395C17.0275 21.51 17.195 21.6287 17.3588 21.745C17.98 22.1887 18.5388 22.5862 19.2288 22.5237C19.6288 22.4862 20.0437 22.11 20.2537 20.9862C20.75 18.3287 21.7275 12.5738 21.9537 10.2013C21.9675 10.0043 21.9591 9.80636 21.9287 9.61125C21.9106 9.45366 21.8338 9.30866 21.7138 9.205C21.535 9.05875 21.2575 9.0275 21.1325 9.03C20.5688 9.04 19.7038 9.34125 15.5375 11.0738V11.0738Z"
+                                        fill="#F9F8F6" />
+                                </svg>
+                            </a>
                         </li>
-                        <li class="mainmenu__item">
-                            <a href="./pages/jumps.html">ПРЫЖКИ</a>
+                        <li class="socials-list__item"><a href="https://www.whatsapp.com/">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M21.7688 17.9776C21.3963 17.7913 19.57 16.8938 19.23 16.7688C18.89 16.6451 18.6425 16.5838 18.3938 16.9563C18.1463 17.3263 17.435 18.1638 17.2187 18.4113C17.0012 18.6601 16.785 18.6901 16.4137 18.5051C16.0425 18.3176 14.845 17.9263 13.4263 16.6613C12.3225 15.6763 11.5763 14.4601 11.36 14.0876C11.1438 13.7163 11.3363 13.5151 11.5225 13.3301C11.69 13.1638 11.8937 12.8963 12.08 12.6801C12.2662 12.4626 12.3275 12.3076 12.4513 12.0588C12.5763 11.8113 12.5137 11.5951 12.42 11.4088C12.3275 11.2226 11.585 9.3938 11.275 8.65005C10.9738 7.9263 10.6675 8.02505 10.44 8.01255C10.2225 8.00255 9.975 8.00005 9.7275 8.00005C9.48 8.00005 9.0775 8.09255 8.7375 8.46505C8.39625 8.8363 7.4375 9.73505 7.4375 11.5638C7.4375 13.3913 8.7675 15.1576 8.95375 15.4063C9.14 15.6538 11.5725 19.4063 15.2988 21.0151C16.1863 21.3976 16.8775 21.6263 17.4162 21.7963C18.3062 22.0801 19.1163 22.0401 19.7563 21.9438C20.4688 21.8376 21.9538 21.0451 22.2638 20.1776C22.5725 19.3101 22.5725 18.5663 22.48 18.4113C22.3875 18.2563 22.14 18.1638 21.7675 17.9776H21.7688ZM14.9913 27.2313H14.9863C12.773 27.2317 10.6005 26.6368 8.69625 25.5088L8.24625 25.2413L3.56875 26.4688L4.8175 21.9088L4.52375 21.4413C3.28642 19.4717 2.63162 17.1923 2.635 14.8663C2.6375 8.0538 8.18 2.5113 14.9962 2.5113C18.2962 2.5113 21.3988 3.7988 23.7313 6.1338C24.8817 7.27953 25.7936 8.64201 26.4141 10.1424C27.0346 11.6428 27.3514 13.2514 27.3463 14.8751C27.3438 21.6876 21.8012 27.2313 14.9913 27.2313V27.2313ZM25.5063 4.36005C24.129 2.97371 22.4903 1.87447 20.6851 1.12605C18.8799 0.377631 16.9442 -0.00509531 14.99 5.12219e-05C6.7975 5.12219e-05 0.1275 6.6688 0.125 14.8651C0.12375 17.4851 0.8075 20.0425 2.10875 22.2963L0 30.0001L7.88 27.9326C10.0598 29.1202 12.5026 29.7425 14.985 29.7426H14.9913C23.1837 29.7426 29.8538 23.0738 29.8563 14.8763C29.8623 12.9229 29.481 10.9877 28.7343 9.18259C27.9876 7.37751 26.8905 5.73839 25.5063 4.36005"
+                                        fill="#F9F8F6" />
+                                </svg>
+                            </a>
                         </li>
-                        <li class="mainmenu__item">
-                            <a href="./pages/flights.html">ПОЛЕТЫ</a>
-                        </li>
-                        <li class="mainmenu__item">
-                            <a href="./pages/courses.html">КУРСЫ</a>
-                        </li>
-                        <li class="mainmenu__item">
-                            <a href="./pages/contacts.html">КОНТАКТЫ</a>
+                        <li class="socials-list__item"><a href="https://vk.com/">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.604 0H10.395C1.99121 0 -0.000976562 1.99219 -0.000976562 10.3959V19.605C-0.000976562 28.0088 1.99121 30.0009 10.395 30.0009H19.604C28.0078 30.0009 30 28.0088 30 19.605V10.3959C30 1.99219 27.9881 0 19.604 0ZM24.2184 21.4012H22.0406C21.2156 21.4012 20.9615 20.7469 19.4775 19.2431C18.1884 17.9934 17.6175 17.8275 17.2996 17.8275C16.8506 17.8275 16.7231 17.9541 16.7231 18.57V20.5378C16.7231 21.0656 16.5571 21.3825 15.1603 21.3825C12.8503 21.3825 10.2871 19.9856 8.48996 17.3831C5.77965 13.5694 5.03809 10.7128 5.03809 10.1222C5.03809 9.80437 5.16465 9.50719 5.77496 9.50719H7.95746C8.50965 9.50719 8.71965 9.76125 8.93434 10.3519C10.0134 13.4672 11.8106 16.1962 12.5521 16.1962C12.8259 16.1962 12.9525 16.0697 12.9525 15.3712V12.1537C12.869 10.6697 12.0881 10.5422 12.0881 10.0153C12.0881 9.76125 12.2981 9.50719 12.6346 9.50719H16.0668C16.5309 9.50719 16.7015 9.76125 16.7015 10.3078V14.6484C16.7015 15.1172 16.9115 15.2831 17.0381 15.2831C17.3118 15.2831 17.5462 15.1172 18.0534 14.6091C19.6209 12.8513 20.744 10.1409 20.744 10.1409C20.8903 9.82313 21.1443 9.52594 21.6965 9.52594H23.879C24.5334 9.52594 24.6796 9.8625 24.5334 10.3313C24.2596 11.6006 21.5887 15.3703 21.5887 15.3703C21.359 15.7509 21.2709 15.9169 21.5887 16.3416C21.8231 16.6594 22.5853 17.3184 23.0925 17.9091C24.0253 18.9684 24.7425 19.8572 24.9337 20.4722C25.1484 21.0825 24.8315 21.4003 24.2156 21.4003L24.2184 21.4012Z"
+                                        fill="#F9F8F6" />
+                                </svg>
+                            </a>
                         </li>
                     </ul>
-                </nav>
-                <address class="page-footer__contact">
-                    <div class="page-footer__contact-column">
-                        <div class="page-footer__contact-title">Адрес аэродрома</div>
-                        <div class="page-footer__contact-text">
-                            Нижегородская область, <br>
-                            Сокольский городской округ, <br>
-                            аэродром "Сокольский"
-                        </div>                            
-                    </div>
-                    <div class="page-footer__contact-column">
-                      <div class="page-footer__contact-title">Главный офис</div>
-                      <div class="page-footer__contact-text">
-                            ул. Ленина д.42, 3 этаж, офис №5 <br> 
-                            Понедельник - Суббота с 9:00 до 18:00
-                        </div>
-                        <a href="tel:+175684565612">+7 (000) 674-45-78</a>
-                    </div>
-               </address>
-            </div>               
-        </div>           
-       <div class="page-footer__bottom">
-           <div class="page-footer__copyright">© 2021 Аэродром Сокольский</div>
-           <div class="page-footer__socials">
-               <ul class="socials-list">
-                   <li class="socials-list__item"><a href="https://www.instagram.com/">
-                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.33125 0.3325C9.7975 0.265 10.265 0.25 14 0.25C17.735 0.25 18.2025 0.26625 19.6675 0.3325C21.1325 0.39875 22.1325 0.6325 23.0075 0.97125C23.9237 1.3175 24.755 1.85875 25.4425 2.55875C26.1425 3.245 26.6825 4.075 27.0275 4.9925C27.3675 5.8675 27.6 6.8675 27.6675 8.33C27.735 9.79875 27.75 10.2663 27.75 14C27.75 17.735 27.7338 18.2025 27.6675 19.6687C27.6013 21.1312 27.3675 22.1312 27.0275 23.0062C26.6825 23.9239 26.1416 24.7552 25.4425 25.4425C24.755 26.1425 23.9237 26.6825 23.0075 27.0275C22.1325 27.3675 21.1325 27.6 19.67 27.6675C18.2025 27.735 17.735 27.75 14 27.75C10.265 27.75 9.7975 27.7338 8.33125 27.6675C6.86875 27.6013 5.86875 27.3675 4.99375 27.0275C4.07615 26.6825 3.24478 26.1416 2.5575 25.4425C1.85797 24.7558 1.31664 23.9249 0.97125 23.0075C0.6325 22.1325 0.4 21.1325 0.3325 19.67C0.265 18.2012 0.25 17.7337 0.25 14C0.25 10.265 0.26625 9.7975 0.3325 8.3325C0.39875 6.8675 0.6325 5.8675 0.97125 4.9925C1.31715 4.0751 1.8589 3.24414 2.55875 2.5575C3.24505 1.85813 4.07559 1.3168 4.9925 0.97125C5.8675 0.6325 6.8675 0.4 8.33 0.3325H8.33125ZM19.5562 2.8075C18.1062 2.74125 17.6713 2.7275 14 2.7275C10.3287 2.7275 9.89375 2.74125 8.44375 2.8075C7.1025 2.86875 6.375 3.0925 5.89 3.28125C5.24875 3.53125 4.79 3.8275 4.30875 4.30875C3.85256 4.75256 3.50148 5.29285 3.28125 5.89C3.0925 6.375 2.86875 7.1025 2.8075 8.44375C2.74125 9.89375 2.7275 10.3287 2.7275 14C2.7275 17.6713 2.74125 18.1062 2.8075 19.5562C2.86875 20.8975 3.0925 21.625 3.28125 22.11C3.50125 22.7063 3.8525 23.2475 4.30875 23.6913C4.7525 24.1475 5.29375 24.4988 5.89 24.7188C6.375 24.9075 7.1025 25.1313 8.44375 25.1925C9.89375 25.2588 10.3275 25.2725 14 25.2725C17.6725 25.2725 18.1062 25.2588 19.5562 25.1925C20.8975 25.1313 21.625 24.9075 22.11 24.7188C22.7513 24.4688 23.21 24.1725 23.6913 23.6913C24.1475 23.2475 24.4988 22.7063 24.7188 22.11C24.9075 21.625 25.1313 20.8975 25.1925 19.5562C25.2588 18.1062 25.2725 17.6713 25.2725 14C25.2725 10.3287 25.2588 9.89375 25.1925 8.44375C25.1313 7.1025 24.9075 6.375 24.7188 5.89C24.4688 5.24875 24.1725 4.79 23.6913 4.30875C23.2474 3.85259 22.7071 3.50151 22.11 3.28125C21.625 3.0925 20.8975 2.86875 19.5562 2.8075V2.8075ZM12.2438 18.2387C13.2246 18.647 14.3167 18.7021 15.3337 18.3947C16.3506 18.0872 17.2292 17.4361 17.8195 16.5528C18.4098 15.6695 18.6751 14.6086 18.5701 13.5514C18.465 12.4942 17.9963 11.5062 17.2438 10.7562C16.764 10.2768 16.184 9.90977 15.5454 9.68143C14.9068 9.4531 14.2255 9.3692 13.5506 9.43577C12.8757 9.50234 12.2239 9.71772 11.6423 10.0664C11.0606 10.4151 10.5634 10.8884 10.1866 11.4523C9.80983 12.0162 9.56274 12.6566 9.46314 13.3275C9.36355 13.9983 9.41394 14.6829 9.61067 15.3319C9.80741 15.9809 10.1456 16.5783 10.6009 17.0809C11.0562 17.5835 11.6173 17.979 12.2438 18.2387ZM9.0025 9.0025C9.65878 8.34622 10.4379 7.82563 11.2954 7.47045C12.1528 7.11528 13.0719 6.93247 14 6.93247C14.9281 6.93247 15.8472 7.11527 16.7046 7.47045C17.5621 7.82563 18.3412 8.34622 18.9975 9.0025C19.6538 9.65878 20.1744 10.4379 20.5295 11.2954C20.8847 12.1528 21.0675 13.0719 21.0675 14C21.0675 14.9281 20.8847 15.8472 20.5295 16.7046C20.1744 17.5621 19.6538 18.3412 18.9975 18.9975C17.6721 20.3229 15.8744 21.0675 14 21.0675C12.1256 21.0675 10.3279 20.3229 9.0025 18.9975C7.67708 17.6721 6.93247 15.8744 6.93247 14C6.93247 12.1256 7.67708 10.3279 9.0025 9.0025V9.0025ZM22.635 7.985C22.7976 7.83159 22.9278 7.6471 23.0179 7.44247C23.1079 7.23783 23.156 7.01721 23.1593 6.79366C23.1625 6.57011 23.1209 6.34818 23.0369 6.14101C22.9528 5.93384 22.828 5.74564 22.67 5.58755C22.5119 5.42946 22.3237 5.3047 22.1165 5.22065C21.9093 5.1366 21.6874 5.09497 21.4638 5.09823C21.2403 5.10149 21.0197 5.14957 20.815 5.23962C20.6104 5.32967 20.4259 5.45987 20.2725 5.6225C19.9741 5.93879 19.8108 6.3589 19.8171 6.79366C19.8235 7.22842 19.999 7.6436 20.3064 7.95105C20.6139 8.25851 21.0291 8.43404 21.4638 8.44037C21.8986 8.44671 22.3187 8.28336 22.635 7.985V7.985Z" fill="#F9F8F6"/>
-                            </svg>                            
-                        </a>
-                    </li>
-                    <li class="socials-list__item">
-                        <a href="https://web.telegram.org/">
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M30 15C30 23.2837 23.2837 30 15 30C6.71625 30 0 23.2837 0 15C0 6.71625 6.71625 0 15 0C23.2837 0 30 6.71625 30 15ZM15.5375 11.0738C14.0788 11.68 11.1625 12.9363 6.79 14.8413C6.08 15.1238 5.7075 15.4 5.67375 15.67C5.61625 16.1275 6.18875 16.3075 6.96625 16.5513C7.0725 16.585 7.1825 16.6187 7.295 16.6562C8.06125 16.905 9.09125 17.1962 9.62625 17.2075C10.1125 17.2175 10.655 17.0175 11.2538 16.6075C15.3388 13.8488 17.4475 12.455 17.58 12.425C17.6738 12.4037 17.8037 12.3762 17.8912 12.455C17.9787 12.5325 17.97 12.68 17.9613 12.72C17.9038 12.9612 15.6612 15.0475 14.4987 16.1275C14.1362 16.4638 13.88 16.7025 13.8275 16.7575C13.71 16.8788 13.59 16.995 13.475 17.1063C12.7625 17.7913 12.23 18.3063 13.505 19.1463C14.1175 19.55 14.6075 19.8838 15.0962 20.2163C15.63 20.58 16.1625 20.9425 16.8525 21.395C17.0275 21.51 17.195 21.6287 17.3588 21.745C17.98 22.1887 18.5388 22.5862 19.2288 22.5237C19.6288 22.4862 20.0437 22.11 20.2537 20.9862C20.75 18.3287 21.7275 12.5738 21.9537 10.2013C21.9675 10.0043 21.9591 9.80636 21.9287 9.61125C21.9106 9.45366 21.8338 9.30866 21.7138 9.205C21.535 9.05875 21.2575 9.0275 21.1325 9.03C20.5688 9.04 19.7038 9.34125 15.5375 11.0738V11.0738Z" fill="#F9F8F6"/>
-                            </svg>                                    
-                        </a>
-                    </li>
-                    <li class="socials-list__item"><a href="https://www.whatsapp.com/">
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.7688 17.9776C21.3963 17.7913 19.57 16.8938 19.23 16.7688C18.89 16.6451 18.6425 16.5838 18.3938 16.9563C18.1463 17.3263 17.435 18.1638 17.2187 18.4113C17.0012 18.6601 16.785 18.6901 16.4137 18.5051C16.0425 18.3176 14.845 17.9263 13.4263 16.6613C12.3225 15.6763 11.5763 14.4601 11.36 14.0876C11.1438 13.7163 11.3363 13.5151 11.5225 13.3301C11.69 13.1638 11.8937 12.8963 12.08 12.6801C12.2662 12.4626 12.3275 12.3076 12.4513 12.0588C12.5763 11.8113 12.5137 11.5951 12.42 11.4088C12.3275 11.2226 11.585 9.3938 11.275 8.65005C10.9738 7.9263 10.6675 8.02505 10.44 8.01255C10.2225 8.00255 9.975 8.00005 9.7275 8.00005C9.48 8.00005 9.0775 8.09255 8.7375 8.46505C8.39625 8.8363 7.4375 9.73505 7.4375 11.5638C7.4375 13.3913 8.7675 15.1576 8.95375 15.4063C9.14 15.6538 11.5725 19.4063 15.2988 21.0151C16.1863 21.3976 16.8775 21.6263 17.4162 21.7963C18.3062 22.0801 19.1163 22.0401 19.7563 21.9438C20.4688 21.8376 21.9538 21.0451 22.2638 20.1776C22.5725 19.3101 22.5725 18.5663 22.48 18.4113C22.3875 18.2563 22.14 18.1638 21.7675 17.9776H21.7688ZM14.9913 27.2313H14.9863C12.773 27.2317 10.6005 26.6368 8.69625 25.5088L8.24625 25.2413L3.56875 26.4688L4.8175 21.9088L4.52375 21.4413C3.28642 19.4717 2.63162 17.1923 2.635 14.8663C2.6375 8.0538 8.18 2.5113 14.9962 2.5113C18.2962 2.5113 21.3988 3.7988 23.7313 6.1338C24.8817 7.27953 25.7936 8.64201 26.4141 10.1424C27.0346 11.6428 27.3514 13.2514 27.3463 14.8751C27.3438 21.6876 21.8012 27.2313 14.9913 27.2313V27.2313ZM25.5063 4.36005C24.129 2.97371 22.4903 1.87447 20.6851 1.12605C18.8799 0.377631 16.9442 -0.00509531 14.99 5.12219e-05C6.7975 5.12219e-05 0.1275 6.6688 0.125 14.8651C0.12375 17.4851 0.8075 20.0425 2.10875 22.2963L0 30.0001L7.88 27.9326C10.0598 29.1202 12.5026 29.7425 14.985 29.7426H14.9913C23.1837 29.7426 29.8538 23.0738 29.8563 14.8763C29.8623 12.9229 29.481 10.9877 28.7343 9.18259C27.9876 7.37751 26.8905 5.73839 25.5063 4.36005" fill="#F9F8F6"/>
-                            </svg>                                
-                        </a>
-                    </li>
-                    <li class="socials-list__item"><a href="https://vk.com/">
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M19.604 0H10.395C1.99121 0 -0.000976562 1.99219 -0.000976562 10.3959V19.605C-0.000976562 28.0088 1.99121 30.0009 10.395 30.0009H19.604C28.0078 30.0009 30 28.0088 30 19.605V10.3959C30 1.99219 27.9881 0 19.604 0ZM24.2184 21.4012H22.0406C21.2156 21.4012 20.9615 20.7469 19.4775 19.2431C18.1884 17.9934 17.6175 17.8275 17.2996 17.8275C16.8506 17.8275 16.7231 17.9541 16.7231 18.57V20.5378C16.7231 21.0656 16.5571 21.3825 15.1603 21.3825C12.8503 21.3825 10.2871 19.9856 8.48996 17.3831C5.77965 13.5694 5.03809 10.7128 5.03809 10.1222C5.03809 9.80437 5.16465 9.50719 5.77496 9.50719H7.95746C8.50965 9.50719 8.71965 9.76125 8.93434 10.3519C10.0134 13.4672 11.8106 16.1962 12.5521 16.1962C12.8259 16.1962 12.9525 16.0697 12.9525 15.3712V12.1537C12.869 10.6697 12.0881 10.5422 12.0881 10.0153C12.0881 9.76125 12.2981 9.50719 12.6346 9.50719H16.0668C16.5309 9.50719 16.7015 9.76125 16.7015 10.3078V14.6484C16.7015 15.1172 16.9115 15.2831 17.0381 15.2831C17.3118 15.2831 17.5462 15.1172 18.0534 14.6091C19.6209 12.8513 20.744 10.1409 20.744 10.1409C20.8903 9.82313 21.1443 9.52594 21.6965 9.52594H23.879C24.5334 9.52594 24.6796 9.8625 24.5334 10.3313C24.2596 11.6006 21.5887 15.3703 21.5887 15.3703C21.359 15.7509 21.2709 15.9169 21.5887 16.3416C21.8231 16.6594 22.5853 17.3184 23.0925 17.9091C24.0253 18.9684 24.7425 19.8572 24.9337 20.4722C25.1484 21.0825 24.8315 21.4003 24.2156 21.4003L24.2184 21.4012Z" fill="#F9F8F6"/>
-                            </svg>                                
-                        </a>
-                    </li>
-               </ul>                    
-           </div>
-       </div>
-        
-    </div>
-    
-</footer>
+                </div>
+            </div>
 
-<!-- sign-up -->
-<div id="popup" class="popup">
-    <div class="popup__body">
-        <div class="popup__content">
-            <a href="#" class="popup__close">
-                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <line x1="8.48528" y1="26.163" x2="26.1629" y2="8.48534" stroke="#333333" stroke-width="2"/>
-                    <line x1="26.163" y1="26.8702" x2="8.48534" y2="9.19252" stroke="#333333" stroke-width="2"/>
-                </svg>                                      
-            </a>
-            <h3 class="section-form__title heading">Форма обратной связи</h3>
-            <form action="/" class="section-form__form">
-                <div class="section-form__field">
-                    <input type="text" class="input-field" placeholder="Имя">
-                </div>
-                <div class="section-form__field">
-                    <input type="email" class="input-field" placeholder="E-mail">
-                </div>
-                <div class="section-form__field section-form__field--position">
-                    <textarea class="input-field section-form__field--style"></textarea>
-                    <span> Введите свое сообщение </span>
-                </div>
-                <div class="section-form__form-bottom">
-                    <label class="checkbox">
-                        <input type="checkbox" class="checkbox__input">
-                        <span class="checkbox__text popup--checkbox__text">
-                            Я согласен(a) на обработку
-                            данных
-                        </span>
-                    </label>
-                    <button class="button section-form__button button--main" type="submit">
-                        Отправить      
-                        <svg width="36" height="17" viewBox="0 0 36 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M0.0263672 8.50017C0.0263672 8.25982 0.158176 8.02931 0.392797 7.85935C0.627418 7.6894 0.945632 7.59392 1.27744 7.59392H30.7851L22.9109 1.89179C22.676 1.72162 22.544 1.49082 22.544 1.25017C22.544 1.00951 22.676 0.778713 22.9109 0.608543C23.1458 0.438373 23.4644 0.342773 23.7967 0.342773C24.1289 0.342773 24.4475 0.438373 24.6824 0.608543L34.691 7.85854C34.8075 7.94273 34.8999 8.04273 34.963 8.15283C35.0261 8.26293 35.0585 8.38096 35.0585 8.50017C35.0585 8.61937 35.0261 8.7374 34.963 8.8475C34.8999 8.9576 34.8075 9.05761 34.691 9.14179L24.6824 16.3918C24.4475 16.562 24.1289 16.6576 23.7967 16.6576C23.4644 16.6576 23.1458 16.562 22.9109 16.3918C22.676 16.2216 22.544 15.9908 22.544 15.7502C22.544 15.5095 22.676 15.2787 22.9109 15.1085L30.7851 9.40642H1.27744C0.945632 9.40642 0.627418 9.31094 0.392797 9.14098C0.158176 8.97103 0.0263672 8.74052 0.0263672 8.50017V8.50017Z"
-                                fill="#F2F2F2" />
-                        </svg>                  
-                    </button>
-                </div>
-            </form>
         </div>
-        
-    </div>
-</section>
 
+    </footer>
 
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-<script src="slider.js"></script>
+    <!-- sign-up -->
+    <div id="popup" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="8.48528" y1="26.163" x2="26.1629" y2="8.48534" stroke="#333333" stroke-width="2" />
+                        <line x1="26.163" y1="26.8702" x2="8.48534" y2="9.19252" stroke="#333333" stroke-width="2" />
+                    </svg>
+                </a>
+                <h3 class="section-form__title heading">Форма обратной связи</h3>
+                <form action="/" class="section-form__form">
+                    <div class="section-form__field">
+                        <input type="text" class="input-field" placeholder="Имя">
+                    </div>
+                    <div class="section-form__field">
+                        <input type="email" class="input-field" placeholder="E-mail">
+                    </div>
+                    <div class="section-form__field section-form__field--position">
+                        <textarea class="input-field section-form__field--style"></textarea>
+                        <span> Введите свое сообщение </span>
+                    </div>
+                    <div class="section-form__form-bottom">
+                        <label class="checkbox">
+                            <input type="checkbox" class="checkbox__input">
+                            <span class="checkbox__text popup--checkbox__text">
+                                Я согласен(a) на обработку
+                                данных
+                            </span>
+                        </label>
+                        <button class="button section-form__button button--main" type="submit">
+                            Отправить
+                            <svg width="36" height="17" viewBox="0 0 36 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0.0263672 8.50017C0.0263672 8.25982 0.158176 8.02931 0.392797 7.85935C0.627418 7.6894 0.945632 7.59392 1.27744 7.59392H30.7851L22.9109 1.89179C22.676 1.72162 22.544 1.49082 22.544 1.25017C22.544 1.00951 22.676 0.778713 22.9109 0.608543C23.1458 0.438373 23.4644 0.342773 23.7967 0.342773C24.1289 0.342773 24.4475 0.438373 24.6824 0.608543L34.691 7.85854C34.8075 7.94273 34.8999 8.04273 34.963 8.15283C35.0261 8.26293 35.0585 8.38096 35.0585 8.50017C35.0585 8.61937 35.0261 8.7374 34.963 8.8475C34.8999 8.9576 34.8075 9.05761 34.691 9.14179L24.6824 16.3918C24.4475 16.562 24.1289 16.6576 23.7967 16.6576C23.4644 16.6576 23.1458 16.562 22.9109 16.3918C22.676 16.2216 22.544 15.9908 22.544 15.7502C22.544 15.5095 22.676 15.2787 22.9109 15.1085L30.7851 9.40642H1.27744C0.945632 9.40642 0.627418 9.31094 0.392797 9.14098C0.158176 8.97103 0.0263672 8.74052 0.0263672 8.50017V8.50017Z"
+                                    fill="#F2F2F2" />
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        </section>
+
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+        <script src="slider.js"></script>
 </body>
+
 </html>

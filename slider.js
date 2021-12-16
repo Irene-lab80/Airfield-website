@@ -7,14 +7,14 @@ navigation: {
 pagination: {
     el: '.swiper-pagination',
     // буллеты
-    // clickable: true,
+    clickable: true,
     // dynamicBullets: true,
 
-    type: 'fraction',
+    // type: 'fraction',
     
-    renderFraction: function (currentClass, totalClass) {
-        return '<span class="' + currentClass + '"></span>' + '/' + '<span class="' + totalClass + '"></span>';
-    },
+    // renderFraction: function (currentClass, totalClass) {
+    //     return '<span class="' + currentClass + '"></span>' + '/' + '<span class="' + totalClass + '"></span>';
+    // },
 },
 
 keyboard: {
