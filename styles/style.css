@@ -53,6 +53,11 @@ nav a:hover {
   margin: 0 auto;
 }
 
+.container-small {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 .page-section {
   padding: var(--grid-gutter) 0; 
 }
@@ -99,7 +104,7 @@ nav a:hover {
 /* menu */
 
 .logo {
-  width: 350px;
+  max-width: 350px;
   display: block;
 }
 
@@ -115,7 +120,7 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 120px;
+    min-height: 100px;
     /* min-height: 8vh; */
 }
 
@@ -549,6 +554,10 @@ fieldset {
   border: 1px solid rgb(189, 189, 189);
 }
 
+.fieldset__legend {
+  font-size: 12px;
+}
+
 .section-form__fieldset {
   font-size: 16px;
   color: var(--color-dark);
@@ -794,13 +803,8 @@ figure:hover .gallery__img{
  /* ****************************************************************** */
 /* ОБЩИЕ СТИЛИ ДЛЯ СТРАНИЦ, кроме главной */
 /* ****************************************************************** */
-.section__poster img {
-  display: block;
-  width: auto;
 
- } 
-
- .section__text {
+.section__text {
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -813,12 +817,7 @@ figure:hover .gallery__img{
   line-height: 48px;
 }
 
-/* баннеры */
-.section__title-banner {
-  font-size: 42px;  
-  margin-bottom: 30px;  
-  line-height: 48px;
-}
+/*  БАННЕРЫ */
 
 .section-pages {
   overflow: hidden;
@@ -827,28 +826,31 @@ figure:hover .gallery__img{
 
 .section-pages__banner {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: row-reverse;
+  /* align-items: center; */
+}
+
+.section-pages__picture img {
+  display: block;
 }
 
 .section-pages__content {
-  padding: var(--grid-gutter);
-  position: absolute;
-  width: 275%;
-  background: rgba(242, 242, 242, 0.9);
-  border: 1px solid var(--color-dark);
+  max-width: 40%;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 100px 0;
+  margin: 0 var(--grid-gutter);
 }
 
 .section-pages__content p {
   padding: 10px 0;
 }
 
-.section-pages__box {
-  width: 25%;
-  flex-shrink: 0;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+.section__title-banner {
+  font-size: 42px;  
+  margin-bottom: 30px;  
+  line-height: 48px;
 }
 
 .section__text span {
@@ -858,18 +860,17 @@ figure:hover .gallery__img{
 
 /* блоки с картинками */
 
-  .section__heading {
-  height: 184px;
-  text-align: center;
-}
-
 .section__box {
   width: 50%;
   flex-shrink: 0;
   position: relative;
   display: flex;
   align-items: center;
+}
 
+.section__heading {
+  height: 184px;
+  text-align: center;
 }
 
 .section__button {
@@ -889,7 +890,7 @@ figure:hover .gallery__img{
   /* width: 660px; */
   width: 110%;
   background: rgba(242, 242, 242, 0.9);
-  border: 1px solid var(--color-dark);
+  box-shadow: 2px 4px 15px rgb(6 12 70 / 10%);
 }
 
 .section__block-picture-right {
@@ -906,23 +907,19 @@ figure:hover .gallery__img{
   padding: var(--grid-gutter);
    padding-right: 80px;
   position: absolute;
-  /* width: 660px; */
   width: 110%;
   background: rgba(242, 242, 242, 0.9);
-  border: 1px solid var(--color-dark);
+  box-shadow: 2px 4px 15px rgb(6 12 70 / 10%);
  
 }
 
 .section__box--picture-left {
   display: flex;
   justify-content: flex-end;
-  
 }
 
- /* ****************************************************************** */
-
 /* =========================================================PAGE ABOUT US=========================================================== */
- /* ABOUT US */
+/* ABOUT US */
 
 /* section hero banner */
 
@@ -983,6 +980,7 @@ figure:hover .gallery__img{
 .section-safety {
   overflow: hidden;
   background-color: var(--color-light);
+  padding: 30px;
 }
 
 /* BENEFITS */
@@ -1013,7 +1011,9 @@ figure:hover .gallery__img{
 /* SERVICES */
 
 .section-services {
-overflow: hidden;
+  overflow: hidden;
+  padding: 30px;
+  background: var(--color-light)
 }
 
 .section-services__title {
@@ -1039,7 +1039,7 @@ overflow: hidden;
 }
 
 .section-jumps__card {
-  border: 1px solid #828282;
+  box-shadow: 2px 4px 15px rgb(6 12 70 / 10%);
   display: block;
   position: relative;
   overflow: hidden;
@@ -1061,23 +1061,24 @@ overflow: hidden;
   padding: 60px;
 }
 
-
 .section-jumps__img {
   width: 100%;
 }
 
 .section-jumps__card-small {
-  width: calc(470/630 * 100%);
+  max-width: calc(390/524 * 100%);
   background-color: var(--color-light);
   margin-top: -40px;
   position: relative;
   padding: calc(var(--grid-gutter)/2);
   margin-left: auto;
   margin-right: auto;
+
 }
 
-.section-jumps__card-button .button {
-  margin: 80px;
+.section-jumps__card-button {
+  max-width: 255px;
+  margin: 0 auto;
 }
 
 .section-jumps__card-container {
@@ -1151,7 +1152,7 @@ overflow: hidden;
 }
 
 .section-flights__card {
-  border: 1px solid #828282;
+  box-shadow: 2px 4px 15px rgb(6 12 70 / 10%);
 }
 
 .section-flights__card-small {
@@ -1164,8 +1165,8 @@ overflow: hidden;
   margin-left: auto;
   margin-right: auto;
   display: flex;
-    flex-direction: column;
-    align-items: center;
+  flex-direction: column;
+  align-items: center;
    
 }
 
@@ -1178,9 +1179,9 @@ overflow: hidden;
   line-height: 45px;
 }
 
-.section-flights__card-button .button {
-  /* margin-left: 80px; */
-}
+/* .section-flights__card-button .button {
+  margin-left: 80px;
+} */
 
 .section-flights__card-container {
   display: grid;
@@ -1222,13 +1223,12 @@ overflow: hidden;
 
 .section-flights__card-small--horizontal {
   margin-top: 0;
-  padding: 30px 110px;
+  padding: 30px;
 }
 
 /* hover карточеки */
 .section-flights__card {
-  border: 1px solid #828282;
-
+  box-shadow: 2px 4px 15px rgb(6 12 70 / 10%);
   display: block;
   position: relative;
   overflow: hidden;
@@ -1277,7 +1277,7 @@ overflow: hidden;
 }
 
 .section-planes__card {
-  border: 1px solid #828282;
+  box-shadow: 2px 4px 15px rgb(6 12 70 / 10%);
   background-color: var(--color-light)
 }
 
@@ -1356,20 +1356,19 @@ overflow: hidden;
 }
 
 /* addservices*/
-.section-addservices__start {
-  background: var(--color-light-grey);
-}
 
 .section-addservices {
   background: var(--color-light-grey);
+  padding: 60px;
+
 }
 .section-addservices__title {
   text-align: center;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 .section-addservices {
-overflow: hidden;
+  overflow: hidden;
 }
 
 /* =========================================================PAGE COURSES=========================================================== */
@@ -1384,6 +1383,7 @@ overflow: hidden;
 
 .section-accordeon__flex {
   display: flex;
+  max-width: 1120px;
 }
 
 .section-accordeon__content {
@@ -1405,6 +1405,8 @@ overflow: hidden;
 
 .accordeon__item {
   margin-bottom: 20px;
+  background-color: var(--color-light);
+  border-radius: 10px;
 }
 
 .accordeon__item:last-child {
@@ -1412,14 +1414,13 @@ overflow: hidden;
 }
 
 /* faq-card */
-
 .faq-card {
-  border: 1px solid rgba(130, 130, 130, 1);
-  padding: 30px;
+  box-shadow: 2px 4px 15px rgb(6 12 70 / 10%);
+  padding: 15px;
 }
 
 .faq-card--opened {
-  border: 1px solid rgba(130, 130, 130, 1);
+  box-shadow: 2px 4px 15px rgb(6 12 70 / 10%);
 }
 
 .faq-card--opened .faq-card__content {
@@ -1427,7 +1428,7 @@ overflow: hidden;
 }
 
 .faq-card__toggle {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 600;
   color: var(--color-dark);
   display: flex;
@@ -1441,12 +1442,6 @@ overflow: hidden;
 
 .faq-card__toggle--opened .faq-card__icon {
   transform: rotate(45deg);
-}
-
-.faq-card__icon {
-  width: 48px;
-  height: 48px;
-  background: url('/images/svg/plus.svg') no-repeat;
 }
 
 .faq-card--opened .faq-card__icon {
@@ -1464,6 +1459,7 @@ overflow: hidden;
 
 .faq-card__content p {
   margin:  0 0 14px;
+  padding-top: 20px;
 }
 
 .faq-card__content p:last-child {
@@ -1474,8 +1470,9 @@ overflow: hidden;
   margin-bottom: 0;
 }
 
-/* section-requirements */
 
+
+/* section-requirements */
 .section-requirements {
   background-color: var(--color-light);
 }
@@ -1526,7 +1523,7 @@ iframe {
 /* form  для контактов*/
 .section-form__map {
   margin: 60px 0;
-  border: 1px solid var(--color-dark);
+  box-shadow: 2px 4px 15px rgb(6 12 70 / 10%);
 }
 
 .section-map__content-form {
@@ -1546,8 +1543,7 @@ iframe {
 
 
 /* =========================================================ADAPTIVE=========================================================== */
-@media screen and (max-width: 1250px) {
-
+@media screen and (max-width: 1000px) {
   .section-main__subtitle {
     font-size: 64px;
   }
@@ -1587,11 +1583,11 @@ iframe {
     flex-direction: column-reverse;
   }
 
-.section-main__poster img {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
+  .section-main__poster img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
 
   .section-main__left {
     align-items: center;
@@ -1630,35 +1626,35 @@ iframe {
     display: block;
   }
 
-.section-about-us__title,
-.section-about-us__text  {
-  text-align: center;
-}
+  .section-about-us__title,
+  .section-about-us__text  {
+    text-align: center;
+  }
 
-.section-about-us__left {
-  flex-direction: column-reverse;
-}
+  .section-about-us__left {
+    flex-direction: column-reverse;
+  }
 
-.section-about-us__text-blok {
-  align-items: center;
-  margin: 0;
-  width: 100%;
-  padding: calc(var(--grid-gutter)/2);
-}
+  .section-about-us__text-blok {
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    padding: calc(var(--grid-gutter)/2);
+  }
 
-.section-benefits__item-wrapper {
-   column-gap: calc(var(--grid-gutter)/2);
-}
+  .section-benefits__item-wrapper {
+    column-gap: calc(var(--grid-gutter)/2);
+  }
 
-.section-benefits__icon {
-  margin-right: calc(var(--grid-gutter)/4);
-}
+  .section-benefits__icon {
+    margin-right: calc(var(--grid-gutter)/4);
+  }
 
 /* ##################################### */
 /* card pages*/
-.section__content-picture-right,
-.section__content-picture-left {
-  padding: 30px;
+  .section__content-picture-right,
+  .section__content-picture-left {
+    padding: 30px;
   }
 
 .section__title {
@@ -1666,8 +1662,9 @@ iframe {
   line-height: 45px;
   
 }
+
 .section__box {
-  width: 70%;
+  /* width: 70%; */
   z-index: 2;
 }
 
@@ -1708,10 +1705,10 @@ iframe {
     margin: 15px 0;
     text-align: center;
 }
-
+/* 
 .section-jumps__card-button .button {
     margin: 15px 0;
-}
+} */
 
 .section-flights__img--horizontal {
   width: 50%;
@@ -1882,97 +1879,106 @@ iframe {
     margin-right: 0;
     margin-bottom: calc(var(--grid-gutter)/4);
   }
-  
-/* section-about-us  */
-.section-our-team__card-wrapper {
-  grid-template-columns: repeat(2, 1fr);
-}
+    
+  /* section-about-us  */
+  .section-our-team__card-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-/* section clouds */
-.section-clouds-text,
-.section-clouds__blok-text span {
-  width: 100%;
-  font-size: 24px;
-  line-height: 35px;
-  text-align: center;
-}
-/* section form */
-.section-form__content {
-  padding: calc(var(--grid-gutter)/2);
-}
-
-.section-form__title {
-  font-size: 26px;
-  margin-bottom: calc(var(--grid-gutter)/4);
-}
-
-.section-form__row {
-  width: 100%;
-}
-
-/* heading */
-.heading {
-  font-size: 36px;
-  margin-bottom: calc(var(--grid-gutter)/2);
-}
-
-.section-main__text span {
-  font-size: 42px;
-  margin-bottom: calc(var(--grid-gutter)/2);
-}
-/* footer */
-
-.page-footer__bottom {
-  display: inherit;
-}
-
-.page-footer__socials {
-  margin-top: calc(var(--grid-gutter)/4);
-}
-
-/* slider */
-.swiper-button-prev,
-.swiper-button-next {
-  display: none;
-}
-
-.section-main-services__text p {
-  display: none;
-}
-
-/* полеты */
-.section-planes__card-content {
-    padding: calc(var(--grid-gutter)/4);
-}
-
-.section-flights__card-small,
-.section-jumps__card-small {
+  /* section clouds */
+  .section-clouds-text,
+  .section-clouds__blok-text span {
     width: 100%;
-    background-color: var(--color-light);
-     margin-top: 0;
-}
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+  }
+  /* section form */
+  .section-form__content {
+    padding: calc(var(--grid-gutter)/2);
+  }
 
-.section-flights__card-button a,
-.section-jumps__card-button a {
-  padding: 0 35px;
-}
+  .section-form__title {
+    font-size: 26px;
+    margin-bottom: calc(var(--grid-gutter)/4);
+  }
 
-.popup__content--card {
-    max-width: 100%;
-    padding: 30px;
-}
+  .section-form__row {
+    width: 100%;
+  }
 
-.popup__content--card h3 {
-  font-size: 24px; 
-  margin-left: 0;
-  margin-bottom: 15px;
-}
+  /* heading */
+  .heading {
+    font-size: 36px;
+    margin-bottom: calc(var(--grid-gutter)/2);
+  }
 
-.popup__content--card p {
-  font-size: 16px;
-  line-height: 130%;
-}
+  .section-main__text span {
+    font-size: 42px;
+    margin-bottom: calc(var(--grid-gutter)/2);
+  }
+  /* footer */
 
+  .page-footer__bottom {
+    display: inherit;
+  }
+
+  .page-footer__socials {
+    margin-top: calc(var(--grid-gutter)/4);
+  }
+
+  /* slider */
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+
+  .section-main-services__text p {
+    display: none;
+  }
+
+  /* полеты */
+  .section-planes__card-content {
+      padding: calc(var(--grid-gutter)/4);
+  }
+
+  .section-flights__card-small,
+  .section-jumps__card-small {
+      width: 100%;
+      background-color: var(--color-light);
+      margin-top: 0;
+  }
+
+  .section-flights__card-button a,
+  .section-jumps__card-button a {
+    padding: 0 35px;
+  }
+
+  .popup__content--card {
+      max-width: 100%;
+      padding: 30px;
+  }
+
+  .popup__content--card h3 {
+    font-size: 24px; 
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+
+  .popup__content--card p {
+    font-size: 16px;
+    line-height: 130%;
+  }
+
+  /* секции с услугами чтобы помещался текст */
+  .section__content-picture-right, 
+  .section__content-picture-left {
+    position: static;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1987,20 +1993,18 @@ iframe {
     margin-bottom: 30px;
   }
 
-.section-additional-services h2 {
-  font-size: 24px;
-  margin-top: 30px;
-}
-
+  .section-additional-services h2 {
+    font-size: 24px;
+    margin-top: 30px;
+  }
 
   .section-additional-services .section-icons {
     grid-template-columns: 1fr;
   }
 
-
  .section-icons__text {
-  font-size: 90%;
-}
+    font-size: 90%;
+  }
 
   /* section-requirements */
   .section-requirements .section-icons {
@@ -2033,172 +2037,188 @@ iframe {
   .page-footer__contact-column:first-child {
   margin-bottom: 20px;
   margin-right: 0;
-}
+  }
 
- /* section clouds */
-.section-clouds-text,
-.section-clouds__blok-text span {
-  width: 100%;
-  font-size: 24px;
-  line-height: 35px;
-  text-align: center;
-}
-/* section form */
-.section-form__content {
-  padding: calc(var(--grid-gutter)/2);
-}
-
-.section-form__title {
-  font-size: 26px;
-  margin-bottom: calc(var(--grid-gutter)/4);
-}
-
-/* section about us */
-.section-about-us__text-blok {
-  width: 100%;
-}
-
-.section-about-us__text-blok .button {
-  margin-top: 30px;
-}
-
-
-/* heading */
-.heading {
-  font-size: 30px;
-  line-height: 120%;
-  margin-bottom: calc(var(--grid-gutter)/2);
-}
-
-.section-main__text span {
-  font-size: 42px;
-  margin-bottom: calc(var(--grid-gutter)/2);
-}
-/* slider */
-
-.section-main-services__text-block {
-  padding: calc(var(--grid-gutter)/4);
-}
-.section-main-services__title {
-font-size: 22px;
-line-height: 120%;
-}
-
-
-.section-main-services__actions .button,
-.section-main-services__actions--add .button {
-  padding: calc(var(--grid-gutter)/2);
-  margin-top: 0px;
-}
-
-
-/* Стили для текстового поля с кнопкой "Далее" для иконок flights */
-.section-program__text {
-  line-height: 25px;
-}
-
-.limiter {
-  max-height: 200px;
-  overflow: hidden;
-  position: relative;
-}
-
-.limiter .bottom__limiter {
-  position: absolute;
-  bottom: 0;
-  background: linear-gradient(
-    to bottom,
-    rgb(242 242 242 / 0%),
-    rgba(242 242 242) 90%);
-  width: 100%;
-  height: 60px;
-  opacity: 1;
-  transition: 0.3s;
-}
-
-.read-more-checker {
-  opacity: 0;
-  position: absolute;
-}
-.read-more-checker:checked ~ .limiter {
-  max-height: none;
-}
-.read-more-checker:checked ~ .limiter .bottom {
-  opacity: 0;
-  transition: 0.3s;
-}
-.read-more-checker~ .read-more-button:before {
-  content: "Подробнее... »";
-}
-.read-more-checker:checked ~ .read-more-button:before {
-  content: "Свернуть «";
-}
-
-.read-more-button {
-  cursor: pointer;
-  display: inline-block;
-  color: #777;
-  text-decoration: underline;
-  padding-left: 30px;
-  padding-bottom: calc(var(--grid-gutter)/4);
-}
-/* card jumps */
-.section-jumps__card-title {
-  font-size: 28px;
-}
-
-.section-jumps__card-subtitle {
-  font-size: 20px;
-}
-
-/* card flights */
-.section-flights__card-title {
+  /* section clouds */
+  .section-clouds-text,
+  .section-clouds__blok-text span {
+    width: 100%;
     font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+  }
+  /* section form */
+  .section-form__content {
+    padding: calc(var(--grid-gutter)/2);
+  }
+
+  .section-form__title {
+    font-size: 26px;
+    margin-bottom: calc(var(--grid-gutter)/4);
+  }
+
+  /* section about us */
+  .section-about-us__text-blok {
+    width: 100%;
+  }
+
+  .section-about-us__text-blok .button {
+    margin-top: 30px;
+  }
+
+
+  /* heading */
+  .heading {
+    font-size: 30px;
+    line-height: 120%;
+    margin-bottom: calc(var(--grid-gutter)/2);
+  }
+
+  .section-main__text span {
+    font-size: 42px;
+    margin-bottom: calc(var(--grid-gutter)/2);
+  }
+  /* slider */
+
+  .section-main-services__text-block {
+    padding: calc(var(--grid-gutter)/4);
+  }
+  .section-main-services__title {
+  font-size: 22px;
+  line-height: 120%;
+  }
+
+
+  .section-main-services__actions .button,
+  .section-main-services__actions--add .button {
+    padding: calc(var(--grid-gutter)/2);
+    margin-top: 0px;
+  }
+
+
+  /* Стили для текстового поля с кнопкой "Далее" для иконок flights */
+  .section-program__text {
+    line-height: 25px;
+  }
+
+  .limiter {
+    max-height: 200px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .limiter .bottom__limiter {
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(
+      to bottom,
+      rgb(242 242 242 / 0%),
+      rgba(242 242 242) 90%);
+    width: 100%;
+    height: 60px;
+    opacity: 1;
+    transition: 0.3s;
+  }
+
+  .read-more-checker {
+    opacity: 0;
+    position: absolute;
+  }
+  .read-more-checker:checked ~ .limiter {
+    max-height: none;
+  }
+  .read-more-checker:checked ~ .limiter .bottom {
+    opacity: 0;
+    transition: 0.3s;
+  }
+  .read-more-checker~ .read-more-button:before {
+    content: "Подробнее... »";
+  }
+  .read-more-checker:checked ~ .read-more-button:before {
+    content: "Свернуть «";
+  }
+
+  .read-more-button {
+    cursor: pointer;
+    display: inline-block;
+    color: #777;
+    text-decoration: underline;
+    padding-left: 30px;
+    padding-bottom: calc(var(--grid-gutter)/4);
+  }
+
+  /* card jumps */
+  .section-jumps__card-title {
+    font-size: 28px;
+  }
+
+  .section-jumps__card-subtitle {
+    font-size: 20px;
+  }
+
+  /* card flights */
+  .section-flights__card-title {
+      font-size: 24px;
+      line-height: 130%;
+  }
+
+  .section-flights__card-title:after {
+      margin-top: 15px; 
+    margin-bottom: 15px;
+  }
+
+  /* acсordeon */
+  .section-accordeon__header {
+    margin-bottom: 15px;
+    margin-top: 30px;
+  }
+
+  .faq-card {
+    padding: 15px;
+  }
+
+  .faq-card__toggle {
+  font-size: 18px;
     line-height: 130%;
-}
+  }
 
-.section-flights__card-title:after {
-    margin-top: 15px; 
-   margin-bottom: 15px;
-}
+  .page-section {
+      padding: calc(var(--grid-gutter)/6);
+  }
 
-/* acсordeon */
-.section-accordeon__header {
-  margin-bottom: 15px;
-  margin-top: 30px;
-}
+  .section-accordeon .container{
+      padding: 0;
+  }
 
-.faq-card {
-  padding: 15px;
-}
+  /* секции с услугами чтобы помещался текст */
+  .section__box {
+    width: 100%;
+  }
 
-.faq-card__toggle {
- font-size: 18px;
-  line-height: 130%;
-}
+  .section__poster-img {
+    display: none;
+  }
 
-.page-section {
-    padding: calc(var(--grid-gutter)/6);
-}
-
-.section-accordeon .container{
-    padding: 0;
-}
+  .section__block-picture-left,
+  .section__block-picture-right{
+    display: block;
+  }
 
 }
+
 
 /* доп. точка чтобы только от 350 менялся шрифт */
 @media screen and (max-width: 350px) {
   .section-flights__card-title {
     font-size: 21px;
-}
-.section-flights__card-text {
-  font-size: 16px;
-  line-height: 130%;
-}
-
-.section-flights__card-button {
-  font-size: 16px;
-}
-
   }
+
+  .section-flights__card-text {
+    font-size: 16px;
+    line-height: 130%;
+  }
+
+  .section-flights__card-button {
+    font-size: 16px;
+  }
+}

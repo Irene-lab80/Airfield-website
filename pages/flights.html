@@ -49,40 +49,33 @@
                     <li class="mainmenu__item">
                         <a class="mainmenu__link" href="./contacts.html">КОНТАКТЫ</a>
                     </li>
-                </ul>
-
-                
-
-            </nav>            
-
+                </ul>               
+            </nav>          
         </div>
     </header>
 
 <main>
+    <!-- BANNER FLIGHTS -->
     <section class="section-pages">
         <div class="container">
             <div class="section-pages__banner">
-                <div class="section__poster">
-                    <img src="../images/plane_banner.jpg" height="892" alt="plane-banner">
-                </div>            
-                <div class="section-pages__box">
-                    <div class="section-pages__content">
-                        
-                            <h1 class="section__title-banner heading">Полеты на самолетах</h1>
-                        
-                        <div class="section__text">
-                            <p>В настоящее время «малая авиация» завоевывает все большую популярность в мире и в России. Самолеты малой авиации широко востребованы как для деловых, так и для развлекательных целей. Бесспорным их преимуществом считается возможность приземляться в небольших аэропортах с укороченной взлетно-посадочной полосой. Это дает возможность совершать полеты в труднодоступные места, где не налажено регулярное авиасообщение. </p>
-                            <p>У нас вы сможете в полной мере воспользоваться всеми преимуществами самолетов малой авиации. На ваш выбор более десятка самых популярных моделей самолетов, на которых вы сможете насладиться высотой, скоростью  и открывающимися пейзажами.</p>
-                        </div>
+                <div class="section-pages__content">
+                    <h1 class="section__title-banner heading">Полеты на самолетах</h1>                        
+                    <div class="section__text">
+                        <p>В настоящее время «малая авиация» завоевывает все большую популярность в мире и в России. Самолеты малой авиации широко востребованы как для деловых, так и для развлекательных целей. Бесспорным их преимуществом считается возможность приземляться в небольших аэропортах с укороченной взлетно-посадочной полосой. Это дает возможность совершать полеты в труднодоступные места, где не налажено регулярное авиасообщение. </p>
+                        <p>У нас вы сможете в полной мере воспользоваться всеми преимуществами самолетов малой авиации. На ваш выбор более десятка самых популярных моделей самолетов, на которых вы сможете насладиться высотой, скоростью  и открывающимися пейзажами.</p>
                     </div>
                 </div>
+                <div class="section-pages__picture">
+                    <img src="../images/plane_banner.jpg" alt="plane_banner">
+                </div>                       
             </div>            
         </div>
     </section>
 
     <!-- SECTION OUR FLIGHTS -->
     <section class="section-flights page-section">
-        <div class="container">
+        <div class="container-small">
             <div class="section-flights__card-container">
                 <div class="section-flights__card">
                     <div class="section-flights__card-see">
@@ -131,7 +124,7 @@
 
     <!-- SECTION PLANES -->
     <section class="section-planes page-section">
-        <div class="container">
+        <div class="container-small">
             <h2 class="section-planes__title heading">Наши самолеты</h2>
             <div class="section-planes__container">
                 <div class="section-planes__card">
@@ -237,11 +230,8 @@
                         </div>
                         <div class="bottom__limiter"></div>
                     </div>
-                    <label for="read-more-checker" class="read-more-button"></label>
-                       
-                       
+                        <label for="read-more-checker" class="read-more-button"></label>  
                     </div>
-                    
                 </div>
                 <div class="section-programs__card">
                     <div class="section-programs__card-inner">
@@ -288,8 +278,7 @@
         </div>
     </section>
 
-<!-- section-addservices(аренда)-->
- 
+    <!-- section-addservices(аренда)-->
     <section class="section-addservices">
         <div class="container">
             <div class="section-addservices__title">
@@ -297,11 +286,10 @@
             </div>
             <div class="section__block-picture-left">
                 <div class="section__poster section__poster-left">
-                    <img src="../images/aircraft_rental.png" height="655" alt="">
+                    <img class="section__poster-img" src="../images/aircraft_rental.jpg" alt="aircraft_rental">
                 </div>
     
-                <div class="section__box section__box--picture-left">
-                    
+                <div class="section__box section__box--picture-left">                    
                     <div class="section__content-picture-left">
                         <p><a name="rent"></a></p>
                         <div class="section__header">
@@ -354,7 +342,7 @@
                     </div>
                 </div>
                 <div class="section__poster section__poster-right">
-                    <img src="../images/aircraft_repair.png" height="655" alt="">
+                    <img class="section__poster-img" src="../images/aircraft_repair.jpg" alt="aircraft_repair">
                 </div>
             </div>
         </div>
@@ -364,7 +352,7 @@
         <div class="container">
             <div class="section__block-picture-left">
                 <div class="section__poster section__poster-left section__poster-left--gift">
-                    <img src="../images/sertificates_picture.jpg" height="670" alt="">
+                    <img class="section__poster-img" src="../images/sertificates_picture.jpg" alt="sertificates_picture">
                 </div>
     
                 <div class="section__box section__box--picture-left">
@@ -385,6 +373,118 @@
             </div>
         </div>
     </section>
+
+    <!-- Подробнее with our instructor-->
+    <div id="instructor" class="instructor">
+        <div class="popup__body">
+            <div class="popup__content popup__content--card">
+                <a href="#" class="popup__close">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="8.48528" y1="26.163" x2="26.1629" y2="8.48534" stroke="#333333" stroke-width="2" />
+                        <line x1="26.163" y1="26.8702" x2="8.48534" y2="9.19252" stroke="#333333" stroke-width="2" />
+                    </svg>
+                </a>
+                <h3 class="section-flights__title heading">Полеты <br>с нашим пилотом</h3>
+                <p>Наш аэродром предлагает Вам совершить ознакомительный полёт в качестве курсанта на
+                    спортивно-пилотажном самолёте. Все
+                    полёты выполняют квалифицированные лётчики-инструкторы, Мастера спорта по высшему пилотажу.
+                    По желанию лётчик выполнит любые фигуры пилотажа, или же вы просто можете полетать, любуясь видами,а
+                    также попробовать
+                    управлять самолётом под контролем инструктора. Во время полёта у вас будет двусторонняя радиосвязь с
+                    лётчиком, и вы
+                    сможете задавать любые вопросы и высказывать пожелания.
+                    Все полеты проходят в Нижегородской области.
+                </p>
+                <p>Стоимость полёта от 6750 рублей за 30 минут, каждая последующая минута - 450 рублей. Количество участников: до 3 пассажиров.</p>
+                <p>Задать интересующиевопросы можно по телефону <br>+7(000)674-45-78</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Подробнее pleasure flights-->
+    <div id="walk" class="walk">
+        <div class="popup__body">
+            <div class="popup__content popup__content--card">
+                <a href="#" class="popup__close">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="8.48528" y1="26.163" x2="26.1629" y2="8.48534" stroke="#333333" stroke-width="2" />
+                        <line x1="26.163" y1="26.8702" x2="8.48534" y2="9.19252" stroke="#333333" stroke-width="2" />
+                    </svg>
+                </a>
+    
+                <h3 class="section-flights__title heading">Прогулочные полеты</h3>
+                <p>Полеты над рекой, полеты над Нижним Новгородом и красотами Нижегородской области.
+                    Большой популярностью у нас пользуются полеты на самолете прогулочного типа. Они позволяют увидеть мир из
+                    поднебесья,
+                    ознакомиться с местными достопримечательностями и живописными пейзажами. Это захватывающее путешествие, которое
+                    зарядит
+                    вас новой энергией, подарит новые впечатления. Мы предлагаем на выбор несколько программ и маршрутов, которые
+                    могут быть
+                    изменены и подстроены под ваши пожелания.</p>
+                
+                <p>Стоимость полёта от 8000 рублей за 30 минут, каждая последующая минута - 450 рублей. Количество участников: до 2
+                    человек.</p>
+    
+                <p>Задать интересующиевопросы можно по телефону <br>+7(000)674-45-78</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Подробнее by_yourself-->
+    <div id="by_yourself" class="by_yourself">
+        <div class="popup__body">
+            <div class="popup__content popup__content--card">
+                <a href="#" class="popup__close">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="8.48528" y1="26.163" x2="26.1629" y2="8.48534" stroke="#333333" stroke-width="2" />
+                        <line x1="26.163" y1="26.8702" x2="8.48534" y2="9.19252" stroke="#333333" stroke-width="2" />
+                    </svg>
+                </a>
+    
+                <h3 class="section-flights__title heading">Самостоятельные полеты</h3>
+                <p>Существует много способов покорить воздушное пространство, и каждый полёт по-своему неповторим. Вы можете стать
+                    участником этого действа. Спокойные полёты для одного позволят насладиться видами и познать новые эмоции,
+                    ощутить
+                    воздушный мир и стать его частичкой.</p>
+                
+                <p>Стоимость полёта от 9700 рублей за 30 минут, каждая последующая минута - 450 рублей.
+                    Количество участников: до 2 человек.</p>
+                <p>Также аэродром «Сокольский» предлагает долгосрочную аренду самолетов для постоянных членов клуба. Что позволит
+                    всегда
+                    иметь в распоряжении воздушное судно, что очень удобно, если Вы постоянно совершаете полеты.</p>
+                <p>Узнать стоимость аренды и
+                    задать интересующиевопросы можно по телефону <br>+7(000)674-45-78</p>
+            </div>
+        </div>
+    </div>
+    <!-- Подробнее by_yourself-->
+    <div id="by_yourself" class="by_yourself">
+        <div class="popup__body">
+            <div class="popup__content popup__content--card">
+                <a href="#" class="popup__close">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="8.48528" y1="26.163" x2="26.1629" y2="8.48534" stroke="#333333" stroke-width="2" />
+                        <line x1="26.163" y1="26.8702" x2="8.48534" y2="9.19252" stroke="#333333" stroke-width="2" />
+                    </svg>
+                </a>
+    
+                <h3 class="section-flights__title heading">Самостоятельные полеты</h3>
+                <p>Существует много способов покорить воздушное пространство, и каждый полёт по-своему неповторим. Вы можете стать
+                    участником этого действа. Спокойные полёты для одного позволят насладиться видами и познать новые эмоции,
+                    ощутить
+                    воздушный мир и стать его частичкой.</p>
+                
+                <p>Стоимость полёта от 9700 рублей за 30 минут, каждая последующая минута - 450 рублей.
+                    Количество участников: до 2 человек.</p>
+                <p>Также аэродром «Сокольский» предлагает долгосрочную аренду самолетов для постоянных членов клуба. Что позволит
+                    всегда
+                    иметь в распоряжении воздушное судно, что очень удобно, если Вы постоянно совершаете полеты.</p>
+                <p>Узнать стоимость аренды и
+                    задать интересующиевопросы можно по телефону +7(000)674-45-78</p>
+            </div>
+        </div>
+    </div>
 
     <!-- FOOTER -->
     <footer class="page-footer">
@@ -422,9 +522,7 @@
                             <a href="tel:+175684565612">+7 (000) 674-45-78</a>
                         </div>
                    </address>
-                </div>
-                
-                
+                </div>               
             </div>           
 
            <div class="page-footer__bottom">
@@ -458,136 +556,8 @@
                         </li>
                    </ul>                    
                </div>
-           </div>
-            
-        </div>
-        
+           </div>            
+        </div>        
     </footer>
-
-<section>
-    <!-- Подробнее with our instructor-->
-    <div id="instructor" class="instructor">
-        <div class="popup__body">
-            <div class="popup__content popup__content--card">
-                <a href="#" class="popup__close">
-                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line x1="8.48528" y1="26.163" x2="26.1629" y2="8.48534" stroke="#333333" stroke-width="2" />
-                        <line x1="26.163" y1="26.8702" x2="8.48534" y2="9.19252" stroke="#333333" stroke-width="2" />
-                    </svg>
-                </a>
-
-                <h3 class="section-flights__title heading">Полеты <br>с нашим пилотом</h3>
-                <p>Наш аэродром предлагает Вам совершить ознакомительный полёт в качестве курсанта на
-                    спортивно-пилотажном самолёте. Все
-                    полёты выполняют квалифицированные лётчики-инструкторы, Мастера спорта по высшему пилотажу.
-                    По желанию лётчик выполнит любые фигуры пилотажа, или же вы просто можете полетать, любуясь видами,а
-                    также попробовать
-                    управлять самолётом под контролем инструктора. Во время полёта у вас будет двусторонняя радиосвязь с
-                    лётчиком, и вы
-                    сможете задавать любые вопросы и высказывать пожелания.
-                    Все полеты проходят в Нижегородской области.</p>
-                
-                <p>Стоимость полёта от 6750 рублей за 30 минут, каждая последующая минута - 450 рублей. Количество
-                    участников: до 3
-                    пассажиров.</p>
-
-                <p>Задать интересующиевопросы можно по телефону <br>+7(000)674-45-78</p>
-
-
-            </div>
-
-        </div>
-    </div>
-
-    <!-- Подробнее pleasure flights-->
-    <div id="walk" class="walk">
-        <div class="popup__body">
-            <div class="popup__content popup__content--card">
-                <a href="#" class="popup__close">
-                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line x1="8.48528" y1="26.163" x2="26.1629" y2="8.48534" stroke="#333333" stroke-width="2" />
-                        <line x1="26.163" y1="26.8702" x2="8.48534" y2="9.19252" stroke="#333333" stroke-width="2" />
-                    </svg>
-                </a>
-    
-                <h3 class="section-flights__title heading">Прогулочные полеты</h3>
-                <p>Полеты над рекой, полеты над Нижним Новгородом и красотами Нижегородской области.
-                    Большой популярностью у нас пользуются полеты на самолете прогулочного типа. Они позволяют увидеть мир из
-                    поднебесья,
-                    ознакомиться с местными достопримечательностями и живописными пейзажами. Это захватывающее путешествие, которое
-                    зарядит
-                    вас новой энергией, подарит новые впечатления. Мы предлагаем на выбор несколько программ и маршрутов, которые
-                    могут быть
-                    изменены и подстроены под ваши пожелания.</p>
-                
-                <p>Стоимость полёта от 8000 рублей за 30 минут, каждая последующая минута - 450 рублей. Количество участников: до 2
-                    человек.</p>
-    
-                <p>Задать интересующиевопросы можно по телефону <br>+7(000)674-45-78</p>
-            </div>
-        </div>
-    </div>
-
-        <!-- Подробнее by_yourself-->
-        <div id="by_yourself" class="by_yourself">
-            <div class="popup__body">
-                <div class="popup__content popup__content--card">
-                    <a href="#" class="popup__close">
-                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <line x1="8.48528" y1="26.163" x2="26.1629" y2="8.48534" stroke="#333333" stroke-width="2" />
-                            <line x1="26.163" y1="26.8702" x2="8.48534" y2="9.19252" stroke="#333333" stroke-width="2" />
-                        </svg>
-                    </a>
-        
-                    <h3 class="section-flights__title heading">Самостоятельные полеты</h3>
-                    <p>Существует много способов покорить воздушное пространство, и каждый полёт по-своему неповторим. Вы можете стать
-                        участником этого действа. Спокойные полёты для одного позволят насладиться видами и познать новые эмоции,
-                        ощутить
-                        воздушный мир и стать его частичкой.</p>
-                    
-                    <p>Стоимость полёта от 9700 рублей за 30 минут, каждая последующая минута - 450 рублей.
-                        Количество участников: до 2 человек.</p>
-                    <p>Также аэродром «Сокольский» предлагает долгосрочную аренду самолетов для постоянных членов клуба. Что позволит
-                        всегда
-                        иметь в распоряжении воздушное судно, что очень удобно, если Вы постоянно совершаете полеты.</p>
-                    <p>Узнать стоимость аренды и
-                        задать интересующиевопросы можно по телефону <br>+7(000)674-45-78</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Подробнее by_yourself-->
-        <div id="by_yourself" class="by_yourself">
-            <div class="popup__body">
-                <div class="popup__content popup__content--card">
-                    <a href="#" class="popup__close">
-                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <line x1="8.48528" y1="26.163" x2="26.1629" y2="8.48534" stroke="#333333" stroke-width="2" />
-                            <line x1="26.163" y1="26.8702" x2="8.48534" y2="9.19252" stroke="#333333" stroke-width="2" />
-                        </svg>
-                    </a>
-        
-                    <h3 class="section-flights__title heading">Самостоятельные полеты</h3>
-                    <p>Существует много способов покорить воздушное пространство, и каждый полёт по-своему неповторим. Вы можете стать
-                        участником этого действа. Спокойные полёты для одного позволят насладиться видами и познать новые эмоции,
-                        ощутить
-                        воздушный мир и стать его частичкой.</p>
-                    
-                    <p>Стоимость полёта от 9700 рублей за 30 минут, каждая последующая минута - 450 рублей.
-                        Количество участников: до 2 человек.</p>
-                    <p>Также аэродром «Сокольский» предлагает долгосрочную аренду самолетов для постоянных членов клуба. Что позволит
-                        всегда
-                        иметь в распоряжении воздушное судно, что очень удобно, если Вы постоянно совершаете полеты.</p>
-                    <p>Узнать стоимость аренды и
-                        задать интересующиевопросы можно по телефону +7(000)674-45-78</p>
-                </div>
-            </div>
-        </div>
-
-</section>
-
-
-</main>
-
 </body>
 </html>
