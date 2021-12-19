@@ -38,6 +38,7 @@ body {
 nav a:hover {
   border-bottom: 1px solid var(--color-light);
   padding-bottom: 1px;
+  /* font-weight: 600; */
 }
 
 .mainmenu__item--current-page a {
@@ -99,6 +100,7 @@ nav a:hover {
 
 .logo {
   width: 350px;
+  display: block;
 }
 
 .page-header {
@@ -220,9 +222,9 @@ nav a:hover {
 }
 
 .button--main:hover {
-  /* background-color: var(--color-light);
-  color: var(--color-dark); */
-  opacity: 0.9;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  /* opacity: 0.9; */
 }
 
 /* section-about-us */
@@ -511,11 +513,11 @@ input::placeholder {
 }
 
 .input-field:focus {
-  border: 1px solid var(--color-dark);
+  border: 1px solid rgb(189, 189, 189);
   outline: none;
 }
 
-.section-form__field span {
+/* .section-form__field span {
   position: absolute;
   left: 15px;
   top: 23px;
@@ -529,12 +531,28 @@ input::placeholder {
   line-height: 45px;
   padding-left: 5px;
   padding-right: 5px;
-}
+} */
 
 textarea {
   resize: none;
+  min-height: 80px;
+  border: none;
+  background: var(--color-light);
+  outline: none;
+  width: 100%;
 }
 
+
+fieldset {
+  background-color: var(--color-light);
+  border-radius: 3px;
+  border: 1px solid rgb(189, 189, 189);
+}
+
+.section-form__fieldset {
+  font-size: 16px;
+  color: var(--color-dark);
+}
 /* ====================================================
 FOOTER 
 =======================================================*/
