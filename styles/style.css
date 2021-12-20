@@ -150,7 +150,7 @@ nav a:hover {
   color: var(--color-light);
   text-decoration: none;
   line-height: calc(27 / 18 * 100%);
-  font-size: 20px;
+  font-size: 18px;
 
 }
 
@@ -351,7 +351,7 @@ nav a:hover {
 /* ####################################################### */
 /* section quote */
 .section-clouds {
-  background: url('/images/fonclouds.png') no-repeat center;
+  background: url('../images/fonclouds.png') no-repeat center;
 }
 
 .section-clouds__blok-text {
@@ -428,7 +428,7 @@ nav a:hover {
 }
 
 .checkbox__input:checked + .checkbox__text::before{
-  background: var(--color-light) url('/images/svg/check.svg') no-repeat center center;
+  background: var(--color-light) url('../images/svg/check.svg') no-repeat center center;
 }
 
 .checkbox__input:focus-visible + .checkbox__text::before{
@@ -791,7 +791,7 @@ figure:hover .gallery__img{
 }
 
 .close:focus {
-  background: url('/images/svg/toggle.svg') no-repeat;
+  background: url('../images/svg/toggle.svg') no-repeat;
   transform: none;
 }
 
@@ -835,7 +835,7 @@ figure:hover .gallery__img{
 }
 
 .section-pages__content {
-  max-width: 40%;
+  width: 40%;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -1065,7 +1065,7 @@ figure:hover .gallery__img{
   width: 100%;
 }
 
-.section-jumps__card-small {
+/* .section-jumps__card-small {
   max-width: calc(390/524 * 100%);
   background-color: var(--color-light);
   margin-top: -40px;
@@ -1074,7 +1074,7 @@ figure:hover .gallery__img{
   margin-left: auto;
   margin-right: auto;
 
-}
+} */
 
 .section-jumps__card-button {
   max-width: 255px;
@@ -1155,19 +1155,19 @@ figure:hover .gallery__img{
   box-shadow: 2px 4px 15px rgb(6 12 70 / 10%);
 }
 
-.section-flights__card-small {
-  width: calc(470/630 * 100%);
-  background-color: var(--color-light);
-  margin-top: -40px;
-  position: relative;
-  /* padding: calc(var(--grid-gutter)/2); */
-  padding: var(--grid-gutter);
-  margin-left: auto;
-  margin-right: auto;
+.card-small {
   display: flex;
   flex-direction: column;
   align-items: center;
-   
+  justify-content: space-between;
+  max-width: 390px;
+  max-height: 550px;
+  position: relative;
+  padding: 30px;
+  margin-top: -40px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--color-light);
 }
 
 .section-flights__img {
@@ -1241,7 +1241,6 @@ figure:hover .gallery__img{
 
 .section-flights__card-see-flex {
   display: flex;
-  align-items: center;
 }
 
 /* .section-flights__card-hidden {
@@ -1711,7 +1710,7 @@ iframe {
 } */
 
 .section-flights__img--horizontal {
-  width: 50%;
+  max-width: 50%;
 }
 
 .section-flights__card-small--horizontal {
@@ -1719,8 +1718,7 @@ iframe {
     padding: 30px 10px;
 }
 
-.section-flights__card-small,
-.section-jumps__card-small {
+.card-small {
   padding: calc(var(--grid-gutter)/4);
   display: flex;
   flex-direction: column;
@@ -1749,8 +1747,8 @@ iframe {
 /* pages courses */
 
 .section-pages__content {
-  width: 310%;
-  padding: calc(var(--grid-gutter)/2);
+  padding: 0;
+  margin: 15px;
 }
 
 .section-form__map iframe {
@@ -1807,26 +1805,17 @@ iframe {
 }
 }
 
-@media screen and (max-width: 960px) {
-  /* отступ для карточки самостоятельные полеты */
-  .section-flights__card-title--merg-top {
-    margin-top: 45px;
-  }
-}
-
 
 @media screen and (max-width: 780px) {
-
-/* отступ для карточки самостоятельные полеты */
-  .section-flights__card-title--merg-top {
-    margin-top: 0;
-  }
-
   /* section-programs */
   .section-programs__icon {
     height: 100px;
   }
   
+  .section-flights__img--horizontal {
+    max-width: 100%;
+  }
+
   .section-programs__card-container {
     grid-template-columns: 1fr;
   } 
@@ -1942,16 +1931,10 @@ iframe {
       padding: calc(var(--grid-gutter)/4);
   }
 
-  .section-flights__card-small,
-  .section-jumps__card-small {
+  .card-small {
       width: 100%;
       background-color: var(--color-light);
       margin-top: 0;
-  }
-
-  .section-flights__card-button a,
-  .section-jumps__card-button a {
-    padding: 0 35px;
   }
 
   .popup__content--card {
@@ -1978,6 +1961,18 @@ iframe {
 
   .container {
     padding: 0 10px;
+  }
+
+  .section-pages__banner {
+    flex-direction: column-reverse;
+  }
+  
+  .section-pages__picture img {
+    width: 100%;
+  }
+
+  .section-pages__content {
+    width: 100%;
   }
 }
 
@@ -2204,6 +2199,10 @@ iframe {
     display: block;
   }
 
+  .section-addservices {
+    padding: 15px;
+  }
+
 }
 
 
@@ -2221,4 +2220,6 @@ iframe {
   .section-flights__card-button {
     font-size: 16px;
   }
+
+ 
 }
