@@ -43,22 +43,14 @@
     </header>
 
     <main>
-
-        <!-- section-contacts-->
-        <section class="section-contacts">
+        <!-- BANNER -->
+        <section class="section-pages">
             <div class="container">
                 <div class="section-pages__banner">
-                    <div class="section__poster">
-                        <img src="../images/contacts.png" height="848" alt="">
-                    </div>
-
-                    <div class="section-pages__box">
-                        <div class="section-pages__content">
-                            <div class="section-contacts__header">
-                                <h2 class="section__title-banner heading">Как до нас добраться</h2>
-                            </div>
-                            <div class="section__text">
-                                <p>Расстояние от аэродрома «Сокольский» до Нижнего Новгорода — 160 км. Доехать до аэродромного комплекса можно на личном или арендованном автомобиле, на такси, с помощью трансфера или на каршеринговом автомобиле.</p>
+                    <div class="section-pages__content">
+                        <h2 class="section__title-banner heading">Как до нас добраться</h2>                        
+                        <div class="section__text">
+                            <p>Расстояние от аэродрома «Сокольский» до Нижнего Новгорода — 160 км. Доехать до аэродромного комплекса можно на личном или арендованном автомобиле, на такси, с помощью трансфера или на каршеринговом автомобиле.</p>
                                 <p>Время в пути на автомобиле — от 2 часов.</p>
                                 <p>Расписание организованного аэродромом транфера, цены и карту с маршрутом для автомобилистов можно уточнить заполнив форму обратной связи.</p>
                                 <address class="page-footer__contact section-contacts__contacts">
@@ -79,10 +71,13 @@
                                         <a href="tel:+175684565612">+7 (000) 674-45-78</a>
                                     </div>
                                 </address>
-                            </div>
                         </div>
                     </div>
-                </div>
+                    <div class="section-pages__picture">
+                        <img src="../images/contacts2.jpg" alt="contacts-banner">
+                    </div>                       
+                </div>            
+            </div>
         </section>
 
         <!-- section-contacts and form-->
@@ -98,16 +93,15 @@
                             <div class="section-form__field">
                                 <input type="email" class="input-field" placeholder="E-mail">
                             </div>
-                            <div class="section-form__field section-form__field--position">
-                                <textarea class="input-field section-form__field--style"></textarea>
-                                <span> Введите свое сообщение </span>
-                            </div>
+                            <fieldset class="section-form__fieldset fieldset">
+                                <legend class="fieldset__legend">Введите свое сообщение</legend>
+                                <textarea class="fieldset__textarea"></textarea>
+                            </fieldset>
                             <div class="section-form__form-bottom">
 
                                 <label class="checkbox">
                                     <input type="checkbox" class="checkbox__input">
-                                    <span class="checkbox__text checkbox__text-contacts">Я согласен(a) на обработку
-                                        данных</a></span>
+                                    <span class="checkbox__text checkbox__text-contacts">Я согласен(a) на обработку данных</a></span>
                                 </label>
 
                                 <button class="button section-form__button button--main" type="submit">Отправить
@@ -118,15 +112,14 @@
                                             fill="#F2F2F2" />
                                     </svg>
                                 </button>
-
                             </div>
                         </form>
                     </div>
                     <div class="section-form__map">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d213739.01448831634!2d43.096862366410456!3d56.96113100821172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1638700797670!5m2!1sru!2sru"
-                            width="645" height="700" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
+                            width="645" height="700" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
                     </div>
                 </div>
             </div>
