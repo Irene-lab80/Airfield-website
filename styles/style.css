@@ -87,7 +87,7 @@ nav a:hover {
   letter-spacing: 0.08em;
   cursor: pointer;
   transition: all 0.25s ease;
-  margin-top: 60px;             /* вынести из кнопки? */
+  margin-top: 60px;             
 }
 
 .button--signup {
@@ -117,11 +117,11 @@ nav a:hover {
 }
 
 .page-header__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 100px;
-    /* min-height: 8vh; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100px;
+  /* min-height: 8vh; */
 }
 
 .hamburger-inner,
@@ -214,7 +214,7 @@ nav a:hover {
 .section-main__subtitle {
   margin-top: 30px;
   margin-bottom: 60px;
-  font-size: 72px;
+  font-size: 68px;
   line-height: 120%;
   letter-spacing: 0.02em;
 }
@@ -774,7 +774,7 @@ figure:hover .gallery__img{
 } */
 
 .popup__content {
-  max-width: 630px;
+  /* max-width: 630px; */
   position: relative;
   background: var(--color-light);
   padding: 80px;
@@ -839,8 +839,8 @@ figure:hover .gallery__img{
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
-  padding: 100px 0;
-  margin: 0 var(--grid-gutter);
+  padding: var(--grid-gutter) 0;
+  margin-left: var(--grid-gutter);
 }
 
 .section-pages__content p {
@@ -848,7 +848,7 @@ figure:hover .gallery__img{
 }
 
 .section__title-banner {
-  font-size: 42px;  
+  font-size: 36px;  
   margin-bottom: 30px;  
   line-height: 48px;
 }
@@ -1555,9 +1555,13 @@ iframe {
     display: block;
   }
 
+  .mainmenu__list {
+    display: block;
+  }
+
   .mainmenu {
     position: absolute;
-    top: 120px;
+    top: 99px;
     right: 0;
     background: var(--color-dark);
     padding: var(--grid-gutter);
@@ -1697,8 +1701,7 @@ iframe {
 .section-jumps__title {
   margin-bottom: 60px;
   font-size: 42px;
-  
-  }
+}
 
 .section-flights__card-button .button {
     margin: 15px 0;
@@ -1726,12 +1729,12 @@ iframe {
   align-items: center;
 }
 
-.section-flights__title,
+/* .section-flights__title,
 .section-jumps__title {
   margin: 10px;
   font-size: 30px;
   line-height: 35px;
-}
+} */
 
 .section-flights__card-hidden,
 .section-jumps__card-hidden {
@@ -1843,7 +1846,7 @@ iframe {
   }
 
   .page-section {
-    padding: calc(var(--grid-gutter)/2);
+    padding: 15px;
   }
 
   .section-jumps__card-container {
@@ -1899,7 +1902,7 @@ iframe {
   /* heading */
   .heading {
     font-size: 36px;
-    margin-bottom: calc(var(--grid-gutter)/2);
+    margin: calc(var(--grid-gutter)/2);
   }
 
   .section-main__text span {
@@ -2178,11 +2181,11 @@ iframe {
   }
 
   .page-section {
-      padding: calc(var(--grid-gutter)/6);
+    padding: 15px;
   }
 
   .section-accordeon .container{
-      padding: 0;
+    padding: 0;
   }
 
   /* секции с услугами чтобы помещался текст */
