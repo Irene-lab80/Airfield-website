@@ -256,6 +256,11 @@ nav a:hover {
   text-align: start;
 }
 
+.section-about-us__title p {
+  margin: 0;
+  padding: 0;
+}
+
 
 /* =================СЛАЙДЕР=====================*/
 
@@ -881,11 +886,13 @@ figure:hover .gallery__img{
 .section__block-picture-left {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .section__content-picture-left {
-  padding: var(--grid-gutter);
-  padding-left: 80px;
+  /* padding: var(--grid-gutter); */
+  padding: 30px 60px 60px 80px;
+  /* padding-left: 80px; */
   position: absolute;
   /* width: 660px; */
   width: 110%;
@@ -904,8 +911,9 @@ figure:hover .gallery__img{
 }
 
 .section__content-picture-right {
-  padding: var(--grid-gutter);
-   padding-right: 80px;
+  /* padding: var(--grid-gutter); */
+  padding: 30px 80px 60px 60px;
+   /* padding-right: 80px; */
   position: absolute;
   width: 110%;
   background: rgba(242, 242, 242, 0.9);
@@ -1020,6 +1028,12 @@ figure:hover .gallery__img{
   text-align: center;
   margin-top: 30px;
 }
+
+.section__actions{
+    display: flex;
+    justify-content: center;
+}
+    
 
 /* =========================================================PAGE-JUMPS=========================================================== */
 /* JUMPS */
@@ -1374,6 +1388,15 @@ figure:hover .gallery__img{
 /* COURSES */
 
 /* ########################################################## */
+/* banner */
+.section-pages__content--courses-pad {
+ padding-top: calc(var(--grid-gutter)/4);
+}
+
+.section-pages__content--courses-pad h2 {
+ margin-bottom: 15px;
+}
+
 /* section-accordeon  */
 
 .section-accordeon {
@@ -1415,7 +1438,7 @@ figure:hover .gallery__img{
 /* faq-card */
 .faq-card {
   box-shadow: 2px 4px 15px rgb(6 12 70 / 10%);
-  padding: 15px;
+  padding: 20px;
 }
 
 .faq-card--opened {
@@ -1509,6 +1532,7 @@ figure:hover .gallery__img{
 
 /* map */
 .section-map {
+
   background: var(--color-light);
   overflow: hidden; 
 }
@@ -1517,10 +1541,12 @@ iframe {
   filter: grayscale(100%);
   /* width="1274" */
   /* width: 100%; */
+  color: aqua;
 }
 
 /* form  для контактов*/
 .section-form__map {
+  width: 100%;
   margin: 60px 0;
   box-shadow: 2px 4px 15px rgb(6 12 70 / 10%);
 }
@@ -1643,6 +1669,7 @@ iframe {
     margin: 0;
     width: 100%;
     padding: calc(var(--grid-gutter)/2);
+     padding-top: 0;
   }
 
   .section-benefits__item-wrapper {
@@ -1707,10 +1734,6 @@ iframe {
     margin: 15px 0;
     text-align: center;
 }
-/* 
-.section-jumps__card-button .button {
-    margin: 15px 0;
-} */
 
 .section-flights__img--horizontal {
   max-width: 50%;
@@ -1729,13 +1752,6 @@ iframe {
   align-items: center;
 }
 
-/* .section-flights__title,
-.section-jumps__title {
-  margin: 10px;
-  font-size: 30px;
-  line-height: 35px;
-} */
-
 .section-flights__card-hidden,
 .section-jumps__card-hidden {
   padding: calc(var(--grid-gutter)/4);
@@ -1752,6 +1768,12 @@ iframe {
 .section-pages__content {
   padding: 0;
   margin: 15px;
+  justify-content: center;
+}
+
+.section-addservices {
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .section-form__map iframe {
@@ -1806,10 +1828,42 @@ iframe {
   width: 15px;
   height: 15px;
 }
+
+/* banner courses */
+
+.section__text--df {
+  display: flex;
 }
 
+.section__text--df p:not(:last-child){
+  padding-right: 30px;
+}
+
+.section__text--df p {
+  width: 50%;
+}
+
+.section-pages__content--courses-pad {
+  width: 55%;
+}
+
+.section-pages__banner-df {
+    display: initial;
+
+}
+
+.section-pages__content--style {
+  width: 45%;
+}
+
+}
 
 @media screen and (max-width: 780px) {
+.section__box {
+  width: 70%;
+  
+}
+
   /* section-programs */
   .section-programs__icon {
     height: 100px;
@@ -1826,6 +1880,34 @@ iframe {
   /* section-palanes */
   .section-planes__container {
     grid-template-columns: 1fr;
+  }
+
+/* полеты */
+  .section-planes__card-content {
+      padding: calc(var(--grid-gutter)/4);
+  }
+
+  .card-small {
+      max-width: 100%;
+      background-color: var(--color-light);
+      margin-top: 0;
+  }
+
+  .popup__content--card {
+      max-width: 80%;
+      padding: 30px;
+      padding-top: 40px;
+  }
+
+  .popup__content--card h3 {
+    font-size: 24px; 
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+
+  .popup__content--card p {
+    font-size: 16px;
+    line-height: 130%;
   }
 
   /* section-flights */
@@ -1929,37 +2011,13 @@ iframe {
     display: none;
   }
 
-  /* полеты */
-  .section-planes__card-content {
-      padding: calc(var(--grid-gutter)/4);
-  }
-
-  .card-small {
-      width: 100%;
-      background-color: var(--color-light);
-      margin-top: 0;
-  }
-
-  .popup__content--card {
-      max-width: 100%;
-      padding: 30px;
-  }
-
-  .popup__content--card h3 {
-    font-size: 24px; 
-    margin-left: 0;
-    margin-bottom: 15px;
-  }
-
-  .popup__content--card p {
-    font-size: 16px;
-    line-height: 130%;
-  }
+  
 
   /* секции с услугами чтобы помещался текст */
   .section__content-picture-right, 
   .section__content-picture-left {
     position: static;
+    padding-top: 0;
   }
 
   .container {
@@ -1976,10 +2034,32 @@ iframe {
 
   .section-pages__content {
     width: 100%;
+    padding: calc(var(--grid-gutter)/2);
+    padding-top: 0;
+    margin: 0;
+  }
+}
+
+/* доп точка, чтобы после 600 убирал картинки в карточках */
+@media screen and (max-width: 650px) {
+ .section__box {
+    width: 100%;
+  }
+
+  .section__poster-img {
+    display: none;
+  }
+
+  .section__block-picture-left,
+  .section__block-picture-right{
+    display: block;
   }
 }
 
 @media screen and (max-width: 480px) {
+  .section-main__subtitle {
+    margin: 0;
+  }
 
   .logo {
     width: 100%;
@@ -2084,14 +2164,19 @@ iframe {
   .section-main-services__title {
   font-size: 22px;
   line-height: 120%;
+  margin-top: 0;
   }
 
 
   .section-main-services__actions .button,
   .section-main-services__actions--add .button {
-    padding: calc(var(--grid-gutter)/2);
+    /* padding: calc(var(--grid-gutter)/2); */
     margin-top: 0px;
   }
+
+.section-main-services__slider-item {
+   padding: 0;
+}
 
 
   /* Стили для текстового поля с кнопкой "Далее" для иконок flights */
@@ -2202,15 +2287,43 @@ iframe {
     display: block;
   }
 
+  .section__title {
+    margin-left: 0;
+    text-align: start;
+    font-size: 24px;
+  }
+
+  .section-addservices__title h2,
+  .section-safety__title h2 {
+    font-size: 26px;
+    text-align: center;
+    margin-left: 0;
+  }
+
   .section-addservices {
     padding: 15px;
   }
+
+  /* banner courses, flex у p убираем */
+  .section__text--df {
+    display: initial;
+}
+
+.section__text--df p {
+    width: 100%;
+}
+
+/* about us */
+
+.section-about-us__text--paragraph p:not(:first-child) {
+  display: none;
+}
 
 }
 
 
 /* доп. точка чтобы только от 350 менялся шрифт */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 370px) {
   .section-flights__card-title {
     font-size: 21px;
   }
@@ -2224,5 +2337,9 @@ iframe {
     font-size: 16px;
   }
 
- 
+ .checkbox__text {
+   
+    font-size: 11px;
+ }
+
 }
