@@ -293,6 +293,7 @@ nav a:hover {
 .section-main-services__text-block {
   padding: 150px 60px;
   background-color: var(--color-light);
+  flex-grow: 1;
 
 }
 
