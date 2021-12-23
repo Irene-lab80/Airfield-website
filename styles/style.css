@@ -59,7 +59,7 @@ nav a:hover {
 }
 
 .page-section {
-  padding: var(--grid-gutter) 0; 
+  padding: calc(var(--grid-gutter)/2) 0; 
 }
 
 .heading {
@@ -301,6 +301,10 @@ nav a:hover {
 }
 
 /* slider-nav */
+.swiper-pagination-bullet-active {
+  background-color: var(--color-dark);
+}
+
 .swiper-container {
   width: 1140px;
   position: relative;
@@ -1027,6 +1031,7 @@ figure:hover .gallery__img{
 .section-services__title {
   text-align: center;
   margin-top: 30px;
+  font-size: 36px;
 }
 
 .section__actions{
@@ -1787,8 +1792,9 @@ iframe {
 
   /* СЛАЙДЕР */
 .section-main-services__slider-item {
-  display: block;
+  flex-direction: column;
 }
+
 .section-main-services__slider-item > img {
   width: 100%;
 }
@@ -2064,7 +2070,11 @@ iframe {
   }
 
   .container {
-    padding: 0 10px;
+    padding: 0 5px;
+  }
+  
+  .section-services {
+    padding: 10px;
   }
 
   .section-pages__banner {
