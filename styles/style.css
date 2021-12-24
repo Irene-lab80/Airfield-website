@@ -293,7 +293,7 @@ nav a:hover {
 .section-main-services__text-block {
   padding: 150px 60px;
   background-color: var(--color-light);
-  flex-grow: 1;
+  flex-grow: 2;
 
 }
 
@@ -1142,6 +1142,7 @@ figure:hover .gallery__img{
 .section-jumps__card-text {
   line-height: 25px;
   text-align: center;
+  flex-grow: 1;
 }
 
 /* SECTION ADDITIONAL SERVICES */
@@ -1181,7 +1182,7 @@ figure:hover .gallery__img{
   align-items: center;
   justify-content: space-between;
   max-width: 390px;
-  max-height: 550px;
+  height: 550px;
   position: relative;
   padding: 30px;
   margin-top: -40px;
@@ -1234,6 +1235,7 @@ figure:hover .gallery__img{
 .section-flights__card-text {
   line-height: 25px;
   text-align: center;
+  /* flex-grow: 1; */
 }
 
 .section-flights__card--horizontal {
@@ -1756,6 +1758,8 @@ iframe {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-height: 550px;
+
 }
 
 .section-flights__card-hidden,
